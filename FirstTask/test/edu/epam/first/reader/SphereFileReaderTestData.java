@@ -1,6 +1,5 @@
 package edu.epam.first.reader;
 
-
 import org.testng.annotations.DataProvider;
 
 import java.util.stream.Collectors;

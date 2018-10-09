@@ -15,12 +15,16 @@ public class SphereFileReader {
     private static final Logger logger = LogManager.getLogger();
 
     public List<String> readAll(String path) {
+        List<String> lines;
+
         try(Stream<String> stream = Files.lines(Paths.get(path))){
-            return stream.collect(Collectors.toList());
+            lines = stream.collect(Collectors.toList());
         } catch (IOException e){
             logger.fatal("Impossible to read file: " + path, e);
             throw new RuntimeException("File can't be read.", e);
         }
+
+        return lines;
     }
 
     public List<String> readAll(File file) {

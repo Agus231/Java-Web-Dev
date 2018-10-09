@@ -1,5 +1,5 @@
-2018-10-09 13:30:58 [main] WARN  epam.first.reader.parser.SphereParser - Sphere from line: 12.5; can't be created.
-edu.epam.first.exception.SphereException: Sphere from line: 12.5; can't be created.
+2018-10-09 13:30:57 [main] WARN  epam.first.reader.parser.SphereParser - Sphere from line: wasd 10 10 15; can't be created.
+edu.epam.first.exception.SphereException: Sphere from line: wasd 10 10 15; can't be created.
 	at edu.epam.first.reader.parser.SphereParser.parseLine(SphereParser.java:30) ~[FirstTask/:?]
 	at edu.epam.first.reader.parser.SphereParser.parseLines(SphereParser.java:41) [FirstTask/:?]
 	at edu.epam.first.reader.parser.SphereParserTest.testParseLines(SphereParserTest.java:23) [FirstTask/:?]

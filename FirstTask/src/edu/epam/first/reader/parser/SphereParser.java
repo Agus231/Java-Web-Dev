@@ -2,30 +2,45 @@ package edu.epam.first.reader.parser;
 
 import edu.epam.first.entity.Point3D;
 import edu.epam.first.entity.Sphere;
+import edu.epam.first.exception.SphereException;
 import edu.epam.first.reader.validator.SphereValidator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SphereParser {
-    public Sphere parseLine(String str) {
-        String[] strings = str.split("\\s+");
+    private static Logger logger = LogManager.getLogger();
 
-        double x = Double.parseDouble(strings[0]);
-        double y = Double.parseDouble(strings[1]);
-        double z = Double.parseDouble(strings[2]);
-        double radius = Double.parseDouble(strings[3]);
+    private Sphere parseLine(String line) throws SphereException {
+        SphereValidator validator = new SphereValidator();
+
+        double x, y, z, radius;
+
+        if (validator.validateLine(line)) {
+            String[] numbers = line.split("\\s+");
+
+            x = Double.parseDouble(numbers[0]);
+            y = Double.parseDouble(numbers[1]);
+            z = Double.parseDouble(numbers[2]);
+            radius = Double.parseDouble(numbers[3]);
+        }
+        else {
+            throw new SphereException("Sphere from line: " + line + "; can't be created.");
+        }
 
         return new Sphere(new Point3D(x, y, z), radius);
     }
 
     public List<Sphere> parseLines(List<String> listData){
         List<Sphere> spheres = new ArrayList<>();
-        SphereValidator validator = new SphereValidator();
 
-        for (String str: listData) {
-            if (validator.validateLine(str)) {
-                spheres.add(parseLine(str));
+        for (String line: listData) {
+            try {
+                spheres.add(parseLine(line));
+            } catch (SphereException e) {
+                logger.warn(e.getMessage(), e);
             }
         }
         return spheres;

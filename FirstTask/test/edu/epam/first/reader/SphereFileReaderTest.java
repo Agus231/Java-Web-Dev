@@ -1,13 +1,9 @@
 package edu.epam.first.reader;
 
-import edu.epam.first.entity.SphereTestData;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.io.IOException;
 import java.util.List;
-
-import static org.testng.Assert.*;
 
 public class SphereFileReaderTest {
     private SphereFileReader sphereFileReader;

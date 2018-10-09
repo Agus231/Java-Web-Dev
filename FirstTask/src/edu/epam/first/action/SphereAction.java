@@ -34,7 +34,7 @@ public class SphereAction {
 
         Sphere sphere = (Sphere) o;
 
-        return sphere.getRadius() != 0;
+        return (sphere.getRadius() != 0);
     }
 
     public boolean doTouchOxy(Sphere sphere){
@@ -61,7 +61,7 @@ public class SphereAction {
     public double calculateSegmentVolume(Sphere sphere, double h) throws SphereException {
         if (!isSphere(sphere)) throw new SphereException("Can't calculate segment volume for non sphere object.");
 
-        return PI * Math.pow(h, 2) * (sphere.getRadius() - h / 3);
+        return (PI * Math.pow(h, 2) * (sphere.getRadius() - h / 3));
     }
 
     public double relationOxy(Sphere sphere) throws SphereException {
@@ -73,7 +73,7 @@ public class SphereAction {
         double volumeFirstSegment = calculateSegmentVolume(sphere, radius - absZ);
         double volumeSecondSegment = calculateVolume(sphere) - volumeFirstSegment;
 
-        return volumeFirstSegment / volumeSecondSegment;
+        return (volumeFirstSegment / volumeSecondSegment);
     }
 
     public double relationOxz(Sphere sphere) throws SphereException {
@@ -85,7 +85,7 @@ public class SphereAction {
         double volumeFirstSegment = calculateSegmentVolume(sphere, radius - absY);
         double volumeSecondSegment = calculateVolume(sphere) - volumeFirstSegment;
 
-        return volumeFirstSegment / volumeSecondSegment;
+        return (volumeFirstSegment / volumeSecondSegment);
     }
 
     public double relationOyz(Sphere sphere) throws SphereException {
@@ -97,9 +97,7 @@ public class SphereAction {
         double volumeFirstSegment = calculateSegmentVolume(sphere, radius - absX);
         double volumeSecondSegment = calculateVolume(sphere) - volumeFirstSegment;
 
-        return volumeFirstSegment / volumeSecondSegment;
-
-
+        return (volumeFirstSegment / volumeSecondSegment);
     }
 
 }

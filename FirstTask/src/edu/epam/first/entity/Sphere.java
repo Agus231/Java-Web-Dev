@@ -1,16 +1,23 @@
 package edu.epam.first.entity;
 
+import edu.epam.first.observer.SphereEvent;
+import edu.epam.first.observer.SphereObserver;
+import edu.epam.first.observer.Subject;
 import edu.epam.first.util.IdGenerator;
 
-public class Sphere {
+public class Sphere implements Subject<SphereObserver> {
+    private final static String DOUBLE_SPLITTER = "\\s+";
+
     private long sphereId;
     private Point3D center;
     private double radius;
+    private SphereObserver observer;
 
+    //todo: smth with constructor
     public Sphere(String string){
         sphereId = IdGenerator.generateId();
 
-        String[] args = string.split("\\s+");
+        String[] args = string.split(DOUBLE_SPLITTER);
 
         center = new Point3D(Double.parseDouble(args[0]), Double.parseDouble(args[1]), Double.parseDouble(args[2]));
         this.radius = Double.parseDouble(args[3]);
@@ -40,6 +47,7 @@ public class Sphere {
 
     public void setRadius(double radius) {
         this.radius = radius;
+        notifyObserver();
     }
 
     @Override
@@ -76,5 +84,22 @@ public class Sphere {
         }
 
         return (center.equals(sphere.center) && radius == sphere.radius);
+    }
+
+    @Override
+    public void attachObserver(SphereObserver observer) {
+        this.observer = observer;
+    }
+
+    @Override
+    public void detachObserver() {
+        this.observer = null;
+    }
+
+    @Override
+    public void notifyObserver() {
+        if (observer != null){
+            observer.handleEvent(new SphereEvent(this));
+        }
     }
 }
