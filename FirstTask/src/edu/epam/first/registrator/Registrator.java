@@ -5,12 +5,14 @@ import edu.epam.first.entity.Sphere;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Registrator {
     private static final Registrator instance = new Registrator();
-    private HashMap<Long, Parameters> registratorMap;
+    private Map<Long, Parameters> parametersMap;
 
     private Registrator(){
+        parametersMap = new HashMap<>();
     };
 
     public static Registrator getInstance(){
@@ -18,18 +20,27 @@ public class Registrator {
     }
 
     public Parameters getParameters(Sphere sphere){
-        return registratorMap.get(sphere.getSphereId());
+        return parametersMap.get(sphere.getSphereId());
     }
 
     public void registerSpheres(List<Sphere> spheres){
-        var sphereAction = SphereAction.getInstance();
-        var registration = new HashMap<Long, Parameters>();
-
         for (Sphere sphere: spheres) {
-            var parameters = new Parameters(sphereAction.calculateArea(sphere), sphereAction.calculateVolume(sphere));
-            registration.put(sphere.getSphereId(), parameters);
+            registerSphere(sphere);
         }
+    }
 
-        registratorMap = registration;
+    public void registerSphere(Sphere sphere){
+        var sphereAction = SphereAction.getInstance();
+        var parameters = new Parameters(sphereAction.calculateArea(sphere), sphereAction.calculateVolume(sphere));
+
+        parametersMap.put(sphere.getSphereId(), parameters);
+    }
+
+    public void unregisterSpheres(){
+        parametersMap = new HashMap<>();
+    }
+
+    public void unregisterSphere(Long id){
+        parametersMap.remove(id);
     }
 }

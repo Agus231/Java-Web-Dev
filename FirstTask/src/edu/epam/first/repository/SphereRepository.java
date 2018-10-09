@@ -12,16 +12,20 @@ public class SphereRepository implements Repository<Sphere>{
     private List<Sphere> spheres;
 
     public SphereRepository(){
-        spheres = new ArrayList<Sphere>();
+        spheres = new ArrayList<>();
     }
 
     public void setSpheres(List<Sphere> spheres) {
         this.spheres = spheres;
     }
 
-    public void registerRepository(SphereRepository sphereRepository){
+    public void registerRepository(){
         var registrator = Registrator.getInstance();
         registrator.registerSpheres(spheres);
+    }
+
+    public void clearRepository(){
+        spheres = new ArrayList<>();
     }
 
     public List<Sphere> sort(Comparator<Sphere> comparator){
@@ -30,12 +34,16 @@ public class SphereRepository implements Repository<Sphere>{
 
     @Override
     public void add(Sphere sphere) {
+        var registrator = Registrator.getInstance();
         spheres.add(sphere);
+        registrator.registerSphere(sphere);
     }
 
     @Override
     public void remove(Sphere sphere) {
+        var registrator = Registrator.getInstance();
         spheres.remove(sphere);
+        registrator.unregisterSphere(sphere.getSphereId());
     }
 
     @Override

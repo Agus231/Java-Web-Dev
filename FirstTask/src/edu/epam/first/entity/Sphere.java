@@ -65,7 +65,7 @@ public class Sphere implements Subject<SphereObserver> {
 
     @Override
     public String toString() {
-        return "Sphere[center:"+center + ", radius=" + radius + "]";
+        return "Sphere[center:"+ center + ", radius=" + radius + "]";
     }
 
     public boolean equalsSphere(Sphere sphere) {

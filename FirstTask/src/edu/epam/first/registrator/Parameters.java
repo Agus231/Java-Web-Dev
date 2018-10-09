@@ -44,4 +44,12 @@ public class Parameters {
     public int hashCode() {
         return (int)((area * 31 + volume * 57) % 23);
     }
+
+    @Override
+    public String toString() {
+        return "Parameters{" +
+                "area=" + area +
+                ", volume=" + volume +
+                '}';
+    }
 }
