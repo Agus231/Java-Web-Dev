@@ -12,11 +12,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SphereRegistratorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTest.java">
+      <file leaf-file-name="SphereSpecificationRadiusMore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationRadiusMore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="225">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SphereSpecificationVolumeBetween.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeBetween.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SphereSpecificationVolumeLess.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeLess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SphereSpecificationVolumeMore.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeMore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SphereRepositoryTestData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTestData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,29 +75,8 @@
       <file leaf-file-name="SphereRepositoryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1019">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testng.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testng.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SphereSortTestData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTestData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="239">
+              <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,50 +87,10 @@
       <file leaf-file-name="SphereSortTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="31" column="49" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="31" selection-end-column="49" />
+            <state relative-caret-position="360">
+              <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SphereRepositoryTestData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTestData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SphereRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/SphereRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Registrator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/epam/first/registrator/Registrator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="e#1256#1257#0" expanded="true" />
-                <element signature="e#1296#1297#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,7 +100,7 @@
         <entry file="file://$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTestData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,11 +108,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SphereFileReaderTestData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/edu/epam/first/reader/SphereFileReaderTestData.java">
+      <file leaf-file-name="SphereRegistratorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="404">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SphereSortTestData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTestData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,25 +187,25 @@
         <option value="$PROJECT_DIR$/src/edu/epam/first/observer/Observer.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/observer/Subject.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/entity/Sphere.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaBetween.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaLess.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaMore.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByArea.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByVolume.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeBetween.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeLess.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeMore.java" />
-        <option value="$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTestData.java" />
-        <option value="$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTest.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/registrator/Parameters.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/SphereRepository.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/registrator/Registrator.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/first/observer/SphereObserver.java" />
         <option value="$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTest.java" />
         <option value="$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTestData.java" />
-        <option value="$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTestData.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/SphereRepository.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByArea.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaBetween.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaLess.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaMore.java" />
+        <option value="$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTestData.java" />
+        <option value="$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTestData.java" />
+        <option value="$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTest.java" />
       </list>
     </option>
   </component>
@@ -227,8 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,56 +250,6 @@
             <path>
               <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
               <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="observer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="registrator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="specification" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -307,33 +257,14 @@
               <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="registrator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FirstTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FirstTask" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="sort" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +306,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./home/verdas/EPAM/FirstTask/testng.xml">
+  <component name="RunManager" selected="TestNG.SphereSortTest.testSortByRadius">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -394,35 +325,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="SphereRegistratorTest.testObserverWithEvent" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="FirstTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="edu.epam.first.registrator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="edu.epam.first.registrator" />
-      <option name="MAIN_CLASS_NAME" value="edu.epam.first.registrator.SphereRegistratorTest" />
-      <option name="METHOD_NAME" value="testObserverWithEvent" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
     </configuration>
     <configuration name="SphereRepositoryTest.testAreaBetween" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FirstTask" />
@@ -511,6 +413,35 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="SphereSortTest.testSortByRadius" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="FirstTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.epam.first.sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="edu.epam.first.sort" />
+      <option name="MAIN_CLASS_NAME" value="edu.epam.first.sort.SphereSortTest" />
+      <option name="METHOD_NAME" value="testSortByRadius" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="/home/verdas/EPAM/FirstTask/testng.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="FirstTask" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -557,19 +488,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="TestNG.SphereRegistratorTest.testObserverWithEvent" />
       <item itemvalue="TestNG.SphereRepositoryTest.testLessRadius" />
       <item itemvalue="TestNG.SphereRepositoryTest.testMoreRadius" />
       <item itemvalue="TestNG.SphereRepositoryTest.testAreaBetween" />
       <item itemvalue="TestNG./home/verdas/EPAM/FirstTask/testng.xml" />
+      <item itemvalue="TestNG.SphereSortTest.testSortByRadius" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./home/verdas/EPAM/FirstTask/testng.xml" />
-        <item itemvalue="TestNG.SphereRepositoryTest.testAreaBetween" />
-        <item itemvalue="TestNG.SphereRepositoryTest.testMoreRadius" />
+        <item itemvalue="TestNG.SphereSortTest.testSortByRadius" />
         <item itemvalue="TestNG.SphereRepositoryTest.testLessRadius" />
-        <item itemvalue="TestNG.SphereRegistratorTest.testObserverWithEvent" />
+        <item itemvalue="TestNG.SphereRepositoryTest.testMoreRadius" />
+        <item itemvalue="TestNG.SphereRepositoryTest.testAreaBetween" />
+        <item itemvalue="TestNG./home/verdas/EPAM/FirstTask/testng.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -605,44 +536,45 @@
       <workItem from="1539001051542" duration="38000" />
       <workItem from="1539074698198" duration="5962000" />
       <workItem from="1539083844915" duration="5997000" />
-      <workItem from="1539095616107" duration="15037000" />
+      <workItem from="1539095616107" duration="16475000" />
+      <workItem from="1539116430269" duration="581000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SphereRegistratorTest_testObserver - 2018.10.09 at 21h 57m 18s.xml">
-      <configuration name="SphereRegistratorTest.testObserver" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SphereRegistratorTest_testObserverWithEvent - 2018.10.09 at 21h 58m 28s.xml">
-      <configuration name="SphereRegistratorTest.testObserverWithEvent" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SphereRepositoryTest_testLessRadius - 2018.10.09 at 22h 07m 58s.xml">
-      <configuration name="SphereRepositoryTest.testLessRadius" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SphereRepositoryTest_testLessRadius - 2018.10.09 at 22h 08m 09s.xml">
-      <configuration name="SphereRepositoryTest.testLessRadius" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SphereRepositoryTest_testLessRadius - 2018.10.09 at 22h 08m 32s.xml">
-      <configuration name="SphereRepositoryTest.testLessRadius" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SphereRepositoryTest_testMoreRadius - 2018.10.09 at 22h 11m 18s.xml">
-      <configuration name="SphereRepositoryTest.testMoreRadius" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SphereRepositoryTest_testMoreRadius - 2018.10.09 at 22h 11m 50s.xml">
-      <configuration name="SphereRepositoryTest.testMoreRadius" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SphereRepositoryTest_testMoreRadius - 2018.10.09 at 22h 13m 28s.xml">
-      <configuration name="SphereRepositoryTest.testMoreRadius" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="SphereRepositoryTest_testAreaBetween - 2018.10.09 at 22h 19m 04s.xml">
-      <configuration name="SphereRepositoryTest.testAreaBetween" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="SphereRepositoryTest_testAreaBetween - 2018.10.09 at 22h 21m 01s.xml">
       <configuration name="SphereRepositoryTest.testAreaBetween" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="SphereRepositoryTest_testAreaBetween - 2018.10.09 at 22h 22m 16s.xml">
+      <configuration name="SphereRepositoryTest.testAreaBetween" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_verdas_EPAM_FirstTask_testng_xml - 2018.10.09 at 22h 22m 31s.xml">
+      <configuration name="/home/verdas/EPAM/FirstTask/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_verdas_EPAM_FirstTask_testng_xml - 2018.10.09 at 22h 23m 36s.xml">
+      <configuration name="/home/verdas/EPAM/FirstTask/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_verdas_EPAM_FirstTask_testng_xml - 2018.10.09 at 22h 45m 26s.xml">
+      <configuration name="/home/verdas/EPAM/FirstTask/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_verdas_EPAM_FirstTask_testng_xml - 2018.10.09 at 23h 00m 30s.xml">
+      <configuration name="/home/verdas/EPAM/FirstTask/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SphereRepositoryTest_testAreaBetween - 2018.10.09 at 23h 23m 08s.xml">
+      <configuration name="SphereRepositoryTest.testAreaBetween" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SphereRepositoryTest_testMoreRadius - 2018.10.09 at 23h 25m 37s.xml">
+      <configuration name="SphereRepositoryTest.testMoreRadius" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SphereRepositoryTest_testLessRadius - 2018.10.09 at 23h 26m 00s.xml">
+      <configuration name="SphereRepositoryTest.testLessRadius" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="SphereSortTest_testSortByRadius - 2018.10.09 at 23h 29m 24s.xml">
+      <configuration name="SphereSortTest.testSortByRadius" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75336000" />
+    <option name="totallyTimeSpent" value="77355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="1853" height="1055" extended-state="6" />
@@ -657,8 +589,8 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32946146" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3284055" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3284055" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -668,8 +600,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915523" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -686,34 +618,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByMaxRadius.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByMinRadius.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByMaxRadius.java" />
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByMinRadius.java" />
     <entry file="jar:///usr/lib/jvm/java-10-oracle/lib/src.zip!/java.base/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -739,9 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,9 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -765,144 +669,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaBetween.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaLess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaMore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByArea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationById.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByRadius.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByVolume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationRadiusBetween.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationRadiusLess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationRadiusMore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeBetween.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeMore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeLess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/Specification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/util/IdGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -917,9 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -955,9 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="80" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,9 +753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,26 +770,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/registrator/Parameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding>
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/first/entity/Sphere.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,33 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/registrator/Registrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
-            <element signature="e#1128#1129#0" expanded="true" />
-            <element signature="e#1256#1257#0" expanded="true" />
-            <element signature="e#1296#1297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/SphereRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,50 +798,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTestData.java">
+    <entry file="file://$PROJECT_DIR$/testng.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/util/IdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/SphereRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/registrator/Registrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/registrator/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaBetween.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaLess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationAreaMore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByArea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationById.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByRadius.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationByVolume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTestData.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationRadiusBetween.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTest.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationRadiusLess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="31" column="49" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="31" selection-end-column="49" />
+        <state relative-caret-position="210">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTestData.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationRadiusMore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="60" column="58" selection-start-line="60" selection-start-column="58" selection-end-line="60" selection-end-column="58" />
+        <state relative-caret-position="225">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeBetween.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeLess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/first/repository/specification/SphereSpecificationVolumeMore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1132,18 +962,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1019">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="239">
+          <caret line="35" column="54" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
+    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTestData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        <state relative-caret-position="225">
+          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/sort/SphereSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/registrator/SphereRegistratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="33" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/edu/epam/first/repository/SphereRepositoryTestData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

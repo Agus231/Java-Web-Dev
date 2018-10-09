@@ -19,20 +19,12 @@ public class SphereSortTest {
 
     @Test(dataProvider = "sphereSortDataRadius", dataProviderClass = SphereSortTestData.class)
     public void testSortByRadius(List<Sphere> listToSort, List<Sphere> expectedList){
+        repository.clearRepository();
         repository.setSpheres(listToSort);
 
         List<Sphere> sortedSpheres = repository.sort(Comparator.comparingDouble(Sphere::getRadius));
-        List<Boolean> actual = new ArrayList<>();
 
-        for (int i = 0; i < sortedSpheres.size(); i++) {
-            actual.add(sortedSpheres.get(i).equalsSphere(expectedList.get(i)));
-        }
-
-        List<Boolean> expected = new ArrayList<>(Arrays.asList(new Boolean[sortedSpheres.size()]));
-        Collections.fill(expected, Boolean.TRUE);
-
-        repository.clearRepository();
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(sortedSpheres, expectedList);
     }
 
     @AfterClass

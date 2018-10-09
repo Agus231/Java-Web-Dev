@@ -1,7 +1,6 @@
 package edu.epam.first.repository.specification;
 
 import edu.epam.first.entity.Sphere;
-import edu.epam.first.exception.SphereException;
 import edu.epam.first.registrator.Registrator;
 import edu.epam.first.repository.Specification;
 

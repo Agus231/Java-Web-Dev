@@ -33,15 +33,7 @@ public class SphereRepositoryTest {
         repository.setSpheres(spheres);
         List<Sphere> queryList = repository.query(new SphereSpecificationRadiusLess(maxRadius));
 
-        var actual = new ArrayList<Boolean>();
-        for (int i = 0; i < queryList.size(); i++) {
-            actual.add(queryList.get(i).equalsSphere(expectedSpheres.get(i)));
-        }
-
-        var expected = new ArrayList<>(Arrays.asList(new Boolean[expectedSpheres.size()]));
-        Collections.fill(expected, Boolean.TRUE);
-
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(queryList, expectedSpheres);
     }
 
     @Test(dataProvider = "sphereRepositoryDataMoreRadius", dataProviderClass = SphereRepositoryTestData.class)
@@ -49,15 +41,7 @@ public class SphereRepositoryTest {
         repository.setSpheres(spheres);
         List<Sphere> queryList = repository.query(new SphereSpecificationRadiusMore(minRadius));
 
-        var actual = new ArrayList<Boolean>();
-        for (int i = 0; i < queryList.size(); i++) {
-            actual.add(queryList.get(i).equalsSphere(expectedSpheres.get(i)));
-        }
-
-        var expected = new ArrayList<>(Arrays.asList(new Boolean[expectedSpheres.size()]));
-        Collections.fill(expected, Boolean.TRUE);
-
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(queryList, expectedSpheres);
     }
 
     @Test(dataProvider = "sphereRepositoryDataBetweenArea", dataProviderClass = SphereRepositoryTestData.class)
@@ -67,15 +51,7 @@ public class SphereRepositoryTest {
 
         List<Sphere> queryList = repository.query(new SphereSpecificationAreaBetween(minArea, maxArea));
 
-        var actual = new ArrayList<Boolean>();
-        for (int i = 0; i < queryList.size(); i++) {
-            actual.add(queryList.get(i).equalsSphere(expectedSpheres.get(i)));
-        }
-
-        var expected = new ArrayList<>(Arrays.asList(new Boolean[expectedSpheres.size()]));
-        Collections.fill(expected, Boolean.TRUE);
-
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(queryList, expectedSpheres);
     }
 
     @AfterClass
