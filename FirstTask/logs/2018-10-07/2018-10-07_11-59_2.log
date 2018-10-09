@@ -1,0 +1,9 @@
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : 10 10 10 -20; FALSE WHILE VALIDATING
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : wasd 10 10 15; FALSE WHILE VALIDATING
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : 10 wasd 10 15; FALSE WHILE VALIDATING
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : 10 10 wasd 15; FALSE WHILE VALIDATING
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : wasd wasd wassd wad; FALSE WHILE VALIDATING
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : 10.5 15 20 25 230; FALSE WHILE VALIDATING
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : ; FALSE WHILE VALIDATING
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : wasd; FALSE WHILE VALIDATING
+2018-10-07 11:59:25 [main] WARN  epam.first.reader.validator.SphereValidator - String : 12.5; FALSE WHILE VALIDATING

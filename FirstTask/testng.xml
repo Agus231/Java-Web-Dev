@@ -1,0 +1,12 @@
+<suite name="TestSuite">
+    <test name="AutoTest">
+        <classes>
+            <class name="edu.epam.first.action.SphereActionTest" />
+            <class name="edu.epam.first.entity.Point3DTest"/>
+            <class name="edu.epam.first.entity.SphereTest"/>
+            <class name="edu.epam.first.reader.SphereFileReaderTest"/>
+            <class name="edu.epam.first.reader.parser.SphereParserTest"/>
+            <class name="edu.epam.first.reader.validator.SphereValidatorTest"/>
+        </classes>
+    </test>
+</suite>
