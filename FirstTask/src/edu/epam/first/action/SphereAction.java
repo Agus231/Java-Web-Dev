@@ -7,15 +7,11 @@ import edu.epam.first.exception.SphereException;
 import static java.lang.Math.PI;
 
 public class SphereAction {
-    private static SphereAction instance;
+    private static final SphereAction instance = new SphereAction();
 
     private SphereAction(){}
 
     public static SphereAction getInstance(){
-        if (instance == null){
-            instance = new SphereAction();
-        }
-
         return instance;
     }
 

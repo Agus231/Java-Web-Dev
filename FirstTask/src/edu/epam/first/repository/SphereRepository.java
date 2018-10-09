@@ -1,15 +1,31 @@
 package edu.epam.first.repository;
 
 import edu.epam.first.entity.Sphere;
+import edu.epam.first.registrator.Registrator;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SphereRepository implements Repository<Sphere>{
     private List<Sphere> spheres;
 
     public SphereRepository(){
         spheres = new ArrayList<Sphere>();
+    }
+
+    public void setSpheres(List<Sphere> spheres) {
+        this.spheres = spheres;
+    }
+
+    public void registerRepository(SphereRepository sphereRepository){
+        var registrator = Registrator.getInstance();
+        registrator.registerSpheres(spheres);
+    }
+
+    public List<Sphere> sort(Comparator<Sphere> comparator){
+        return spheres.stream().sorted(comparator).collect(Collectors.toList());
     }
 
     @Override
@@ -22,9 +38,8 @@ public class SphereRepository implements Repository<Sphere>{
         spheres.remove(sphere);
     }
 
-    //todo: add realization
     @Override
     public List<Sphere> query(Specification<Sphere> specification) {
-        return null;
+        return spheres.stream().filter(specification::specified).collect(Collectors.toList());
     }
 }

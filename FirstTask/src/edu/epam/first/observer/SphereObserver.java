@@ -1,9 +1,22 @@
 package edu.epam.first.observer;
 
+import edu.epam.first.action.SphereAction;
+import edu.epam.first.registrator.Registrator;
+
 public class SphereObserver implements Observer<SphereEvent> {
-    //todo: add realization
     @Override
     public void handleEvent(SphereEvent event) {
+        var registrator = Registrator.getInstance();
+        var sphereAction = SphereAction.getInstance();
 
+        var sphere = event.getSource();
+
+        double area = sphereAction.calculateArea(sphere);
+        double volume = sphereAction.calculateVolume(sphere);
+
+        var parameters = registrator.getParameters(sphere);
+
+        parameters.setArea(area);
+        parameters.setVolume(volume);
     }
 }
