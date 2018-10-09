@@ -6,21 +6,15 @@ import edu.epam.first.observer.Subject;
 import edu.epam.first.util.IdGenerator;
 
 public class Sphere implements Subject<SphereObserver> {
-    private final static String DOUBLE_SPLITTER = "\\s+";
-
     private long sphereId;
     private Point3D center;
     private double radius;
     private SphereObserver observer;
 
-    //todo: smth with constructor
-    public Sphere(String string){
+    public Sphere(double x, double y, double z, double radius){
         sphereId = IdGenerator.generateId();
-
-        String[] args = string.split(DOUBLE_SPLITTER);
-
-        center = new Point3D(Double.parseDouble(args[0]), Double.parseDouble(args[1]), Double.parseDouble(args[2]));
-        this.radius = Double.parseDouble(args[3]);
+        center = new Point3D(x, y, z);
+        this.radius = radius;
     }
 
     public Sphere(Point3D center, double radius){

@@ -12,13 +12,13 @@ public class SphereParserTestData {
         return new Object[][]{
                 {
                     "./data/input.txt",
-                    Stream.of(new Sphere("10 10 10 10"),
-                              new Sphere("10.5 10 10 10"),
-                              new Sphere("10 10.5 10 10"),
-                              new Sphere("10 10 10.5 10"),
-                              new Sphere("10.5 10.7 10.9 10"),
-                              new Sphere("-10.45 10 -10.5 15"),
-                              new Sphere("10.34e+01 -20.4789E+03 10564.5e-3 20.6")).collect(Collectors.toList())
+                    Stream.of(new Sphere(10, 10, 10, 10),
+                              new Sphere(10.5, 10, 10, 10),
+                              new Sphere(10, 10.5, 10, 10),
+                              new Sphere(10, 10, 10.5, 10),
+                              new Sphere(10.5, 10.7, 10.9, 10),
+                              new Sphere(-10.45, 10, -10.5, 15),
+                              new Sphere(10.34e+01, -20.4789E+03, 10564.5e-3, 20.6)).collect(Collectors.toList())
                 }
         };
     }
