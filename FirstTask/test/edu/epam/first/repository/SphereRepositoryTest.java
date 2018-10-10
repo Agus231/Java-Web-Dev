@@ -1,37 +1,31 @@
 package edu.epam.first.repository;
 
-import edu.epam.first.action.SphereAction;
 import edu.epam.first.entity.Sphere;
-import edu.epam.first.observer.SphereObserver;
-import edu.epam.first.registrator.Registrator;
-import edu.epam.first.registrator.SphereRegistratorTestData;
-import edu.epam.first.repository.specification.SphereSpecificationAreaBetween;
-import edu.epam.first.repository.specification.SphereSpecificationRadiusLess;
-import edu.epam.first.repository.specification.SphereSpecificationRadiusMore;
+import edu.epam.first.registrator.Warehouse;
+import edu.epam.first.repository.specification.impl.SphereAreaBetweenSpecification;
+import edu.epam.first.repository.specification.impl.SphereRadiusLessSpecification;
+import edu.epam.first.repository.specification.impl.SphereRadiusMoreSpecification;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class SphereRepositoryTest {
     private SphereRepository repository;
-    private Registrator registrator;
+    private Warehouse warehouse;
 
     @BeforeClass
     public void setUp(){
         repository = new SphereRepository();
-        registrator =  Registrator.getInstance();
+        warehouse =  Warehouse.getInstance();
     }
 
     @Test(dataProvider = "sphereRepositoryDataLessRadius", dataProviderClass = SphereRepositoryTestData.class)
     public void testLessRadius(double maxRadius, List<Sphere> spheres, List<Sphere> expectedSpheres){
         repository.setSpheres(spheres);
-        List<Sphere> queryList = repository.query(new SphereSpecificationRadiusLess(maxRadius));
+        List<Sphere> queryList = repository.query(new SphereRadiusLessSpecification(maxRadius));
 
         Assert.assertEquals(queryList, expectedSpheres);
     }
@@ -39,7 +33,7 @@ public class SphereRepositoryTest {
     @Test(dataProvider = "sphereRepositoryDataMoreRadius", dataProviderClass = SphereRepositoryTestData.class)
     public void testMoreRadius(double minRadius, List<Sphere> spheres, List<Sphere> expectedSpheres){
         repository.setSpheres(spheres);
-        List<Sphere> queryList = repository.query(new SphereSpecificationRadiusMore(minRadius));
+        List<Sphere> queryList = repository.query(new SphereRadiusMoreSpecification(minRadius));
 
         Assert.assertEquals(queryList, expectedSpheres);
     }
@@ -49,7 +43,7 @@ public class SphereRepositoryTest {
         repository.setSpheres(spheres);
         repository.registerRepository();
 
-        List<Sphere> queryList = repository.query(new SphereSpecificationAreaBetween(minArea, maxArea));
+        List<Sphere> queryList = repository.query(new SphereAreaBetweenSpecification(minArea, maxArea));
 
         Assert.assertEquals(queryList, expectedSpheres);
     }
@@ -58,6 +52,6 @@ public class SphereRepositoryTest {
     public void tearDown(){
         repository.clearRepository();
         repository = null;
-        registrator.unregisterSpheres();
+        warehouse.unregisterSpheres();
     }
 }

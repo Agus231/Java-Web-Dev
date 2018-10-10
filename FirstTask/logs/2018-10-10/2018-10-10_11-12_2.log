@@ -1,8 +1,15 @@
-2018-10-10 11:52:49 [main] WARN  epam.first.reader.parser.SphereParser - Sphere from line: 12.5; can't be created.
-edu.epam.first.exception.SphereException: Sphere from line: 12.5; can't be created.
-	at edu.epam.first.reader.parser.SphereParser.parseLine(SphereParser.java:30) ~[FirstTask/:?]
-	at edu.epam.first.reader.parser.SphereParser.parseLines(SphereParser.java:41) [FirstTask/:?]
-	at edu.epam.first.reader.parser.SphereParserTest.testParseLines(SphereParserTest.java:23) [FirstTask/:?]
+2018-10-10 11:12:24 [main] FATAL edu.epam.first.reader.SphereFileReader - Impossible to read file: ./data/fileNotExists.txt
+java.nio.file.NoSuchFileException: ./data/fileNotExists.txt
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:178) ~[?:?]
+	at java.nio.channels.FileChannel.open(FileChannel.java:292) ~[?:?]
+	at java.nio.channels.FileChannel.open(FileChannel.java:340) ~[?:?]
+	at java.nio.file.Files.lines(Files.java:3866) ~[?:?]
+	at java.nio.file.Files.lines(Files.java:3958) ~[?:?]
+	at edu.epam.first.reader.SphereFileReader.readAll(SphereFileReader.java:20) [FirstTask/:?]
+	at edu.epam.first.reader.SphereFileReaderTest.testExceptionReadAll(SphereFileReaderTest.java:19) [FirstTask/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
 	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]

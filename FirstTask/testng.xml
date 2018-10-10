@@ -7,7 +7,7 @@
             <class name="edu.epam.first.reader.SphereFileReaderTest"/>
             <class name="edu.epam.first.reader.parser.SphereParserTest"/>
             <class name="edu.epam.first.reader.validator.SphereValidatorTest"/>
-            <class name="edu.epam.first.registrator.SphereRegistratorTest"/>
+            <class name="edu.epam.first.registrator.SphereWarehouseTest" />
             <class name="edu.epam.first.repository.SphereRepositoryTest"/>
             <class name="edu.epam.first.sort.SphereSortTest"/>
         </classes>

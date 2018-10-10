@@ -1,7 +1,8 @@
 package edu.epam.first.repository;
 
 import edu.epam.first.entity.Sphere;
-import edu.epam.first.registrator.Registrator;
+import edu.epam.first.registrator.Warehouse;
+import edu.epam.first.repository.specification.Specification;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -20,7 +21,7 @@ public class SphereRepository implements Repository<Sphere>{
     }
 
     public void registerRepository(){
-        var registrator = Registrator.getInstance();
+        var registrator = Warehouse.getInstance();
         registrator.registerSpheres(spheres);
     }
 
@@ -34,14 +35,14 @@ public class SphereRepository implements Repository<Sphere>{
 
     @Override
     public void add(Sphere sphere) {
-        var registrator = Registrator.getInstance();
+        var registrator = Warehouse.getInstance();
         spheres.add(sphere);
         registrator.registerSphere(sphere);
     }
 
     @Override
     public void remove(Sphere sphere) {
-        var registrator = Registrator.getInstance();
+        var registrator = Warehouse.getInstance();
         spheres.remove(sphere);
         registrator.unregisterSphere(sphere.getSphereId());
     }
