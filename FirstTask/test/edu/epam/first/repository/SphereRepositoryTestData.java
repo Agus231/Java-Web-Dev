@@ -19,7 +19,6 @@ public class SphereRepositoryTestData {
         return new Object[][]{
                 {
                         10,
-                        list,
                         Stream.of(
                                 list.get(1),
                                 list.get(4)).collect(Collectors.toList())
@@ -32,7 +31,6 @@ public class SphereRepositoryTestData {
         return new Object[][]{
                 {
                         10,
-                        list,
                         Stream.of(
                                 list.get(2),
                                 list.get(3)).collect(Collectors.toList())
@@ -46,7 +44,6 @@ public class SphereRepositoryTestData {
                 {
                         1000,
                         1600,
-                        list,
                         Stream.of(
                                 list.get(0),
                                 list.get(1),

@@ -14,16 +14,12 @@ public class SphereSortTest {
 
     @BeforeClass
     public void setUp(){
-        repository = new SphereRepository();
+        repository = SphereRepository.getInstance();
     }
 
     @Test(dataProvider = "sphereSortDataRadius", dataProviderClass = SphereSortTestData.class)
-    public void testSortByRadius(List<Sphere> listToSort, List<Sphere> expectedList){
-        repository.clearRepository();
-        repository.setSpheres(listToSort);
-
+    public void testSortByRadius(List<Sphere> expectedList){
         List<Sphere> sortedSpheres = repository.sort(Comparator.comparingDouble(Sphere::getRadius));
-
         Assert.assertEquals(sortedSpheres, expectedList);
     }
 

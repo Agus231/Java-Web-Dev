@@ -18,40 +18,31 @@ public class SphereRepositoryTest {
 
     @BeforeClass
     public void setUp(){
-        repository = new SphereRepository();
+        repository = SphereRepository.getInstance();
         warehouse =  Warehouse.getInstance();
     }
 
     @Test(dataProvider = "sphereRepositoryDataLessRadius", dataProviderClass = SphereRepositoryTestData.class)
-    public void testLessRadius(double maxRadius, List<Sphere> spheres, List<Sphere> expectedSpheres){
-        repository.setSpheres(spheres);
+    public void testLessRadius(double maxRadius, List<Sphere> expectedSpheres){ ;
         List<Sphere> queryList = repository.query(new SphereRadiusLessSpecification(maxRadius));
-
         Assert.assertEquals(queryList, expectedSpheres);
     }
 
     @Test(dataProvider = "sphereRepositoryDataMoreRadius", dataProviderClass = SphereRepositoryTestData.class)
-    public void testMoreRadius(double minRadius, List<Sphere> spheres, List<Sphere> expectedSpheres){
-        repository.setSpheres(spheres);
+    public void testMoreRadius(double minRadius, List<Sphere> expectedSpheres){
         List<Sphere> queryList = repository.query(new SphereRadiusMoreSpecification(minRadius));
-
         Assert.assertEquals(queryList, expectedSpheres);
     }
 
     @Test(dataProvider = "sphereRepositoryDataBetweenArea", dataProviderClass = SphereRepositoryTestData.class)
-    public void testAreaBetween(double minArea, double maxArea, List<Sphere> spheres, List<Sphere> expectedSpheres){
-        repository.setSpheres(spheres);
-        repository.registerRepository();
-
+    public void testAreaBetween(double minArea, double maxArea, List<Sphere> expectedSpheres){
         List<Sphere> queryList = repository.query(new SphereAreaBetweenSpecification(minArea, maxArea));
-
         Assert.assertEquals(queryList, expectedSpheres);
     }
 
     @AfterClass
     public void tearDown(){
         repository.clearRepository();
-        repository = null;
         warehouse.unregisterSpheres();
     }
 }

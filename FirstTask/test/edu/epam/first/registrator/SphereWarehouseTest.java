@@ -1,6 +1,7 @@
 package edu.epam.first.registrator;
 
 import edu.epam.first.entity.Sphere;
+import edu.epam.first.exception.SphereException;
 import edu.epam.first.observer.SphereObserver;
 import edu.epam.first.repository.SphereRepository;
 import org.testng.Assert;
@@ -14,44 +15,24 @@ public class SphereWarehouseTest {
 
     @BeforeClass
     public void setUp(){
-        repository = new SphereRepository();
+        repository = SphereRepository.getInstance();
         warehouse =  Warehouse.getInstance();
     }
 
     @Test(dataProvider = "sphereRegistratorData", dataProviderClass = SphereRegistratorTestData.class)
-    public void testObserverWithoutEvent(List<Sphere> spheres, Sphere newSphere, Sphere expectedSphere){
-        repository.setSpheres(spheres);
-        repository.registerRepository();
-
-        SphereObserver observer = new SphereObserver();
-        newSphere.attachObserver(observer);
-
-        repository.add(newSphere);
-        repository.add(expectedSphere);
-
-
+    public void testObserverWithoutEvent(Sphere newSphere, Sphere expectedSphere){
         Assert.assertNotEquals(warehouse.getParameters(newSphere), warehouse.getParameters(expectedSphere));
     }
 
     @Test(dataProvider = "sphereRegistratorData", dataProviderClass = SphereRegistratorTestData.class)
-    public void testObserverWithEvent(List<Sphere> spheres, Sphere newSphere, Sphere expectedSphere){
-        repository.setSpheres(spheres);
-        repository.registerRepository();
-
-        SphereObserver observer = new SphereObserver();
-        newSphere.attachObserver(observer);
-
-        repository.add(newSphere);
-        repository.add(expectedSphere);
+    public void testObserverWithEvent(Sphere newSphere, Sphere expectedSphere){
         newSphere.setRadius(expectedSphere.getRadius());
-
         Assert.assertEquals(warehouse.getParameters(newSphere), warehouse.getParameters(expectedSphere));
     }
 
     @AfterClass
     public void tearDown(){
         repository.clearRepository();
-        repository = null;
         warehouse.unregisterSpheres();
     }
 }

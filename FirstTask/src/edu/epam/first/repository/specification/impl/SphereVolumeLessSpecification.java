@@ -21,8 +21,8 @@ public class SphereVolumeLessSpecification implements Specification<Sphere> {
 
     @Override
     public boolean specified(Sphere sphere) {
-        Warehouse warehouse = Warehouse.getInstance();
-        var volume = warehouse.getParameters(sphere).getVolume();
+        var warehouse = Warehouse.getInstance();
+        double volume = warehouse.getParameters(sphere).getVolume();
         return (volume < maxVolume);
     }
 }

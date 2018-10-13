@@ -23,12 +23,6 @@ public class Warehouse {
         return parametersMap.get(sphere.getSphereId());
     }
 
-    public void registerSpheres(List<Sphere> spheres){
-        for (Sphere sphere: spheres) {
-            registerSphere(sphere);
-        }
-    }
-
     public void registerSphere(Sphere sphere){
         var sphereAction = SphereAction.getInstance();
         var parameters = new Parameters(sphereAction.calculateArea(sphere), sphereAction.calculateVolume(sphere));

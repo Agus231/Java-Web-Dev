@@ -14,7 +14,7 @@ public class SphereParser {
     private static Logger logger = LogManager.getLogger();
 
     private Sphere parseLine(String line) throws SphereException {
-        SphereValidator validator = new SphereValidator();
+        var validator = new SphereValidator();
 
         double x, y, z, radius;
 
@@ -34,7 +34,7 @@ public class SphereParser {
     }
 
     public List<Sphere> parseLines(List<String> listData){
-        List<Sphere> spheres = new ArrayList<>();
+        var spheres = new ArrayList<Sphere>();
 
         for (String line: listData) {
             try {

@@ -21,8 +21,8 @@ public class SphereAreaLessSpecification implements Specification<Sphere> {
 
     @Override
     public boolean specified(Sphere sphere) {
-        Warehouse warehouse = Warehouse.getInstance();
-        var area = warehouse.getParameters(sphere).getArea();
+        var warehouse = Warehouse.getInstance();
+        double area = warehouse.getParameters(sphere).getArea();
         return (area < maxArea);
     }
 }

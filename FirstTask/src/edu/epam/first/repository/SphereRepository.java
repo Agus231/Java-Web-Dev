@@ -10,19 +10,19 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class SphereRepository implements Repository<Sphere>{
+    private static final SphereRepository instance = new SphereRepository();
     private List<Sphere> spheres;
 
-    public SphereRepository(){
+    private SphereRepository(){
         spheres = new ArrayList<>();
     }
 
-    public void setSpheres(List<Sphere> spheres) {
-        this.spheres = spheres;
+    public static SphereRepository getInstance(){
+        return instance;
     }
 
-    public void registerRepository(){
-        var registrator = Warehouse.getInstance();
-        registrator.registerSpheres(spheres);
+    public List<Sphere> getSpheres() {
+        return spheres;
     }
 
     public void clearRepository(){

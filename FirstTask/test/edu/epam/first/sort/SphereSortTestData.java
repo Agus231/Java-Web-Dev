@@ -19,7 +19,6 @@ public class SphereSortTestData {
     public static Object[][] sphereSortDataRadius(){
         return new Object[][]{
                 {
-                    list,
                     Stream.of(list.get(4),
                             list.get(1),
                             list.get(0),
