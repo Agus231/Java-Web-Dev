@@ -1,7 +1,10 @@
 package edu.epam.second;
 
-public interface Composite {
+import java.util.List;
+
+public interface Component<T extends Component> {
     void operation();
-    boolean add(Composite composite);
-    boolean remove(Composite composite);
+    boolean add(T component);
+    boolean addAll(List<T> component);
+    boolean remove(T component);
 }

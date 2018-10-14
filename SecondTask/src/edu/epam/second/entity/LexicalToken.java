@@ -1,35 +1,40 @@
 package edu.epam.second.entity;
 
 import edu.epam.second.Component;
-
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Word implements Component {
-    private String value;
-
-    public Word(String string){
-        value = string;
-    }
+public class LexicalToken implements Component<Component> {
+    private List<Component> symbols = new ArrayList<>();
 
     @Override
     public void operation() {
-        System.out.print(value);
+        symbols.forEach(Component::operation);
     }
 
     @Override
     public boolean add(Component component) {
-        return false;
+        return symbols.add(component);
     }
 
     @Override
-    public boolean addAll(List<? extends Component> component) {
-        return false;
+    public boolean addAll(List<Component> component) {
+        return symbols.addAll(component);
     }
 
     @Override
     public boolean remove(Component component) {
-        return false;
+        return symbols.remove(component);
+    }
+
+    public Word getWordFromLexem(){
+        Word word = null;
+        for (Component c: symbols) {
+            if (c instanceof Word)
+                word = (Word) c;
+        }
+        return word;
     }
 
     @Override
@@ -42,19 +47,20 @@ public class Word implements Component {
             return false;
         }
 
-        Word word = (Word) o;
-        return Objects.equals(value, word.value);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(value);
+        LexicalToken that = (LexicalToken) o;
+        return Objects.equals(symbols, that.symbols);
     }
 
     @Override
     public String toString() {
-        return "Word{" +
-                "value='" + value + '\'' +
+        return "LexicalToken{" +
+                "symbols=" + symbols +
                 '}';
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(symbols);
     }
 }
