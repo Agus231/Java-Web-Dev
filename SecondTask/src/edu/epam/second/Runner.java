@@ -21,15 +21,15 @@ public class Runner {
         String text = textReader.readFileToString("./data/input.txt");
         Text textObj = textParser.handleParse(text);
 
-        System.out.println(manager.getString(ResourceManager.TEXT_KEY)); //localization
+        System.out.println(manager.getString(ResourceManager.TEXT_KEY));
         textObj.operation();
 
         List<Word> wordList = textObj.wordList();
-        System.out.println(manager.getString(ResourceManager.FIRST_SORT_KEY)); //localization
+        System.out.println(manager.getString(ResourceManager.FIRST_SORT_KEY));
         wordList.stream().sorted(WordAction.comparatorFirst).forEach(System.out::println);
         System.out.println();
 
-        System.out.println(manager.getString(ResourceManager.SECOND_SORT_KEY)); //localization
+        System.out.println(manager.getString(ResourceManager.SECOND_SORT_KEY));
         wordList.stream().filter(word -> {
             char[] characters = word.getValue().toCharArray();
             return WordAction.isVovel(String.valueOf(characters[0])) && characters.length != 1;

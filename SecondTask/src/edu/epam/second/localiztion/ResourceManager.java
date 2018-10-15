@@ -16,9 +16,11 @@ public enum ResourceManager {
     ResourceManager() {
         resourceBundle = ResourceBundle.getBundle(resourceName, Locale.getDefault());
     }
+
     public void changeResource(Locale locale) {
         resourceBundle = ResourceBundle.getBundle(resourceName, locale);
     }
+
     public String getString(String key) {
         return resourceBundle.getString(key);
     }

@@ -8,6 +8,5 @@ import java.util.List;
 public interface Repository<T> {
     void add(T t);
     List<T> sort(Comparator<T> comparator);
-
     List<T> query(Specification<T> specification);
 }
