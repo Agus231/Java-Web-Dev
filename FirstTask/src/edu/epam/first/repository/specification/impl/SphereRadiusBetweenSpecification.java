@@ -3,6 +3,8 @@ package edu.epam.first.repository.specification.impl;
 import edu.epam.first.entity.Sphere;
 import edu.epam.first.repository.specification.Specification;
 
+import java.util.function.Predicate;
+
 public class SphereRadiusBetweenSpecification implements Specification<Sphere> {
     private double minRadius;
     private double maxRadius;
@@ -29,7 +31,7 @@ public class SphereRadiusBetweenSpecification implements Specification<Sphere> {
     }
 
     @Override
-    public boolean specified(Sphere sphere) {
-        return (sphere.getRadius() >= minRadius && sphere.getRadius() < maxRadius);
+    public Predicate<Sphere> specified() {
+        return (s) -> (s.getRadius() >= minRadius && s.getRadius() < maxRadius);
     }
 }

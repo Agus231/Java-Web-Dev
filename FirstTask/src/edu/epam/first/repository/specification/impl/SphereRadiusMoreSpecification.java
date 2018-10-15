@@ -3,6 +3,8 @@ package edu.epam.first.repository.specification.impl;
 import edu.epam.first.entity.Sphere;
 import edu.epam.first.repository.specification.Specification;
 
+import java.util.function.Predicate;
+
 public class SphereRadiusMoreSpecification implements Specification<Sphere> {
     private double minRadius;
 
@@ -19,7 +21,7 @@ public class SphereRadiusMoreSpecification implements Specification<Sphere> {
     }
 
     @Override
-    public boolean specified(Sphere sphere) {
-        return (sphere.getRadius() > minRadius);
+    public Predicate<Sphere> specified() {
+        return (s) -> (s.getRadius() > minRadius);
     }
 }

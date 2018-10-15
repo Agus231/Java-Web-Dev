@@ -4,6 +4,8 @@ import edu.epam.first.entity.Sphere;
 import edu.epam.first.registrator.Warehouse;
 import edu.epam.first.repository.specification.Specification;
 
+import java.util.function.Predicate;
+
 public class SphereVolumeLessSpecification implements Specification<Sphere> {
     private double maxVolume;
 
@@ -20,9 +22,11 @@ public class SphereVolumeLessSpecification implements Specification<Sphere> {
     }
 
     @Override
-    public boolean specified(Sphere sphere) {
+    public Predicate<Sphere> specified() {
         var warehouse = Warehouse.getInstance();
-        double volume = warehouse.getParameters(sphere).getVolume();
-        return (volume < maxVolume);
+        return (s) -> {
+            double volume = warehouse.getParameters(s).getVolume();
+            return (volume < maxVolume);
+        };
     }
 }

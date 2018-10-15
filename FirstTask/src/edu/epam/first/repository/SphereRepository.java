@@ -41,14 +41,7 @@ public class SphereRepository implements Repository<Sphere>{
     }
 
     @Override
-    public void remove(Sphere sphere) {
-        var registrator = Warehouse.getInstance();
-        spheres.remove(sphere);
-        registrator.unregisterSphere(sphere.getSphereId());
-    }
-
-    @Override
     public List<Sphere> query(Specification<Sphere> specification) {
-        return spheres.stream().filter(specification::specified).collect(Collectors.toList());
+        return spheres.stream().filter(specification.specified()).collect(Collectors.toList());
     }
 }

@@ -1,31 +1,28 @@
 package edu.epam.first.observer;
 
 import edu.epam.first.entity.Sphere;
-import edu.epam.first.observer.event.SphereCreationEvent;
-import edu.epam.first.observer.event.SphereUpdateEvent;
 import edu.epam.first.registrator.Warehouse;
 import edu.epam.first.repository.SphereRepository;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.EventObject;
 
-public class SphereObserver implements Observer<EventObject> {
+public class SphereObserver implements Observer<SphereEvent> {
     private static Logger logger = LogManager.getLogger();
 
-    //todo: handler different events, two observers or instanceof
     @Override
-    public void handleEvent(EventObject event) {
-        Sphere sphere = (Sphere) event.getSource();
+    public void handleEvent(SphereEvent event) {
+        Sphere sphere = event.getSource();
 
-        if (event instanceof SphereCreationEvent){
-            creationRegister(sphere);
-        }
-        else if (event instanceof SphereUpdateEvent){
-            updateParameters(sphere);
-        }
-        else {
-            logger.warn("This type of event can't be handled.");
+        switch (event.getEventType()){
+            case CREATION:
+                creationRegister(sphere);
+                break;
+            case UPDATE:
+                updateParameters(sphere);
+                break;
+                default:
+                    logger.warn("This type of event can't be handled.");
         }
     }
 

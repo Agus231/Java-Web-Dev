@@ -3,6 +3,8 @@ package edu.epam.first.repository.specification.impl;
 import edu.epam.first.entity.Sphere;
 import edu.epam.first.repository.specification.Specification;
 
+import java.util.function.Predicate;
+
 public class SphereByRadiusSpecification implements Specification<Sphere> {
     private double desiredRadius;
 
@@ -19,7 +21,7 @@ public class SphereByRadiusSpecification implements Specification<Sphere> {
     }
 
     @Override
-    public boolean specified(Sphere sphere) {
-        return (sphere.getRadius() == desiredRadius);
+    public Predicate<Sphere> specified() {
+        return (s) -> (s.getRadius() == desiredRadius);
     }
 }
