@@ -1,10 +1,17 @@
 package edu.epam.second;
 
+import edu.epam.second.action.NotationAction;
+
 public class Runner {
     public static void main(String[] args) {
-        final String PUNCTUATION_REGEX = "[\\p{Punct}\\u2026]";
-        final String NUMERIC_REGEX = "\\p{Nd}";
-        String EXPRESSION_REGEX = "(" + PUNCTUATION_REGEX + "*" + NUMERIC_REGEX + "+" + PUNCTUATION_REGEX + "*)+";
-        System.out.println("12".matches(EXPRESSION_REGEX));
+        NotationAction notationAction = NotationAction.getInstance();
+        String polish1 = notationAction.toPolishNotation("5|(1&2&(3|(4&(2^5|6&47)|3)|2)|1)");
+        String polish2 = notationAction.toPolishNotation("(71&(2&3|(3|(2&1>>2|2)&2)|10&2))|78");
+        String polish3 = notationAction.toPolishNotation("(8^5|1&2<<(2|5>>2&71))|1200");
+        String polish4 = notationAction.toPolishNotation("~6&9|(3&4)");
+        System.out.println(polish1);
+        System.out.println(polish2);
+        System.out.println(polish3);
+        System.out.println(polish4);
     }
 }

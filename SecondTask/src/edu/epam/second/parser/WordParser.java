@@ -1,6 +1,7 @@
 package edu.epam.second.parser;
 
 import edu.epam.second.entity.impl.WordComposite;
+import edu.epam.second.entity.type.CharacterType;
 
 public class WordParser {
     private SymbolParser symbolParser;
@@ -14,7 +15,7 @@ public class WordParser {
 
         char[] letters = word.toCharArray();
         for (char letter: letters) {
-            var wordComponent = symbolParser.parseSymbol(letter, );
+            var wordComponent = symbolParser.parseSymbol(letter, CharacterType.LETTER);
             wordComposite.add(wordComponent);
         }
         return wordComposite;

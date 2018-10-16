@@ -26,6 +26,7 @@ import java.util.stream.Collectors;
  */
 
 //todo: abstract parser with regex and matches
+    //todo: reverse split order
 public class LexicalUnitParser {
     private static final String LEXICAL_UNIT_SPLIT_REGEX = "\\p{Blank}+";
     private static final String PUNCTUATION_REGEX = "[\\p{Punct}\\u2026]";
