@@ -1,5 +1,6 @@
 package edu.epam.first.entity;
 
+import edu.epam.first.observer.EventType;
 import edu.epam.first.observer.SphereEvent;
 import edu.epam.first.observer.SphereObserver;
 import edu.epam.first.observer.Subject;
@@ -16,7 +17,7 @@ public class Sphere implements Subject<SphereObserver> {
         this.center = new Point3D(x, y, z);
         this.radius = radius;
         this.observer = new SphereObserver();
-        observer.handleEvent(new SphereEvent(this, SphereEvent.Type.CREATION));
+        observer.handleEvent(new SphereEvent(this, EventType.CREATION));
     }
 
     public Sphere(Point3D center, double radius){
@@ -24,7 +25,7 @@ public class Sphere implements Subject<SphereObserver> {
         this.center = center;
         this.radius = radius;
         this.observer = new SphereObserver();
-        observer.handleEvent(new SphereEvent(this, SphereEvent.Type.CREATION));
+        observer.handleEvent(new SphereEvent(this, EventType.CREATION));
     }
 
     public double getRadius() {
@@ -97,7 +98,7 @@ public class Sphere implements Subject<SphereObserver> {
     @Override
     public void notifyObserver() {
         if (observer != null){
-            observer.handleEvent(new SphereEvent(this, SphereEvent.Type.UPDATE));
+            observer.handleEvent(new SphereEvent(this, EventType.UPDATE));
         }
     }
 }

@@ -1,30 +1,37 @@
 package edu.epam.second.parser;
 
-import edu.epam.second.entity.Paragraph;
-import edu.epam.second.entity.Sentence;
+import edu.epam.second.entity.impl.ParagraphComposite;
+import edu.epam.second.entity.impl.SentenceComposite;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ParagraphParser {
-    private static final String PARAGRAPH_DELIMITER = "(\\s{4,5}|\\t)";
-    private SentenceParser sentenceParser = new SentenceParser();
+    //TODO: CHANGE REGEX
+    private static final String PARAGRAPH_SPLIT_REGEX = "(?m)(?=^\\s{4})";
+    private SentenceParser sentenceParser;
 
-    public List<Paragraph> handleParse(String text){
-        List<String> paragraphSentencesList = Arrays.stream(text.split(PARAGRAPH_DELIMITER))
-                                                    .filter(s -> !s.isEmpty())
-                                                    .collect(Collectors.toList());
+    public ParagraphParser(){
+        sentenceParser = new SentenceParser();
+    }
 
-        var paragraphs = new ArrayList<Paragraph>();
+    public List<ParagraphComposite> parseParagraphs(String text){
+        List<String> paragraphs = Arrays.stream(text.split(PARAGRAPH_SPLIT_REGEX))
+                                        .collect(Collectors.toList());
 
-        for (String paragraphText: paragraphSentencesList) {
-            List<Sentence> sentences = sentenceParser.handleParse(paragraphText);
-            var paragraph = new Paragraph();
-            paragraph.addAll(sentences);
-            paragraphs.add(paragraph);
+        var paragraphComposites = new ArrayList<ParagraphComposite>();
+
+        for (String paragraph: paragraphs) {
+            var currentParagraph = new ParagraphComposite();
+
+            List<SentenceComposite> sentenceComposites = sentenceParser.parseSentences(paragraph);
+            sentenceComposites.forEach(currentParagraph::add);
+
+            paragraphComposites.add(currentParagraph);
         }
 
-        return paragraphs;
+        return paragraphComposites;
     }
 }

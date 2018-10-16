@@ -4,18 +4,14 @@ import edu.epam.first.entity.Sphere;
 import java.util.EventObject;
 
 public class SphereEvent extends EventObject {
-    private Type eventType;
+    private EventType eventType;
 
-    public enum Type {
-        CREATION, UPDATE
-    }
-
-    public SphereEvent(Sphere source, Type type) {
+    public SphereEvent(Sphere source, EventType type) {
         super(source);
         eventType = type;
     }
 
-    public Type getEventType() {
+    public EventType getEventType() {
         return eventType;
     }
 

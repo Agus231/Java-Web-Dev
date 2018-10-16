@@ -2,8 +2,8 @@ package edu.epam.first.util;
 
 public class IdGenerator {
     private static long id = 0;
-    private static long MIN_VALUE = 0;
-    private static long MAX_VALUE = 4_000_000;
+    private static final long MIN_VALUE = 0;
+    private static final long MAX_VALUE = 4_000_000;
 
     private IdGenerator(){}
 

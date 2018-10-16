@@ -1,29 +1,30 @@
 package edu.epam.second.reader;
 
-import edu.epam.second.localiztion.ResourceManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.List;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class TextReader {
-    private ResourceManager manager = ResourceManager.INSTANCE;
+    private static final Logger logger = LogManager.getLogger();
 
-    public String readFileToString(String path){
-        String result = "";
-        List<String> lines;
-        try (Stream<String> stringStream = Files.lines(Paths.get(path))){
-            lines = stringStream.collect(Collectors.toList());
-        } catch (IOException e) {
-            throw new RuntimeException(manager.getString(ResourceManager.ERROR_KEY), e);
+    public String fileToString(String filePath){
+        StringBuilder contentBuilder = new StringBuilder();
+        try (Stream<String> stream = Files.lines(Paths.get(filePath))) {
+            stream.forEach(s -> contentBuilder.append(s).append("\n"));
         }
-        for (String line: lines) {
-            result = result + line + '\n';
+        catch (IOException e) {
+            logger.fatal("Can't find file: " + filePath, e);
+            throw new RuntimeException("Impossible to read file: " + filePath, e);
         }
+        return contentBuilder.toString();
+    }
 
-        return result;
+    public String fileToString(File file){
+        return fileToString(file.getAbsolutePath());
     }
 }

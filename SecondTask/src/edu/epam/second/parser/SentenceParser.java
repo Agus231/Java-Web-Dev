@@ -1,29 +1,37 @@
 package edu.epam.second.parser;
 
-import edu.epam.second.entity.Sentence;
-import edu.epam.second.entity.LexicalToken;
+import edu.epam.second.entity.TextComponent;
+import edu.epam.second.entity.impl.SentenceComposite;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class SentenceParser {
-    private static final String SENTENCE_DELIMITERS = "(?<=[\\.!\\?])";
-    private LexicalTokenParser lexicalTokenParser = new LexicalTokenParser();
+    private static final String SENTENCE_SPLIT_REGEX = "(?<=[.!?\\u2026])";
+    private LexicalUnitParser unitParser;
 
-    public List<Sentence> handleParse(String paragraphText){
-        List<String> sentencesTextList = Arrays.stream(paragraphText.split(SENTENCE_DELIMITERS))
-                                                                    .filter(s -> !s.isEmpty())
-                                                                    .collect(Collectors.toList());
-        var sentences = new ArrayList<Sentence>();
+    public SentenceParser(){
+        unitParser = new LexicalUnitParser();
+    }
 
-        for (String sentenceText: sentencesTextList) {
-            List<LexicalToken> lexicalTokens = lexicalTokenParser.handleParse(sentenceText);
-            var sentence = new Sentence();
-            sentence.addAll(lexicalTokens);
-            sentences.add(sentence);
+    public List<SentenceComposite> parseSentences(String text){
+        List<String> sentences = Arrays.stream(text.split(SENTENCE_SPLIT_REGEX))
+                                        .collect(Collectors.toList());
+
+        var sentenceComposites = new ArrayList<SentenceComposite>();
+
+        //todo: can throw exception
+        for (String sentence: sentences) {
+            TextComponent currentSentence = new SentenceComposite();
+
+            List<TextComponent> unitComposites = unitParser.parseUnits(sentence);
+            unitComposites.forEach(currentSentence::add);
+
+            sentenceComposites.add((SentenceComposite) currentSentence);
         }
 
-        return sentences;
+        return sentenceComposites;
     }
 }

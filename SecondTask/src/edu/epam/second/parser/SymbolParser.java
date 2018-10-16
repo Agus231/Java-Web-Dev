@@ -1,38 +1,23 @@
 package edu.epam.second.parser;
 
-import edu.epam.second.Component;
-import edu.epam.second.entity.Symbol;
-import edu.epam.second.entity.Word;
-import java.util.ArrayList;
-import java.util.List;
+import edu.epam.second.entity.impl.Symbol;
+import edu.epam.second.entity.type.CharacterType;
 
 public class SymbolParser {
-    public List<Component> handleParse(String lexem){
-        List<Component> components = new ArrayList<>();
+    public Symbol parseSymbol(char value, CharacterType type){
+        return new Symbol(value, type);
+    }
 
-        char[] charArray = lexem.toCharArray();
-
-        for (int i = 0; i < charArray.length; i++) {
-            if(!Character.isLetter(charArray[i])) {
-                components.add(new Symbol(charArray[i]));
-            }
-            else {
-                StringBuilder word = new StringBuilder();
-                if(components.isEmpty() || !components.get(0).equals(new Symbol('<'))) {
-                    while (Character.isLetter(charArray[i])) {
-                        word.append(charArray[i]);
-                        i++;
-                    }
-                    var wordComponent = new Word(word.toString());
-                    components.add(wordComponent);
-                    i--;
-                }
-                else {
-                    components.add(new Symbol(charArray[i]));
-                }
-            }
+    public Symbol parseSymbol(char value){
+        CharacterType type;
+        if (Character.isLetter(value)){
+            type = CharacterType.LETTER;
+        } else if(Character.isDigit(value)){
+            type = CharacterType.NUMBER;
+        } else{
+            type = CharacterType.PUNCTUATION;
         }
 
-        return components;
+        return parseSymbol(value, type);
     }
 }
