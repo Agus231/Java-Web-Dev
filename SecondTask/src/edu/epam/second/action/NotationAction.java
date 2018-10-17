@@ -14,6 +14,7 @@ public class NotationAction {
         return instance;
     }
 
+    //todo: split two times
     //todo: make right tripple shift
     public String toPolishNotation(String expression){
         char[] charArray = expression.toCharArray();

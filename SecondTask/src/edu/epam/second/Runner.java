@@ -2,6 +2,8 @@ package edu.epam.second;
 
 import edu.epam.second.action.NotationAction;
 
+import java.util.Arrays;
+
 public class Runner {
     public static void main(String[] args) {
         NotationAction notationAction = NotationAction.getInstance();
@@ -13,5 +15,8 @@ public class Runner {
         System.out.println(polish2);
         System.out.println(polish3);
         System.out.println(polish4);
+
+        String FIRST_REGEX = "(?<=((>>)|(>>>)|(<<)|(&)|(\\^)|(~)|(\\|)|\\(|\\)))|(?=((>>)|(>>>)|(<<)|(&)|(\\^)|(~)|(\\|)|\\(|\\)))";
+        System.out.println(Arrays.toString("(8^5|1&2<<(2|5>>2&71))|1200".split(FIRST_REGEX)));
     }
 }
