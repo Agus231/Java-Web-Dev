@@ -1,13 +1,14 @@
 package edu.epam.second.entity.impl;
 
+import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.entity.TextComponent;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//todo: add types of parts in enum
 public class NumberComposite implements TextComponent<Symbol> {
+    public static final ComponentType TYPE = ComponentType.NUMBER;
     private List<Symbol> numerics;
 
     public NumberComposite(){

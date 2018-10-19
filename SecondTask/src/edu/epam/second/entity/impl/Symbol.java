@@ -1,9 +1,11 @@
 package edu.epam.second.entity.impl;
 
+import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.entity.TextComponent;
 import edu.epam.second.entity.type.CharacterType;
 
 public class Symbol implements TextComponent {
+    public static final ComponentType TYPE = ComponentType.SYMBOL;
     private Character value;
     private CharacterType type;
 

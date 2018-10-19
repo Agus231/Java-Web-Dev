@@ -3,6 +3,8 @@ package edu.epam.second.action;
 import edu.epam.second.operation.NotationOperator;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NotationAction {
     private static final NotationAction instance = new NotationAction();
@@ -14,95 +16,80 @@ public class NotationAction {
         return instance;
     }
 
-    //todo: split two times
-    //todo: make right tripple shift
-    public String toPolishNotation(String expression){
-        char[] charArray = expression.toCharArray();
+    private boolean checkPriority(NotationOperator stackPeek, NotationOperator currentOperation) {
+        return (stackPeek != NotationOperator.OPEN_BRACKET && stackPeek.getPriority() > currentOperation.getPriority());
+    }
 
+    //todo: regex
+    public List<String> toPolishNotation(List<String> expressionParts){
         ArrayDeque<NotationOperator> stack = new ArrayDeque<>();
-        StringBuilder resultString = new StringBuilder();
+        List<String> polishExpression = new ArrayList<>();
 
-        int i = 0;
-
-        while (i != charArray.length){
-            if (Character.isDigit(charArray[i])){
-                String decimal = createDecimal(charArray, i);
-                i += decimal.length();
-                resultString.append(decimal).append(" ");
+        for (String part: expressionParts) {
+            if (part.matches("\\d+")){
+                polishExpression.add(part);
             }
-            if (i == charArray.length) break;
-
-            switch (charArray[i]) {
-                case '~':
-                    stack.push(NotationOperator.INVERSE);
-                    i++;
-                    break;
-                case '(':
-                    stack.push(NotationOperator.OPEN_BRACKET);
-                    i++;
-                    break;
-                case ')':
-                    while (stack.peek() != NotationOperator.OPEN_BRACKET){
-                        resultString.append(stack.pop().getValue()).append(" ");
-                    }
-                    stack.pop();
-                    i++;
-                    break;
-                case '<':
-                    while (!stack.isEmpty() && (stack.peek() == NotationOperator.INVERSE || (stack.peek() != NotationOperator.OPEN_BRACKET && stack.peek().getPriority() > NotationOperator.SIGNED_LEFT_SHIFT.getPriority()))){
-                        resultString.append(stack.pop().getValue()).append(" ");
-                    }
-                    stack.push(NotationOperator.SIGNED_LEFT_SHIFT);
-                    i+=2;
-                    break;
-                case '>':
-                    while (!stack.isEmpty() && (stack.peek() == NotationOperator.INVERSE || (stack.peek() != NotationOperator.OPEN_BRACKET && stack.peek().getPriority() > NotationOperator.SIGNED_RIGHT_SHIFT.getPriority()))){
-                        resultString.append(stack.pop().getValue()).append(" ");
-                    }
-                    stack.push(NotationOperator.SIGNED_RIGHT_SHIFT);
-                    i+=2;
-                    break;
-                case '&':
-                    while (!stack.isEmpty() && (stack.peek() == NotationOperator.INVERSE || (stack.peek() != NotationOperator.OPEN_BRACKET && stack.peek().getPriority() > NotationOperator.AND.getPriority()))){
-                        resultString.append(stack.pop().getValue()).append(" ");
-                    }
-                    stack.push(NotationOperator.AND);
-                    i++;
-                    break;
-                case '^':
-                    while (!stack.isEmpty() && (stack.peek() == NotationOperator.INVERSE || (stack.peek() != NotationOperator.OPEN_BRACKET && stack.peek().getPriority() > NotationOperator.XOR.getPriority()))){
-                        resultString.append(stack.pop().getValue()).append(" ");
-                    }
-                    stack.push(NotationOperator.XOR);
-                    i++;
-                    break;
-                case '|':
-                    while (!stack.isEmpty() && (stack.peek() == NotationOperator.INVERSE || (stack.peek() != NotationOperator.OPEN_BRACKET && stack.peek().getPriority() > NotationOperator.OR.getPriority()))){
-                        resultString.append(stack.pop().getValue()).append(" ");
-                    }
-                    stack.push(NotationOperator.OR);
-                    i++;
-                    break;
-                    default:
+            else {
+                switch (part){
+                    case "~":
+                        stack.push(NotationOperator.INVERSE);
                         break;
+                    case "(":
+                        stack.push(NotationOperator.OPEN_BRACKET);
+                        break;
+                    case ")":
+                        while (stack.peek() != NotationOperator.OPEN_BRACKET){
+                            polishExpression.add(stack.pop().getValue());
+                        }
+                        stack.pop();
+                        break;
+                    case "<<":
+                        while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.SIGNED_LEFT_SHIFT)){
+                            polishExpression.add(stack.pop().getValue());
+                        }
+                        stack.push(NotationOperator.SIGNED_LEFT_SHIFT);
+                        break;
+                    case ">>":
+                        while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.SIGNED_RIGHT_SHIFT)){
+                            polishExpression.add(stack.pop().getValue());
+                        }
+                        stack.push(NotationOperator.SIGNED_RIGHT_SHIFT);
+                        break;
+                    case ">>>":
+                        while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.UNSIGNED_RIGH_SHIFT)){
+                            polishExpression.add(stack.pop().getValue());
+                        }
+                        stack.push(NotationOperator.UNSIGNED_RIGH_SHIFT);
+                        break;
+                    case "&":
+                        while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.AND)){
+                            polishExpression.add(stack.pop().getValue());
+                        }
+                        stack.push(NotationOperator.AND);
+                        break;
+                    case "^":
+                        while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.XOR)){
+                            polishExpression.add(stack.pop().getValue());
+                        }
+                        stack.push(NotationOperator.XOR);
+                        break;
+                    case "|":
+                        while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.OR)){
+                            polishExpression.add(stack.pop().getValue());
+                        }
+                        stack.push(NotationOperator.OR);
+                        break;
+                        default:
+                            break;
+                }
             }
         }
 
         while (!stack.isEmpty()){
-            resultString.append(stack.pop().getValue()).append(" ");
+            polishExpression.add(stack.pop().getValue());
         }
 
-        return resultString.toString().trim();
+        return polishExpression;
     }
 
-    private String createDecimal(char[] characters, int index){
-        StringBuilder notationPart = new StringBuilder();
-
-        while (index != characters.length && Character.isDigit(characters[index])){
-            notationPart.append(characters[index]);
-            index++;
-        }
-
-        return notationPart.toString();
-    }
 }

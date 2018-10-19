@@ -51,7 +51,7 @@ public class LexicalUnitParser {
 
     public List<TextComponent> parseUnits(String sentence){
         List<String> lexicalUnits = Arrays.stream(sentence.split(LEXICAL_UNIT_SPLIT_REGEX))
-                                       .collect(Collectors.toList());
+                                          .collect(Collectors.toList());
 
         var unitComponents = new ArrayList<TextComponent>();
 
@@ -60,6 +60,7 @@ public class LexicalUnitParser {
                 Optional<? extends TextComponent> symbol;
                 symbol = lexem.matches(LETTER_REGEX) ? Optional.of(wordParser.parseWord(lexem)) :
                          lexem.matches(PUNCTUATION_REGEX) ? Optional.of(symbolParser.parseSymbol(lexem.charAt(0))) :
+                         lexem.matches(NUMERIC_REGEX) ? Optional.of(symbolParser.parseSymbol(lexem.charAt(0))):
                          Optional.empty();
 
                 symbol.ifPresentOrElse(unitComponents::add, () -> logger.warn("Symbol '" + lexem + "' is unknown, can't parse it."));

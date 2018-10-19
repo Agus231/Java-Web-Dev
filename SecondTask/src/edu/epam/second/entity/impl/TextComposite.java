@@ -1,5 +1,6 @@
 package edu.epam.second.entity.impl;
 
+import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.entity.TextComponent;
 
 import java.util.ArrayList;
@@ -7,6 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TextComposite implements TextComponent<ParagraphComposite> {
+    public static final ComponentType TYPE = ComponentType.TEXT;
     private List<ParagraphComposite> paragraphs;
 
     public TextComposite(){
