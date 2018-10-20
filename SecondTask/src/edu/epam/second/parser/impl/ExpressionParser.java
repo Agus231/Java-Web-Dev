@@ -1,26 +1,25 @@
-package edu.epam.second.parser;
+package edu.epam.second.parser.impl;
 
 import edu.epam.second.action.NotationAction;
 import edu.epam.second.entity.impl.WordComposite;
+import edu.epam.second.parser.BaseParser;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ExpressionParser {
+public class ExpressionParser implements BaseParser {
     private WordParser wordParser;
-    private static final String UNSIGNED_SHIFT_REGEX = "(>){3}";
-    private static final String UNSIGNED_SHIFT_SPLIT_REGEX = "(?<=(" + UNSIGNED_SHIFT_REGEX + "))|(?=(" + UNSIGNED_SHIFT_REGEX + "))";
-    private static final String EXPRESSION_SPLIT_REGEX = "(?<=((>){2}|(<){2}|(&)|(\\^)|(~)|(\\|)|\\(|\\)))|(?=((>){2}|(<){2}|(&)|(\\^)|(~)|(\\|)|\\(|\\)))";
 
     public ExpressionParser(){
         wordParser = new WordParser();
     }
 
-    public WordComposite parseExpression(String expression){
+    @Override
+    public WordComposite parseTextPart(String expression){
         List<String> splitExpression = splitExpression(expression);
         NotationAction notationAction = NotationAction.getInstance();
-        System.out.println(notationAction.toPolishNotation(splitExpression));
+
 
         return null;
     }

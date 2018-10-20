@@ -12,14 +12,18 @@ import java.util.List;
 
 public class SphereParser {
     private static Logger logger = LogManager.getLogger();
+    private static final String NUMBER_DELIMITER = "\\s+";
 
     private Sphere parseLine(String line) throws SphereException {
         var validator = new SphereValidator();
 
-        double x, y, z, radius;
+        double x;
+        double y;
+        double z;
+        double radius;
 
         if (validator.validateLine(line)) {
-            String[] numbers = line.split("\\s+");
+            String[] numbers = line.split(NUMBER_DELIMITER);
 
             x = Double.parseDouble(numbers[0]);
             y = Double.parseDouble(numbers[1]);

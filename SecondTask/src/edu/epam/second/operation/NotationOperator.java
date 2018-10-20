@@ -6,7 +6,7 @@ public enum NotationOperator {
     INVERSE("~", 5),
     SIGNED_LEFT_SHIFT("<<", 4),
     SIGNED_RIGHT_SHIFT(">>", 4),
-    UNSIGNED_RIGH_SHIFT(">>>", 4),
+    UNSIGNED_RIGHT_SHIFT(">>>", 4),
     AND("&", 3),
     XOR("^", 2),
     OR("|", 1);

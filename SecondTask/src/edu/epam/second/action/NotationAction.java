@@ -1,6 +1,7 @@
 package edu.epam.second.action;
 
 import edu.epam.second.operation.NotationOperator;
+import edu.epam.second.parser.BaseParser;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -9,8 +10,7 @@ import java.util.List;
 public class NotationAction {
     private static final NotationAction instance = new NotationAction();
 
-    private NotationAction(){
-    }
+    private NotationAction(){}
 
     public static NotationAction getInstance(){
         return instance;
@@ -20,13 +20,12 @@ public class NotationAction {
         return (stackPeek != NotationOperator.OPEN_BRACKET && stackPeek.getPriority() > currentOperation.getPriority());
     }
 
-    //todo: regex
     public List<String> toPolishNotation(List<String> expressionParts){
         ArrayDeque<NotationOperator> stack = new ArrayDeque<>();
         List<String> polishExpression = new ArrayList<>();
 
         for (String part: expressionParts) {
-            if (part.matches("\\d+")){
+            if (part.matches(BaseParser.NUMBER_REGEX)){
                 polishExpression.add(part);
             }
             else {
@@ -56,10 +55,10 @@ public class NotationAction {
                         stack.push(NotationOperator.SIGNED_RIGHT_SHIFT);
                         break;
                     case ">>>":
-                        while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.UNSIGNED_RIGH_SHIFT)){
+                        while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.UNSIGNED_RIGHT_SHIFT)){
                             polishExpression.add(stack.pop().getValue());
                         }
-                        stack.push(NotationOperator.UNSIGNED_RIGH_SHIFT);
+                        stack.push(NotationOperator.UNSIGNED_RIGHT_SHIFT);
                         break;
                     case "&":
                         while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.AND)){
