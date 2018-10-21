@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ParagraphComposite implements TextComponent<SentenceComposite> {
-    public static final ComponentType TYPE = ComponentType.PARAGRAPH;
+    private static final ComponentType TYPE = ComponentType.PARAGRAPH;
     private List<SentenceComposite> sentences;
 
     public ParagraphComposite() {

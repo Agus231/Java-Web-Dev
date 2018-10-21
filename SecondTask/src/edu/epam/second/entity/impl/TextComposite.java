@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class TextComposite implements TextComponent<ParagraphComposite> {
-    public static final ComponentType TYPE = ComponentType.TEXT;
+    private static final ComponentType TYPE = ComponentType.TEXT;
     private List<ParagraphComposite> paragraphs;
 
     public TextComposite(){
@@ -17,7 +17,7 @@ public class TextComposite implements TextComponent<ParagraphComposite> {
 
     @Override
     public String operation() {
-        return paragraphs.stream().map(ParagraphComposite::operation).collect(Collectors.joining("\n"));
+        return paragraphs.stream().map((s) -> "\t" + s.operation()).collect(Collectors.joining("\n"));
     }
 
     @Override

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class NumberComposite implements TextComponent<Symbol> {
-    public static final ComponentType TYPE = ComponentType.NUMBER;
+    private static final ComponentType TYPE = ComponentType.NUMBER;
     private List<Symbol> numerics;
 
     public NumberComposite(){

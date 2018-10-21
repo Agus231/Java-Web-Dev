@@ -1,4 +1,4 @@
-package edu.epam.second.operation;
+package edu.epam.second.notation;
 
 public enum NotationOperator {
     OPEN_BRACKET("(", 6),

@@ -23,7 +23,7 @@ public class ParagraphParser implements BaseParser {
         var paragraphComposite = new ParagraphComposite();
 
         for (String sentence: sentences) {
-            SentenceComposite sentenceComposite = sentenceParser.parseTextPart(sentence);
+            SentenceComposite sentenceComposite = sentenceParser.parseTextPart(sentence.trim());
             paragraphComposite.add(sentenceComposite);
         }
 

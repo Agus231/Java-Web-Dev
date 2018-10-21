@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class WordComposite implements TextComponent<Symbol> {
-    public static final ComponentType TYPE = ComponentType.WORD;
+    private static final ComponentType TYPE = ComponentType.WORD;
     private List<Symbol> wordSymbols;
 
     public WordComposite(){

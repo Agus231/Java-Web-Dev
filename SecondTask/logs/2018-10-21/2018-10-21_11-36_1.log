@@ -1,0 +1,9 @@
+2018-10-21 11:27:53 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit 'here),' is unknown, can't parse it.
+2018-10-21 11:27:53 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit '' is unknown, can't parse it.
+2018-10-21 11:27:53 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit '' is unknown, can't parse it.
+2018-10-21 11:29:32 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit 'more-or-less' is unknown, can't parse it.
+2018-10-21 11:29:32 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit '(Content' is unknown, can't parse it.
+2018-10-21 11:29:32 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit 'here),' is unknown, can't parse it.
+2018-10-21 11:29:55 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit 'more-or-less' is unknown, can't parse it.
+2018-10-21 11:29:55 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit '(Content' is unknown, can't parse it.
+2018-10-21 11:29:55 [main] WARN  epam.second.parser.impl.LexicalUnitParser - Lexical unit 'here),' is unknown, can't parse it.

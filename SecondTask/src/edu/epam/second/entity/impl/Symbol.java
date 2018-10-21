@@ -5,7 +5,7 @@ import edu.epam.second.entity.TextComponent;
 import edu.epam.second.entity.type.CharacterType;
 
 public class Symbol implements TextComponent {
-    public static final ComponentType TYPE = ComponentType.SYMBOL;
+    private static final ComponentType TYPE = ComponentType.SYMBOL;
     private Character value;
     private CharacterType type;
 
@@ -19,14 +19,13 @@ public class Symbol implements TextComponent {
         return String.valueOf(value);
     }
 
-    //todo: unsupported operation exception
     @Override
     public boolean add(TextComponent component) {
-        return false;
+        throw new UnsupportedOperationException("Adding element to symbol is not supported.");
     }
 
     @Override
     public boolean remove(TextComponent component) {
-        return false;
+        throw new UnsupportedOperationException("Removing element from symbol is not supported.");
     }
 }

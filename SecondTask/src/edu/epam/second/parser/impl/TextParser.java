@@ -23,7 +23,7 @@ public class TextParser implements BaseParser {
         var textComposite = new TextComposite();
 
         for (String paragraph: paragraphs) {
-            ParagraphComposite paragraphComposite = paragraphParser.parseTextPart(paragraph);
+            ParagraphComposite paragraphComposite = paragraphParser.parseTextPart(paragraph.trim());
             textComposite.add(paragraphComposite);
         }
 

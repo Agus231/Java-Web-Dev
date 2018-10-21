@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class SentenceComposite implements TextComponent<LexicalUnitComposite> {
-    public static final ComponentType TYPE = ComponentType.SENTENCE;
+    private static final ComponentType TYPE = ComponentType.SENTENCE;
     private List<LexicalUnitComposite> lexicalUnits;
 
     public SentenceComposite(){

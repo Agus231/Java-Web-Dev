@@ -9,17 +9,6 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.Optional;
 
-/**
- * … - 2026
- * all the possible lexems:
- * -
- * a
- * word,
- * word
- * (word)
- * 13<<2
- * (word),
- */
 public class LexicalUnitParser implements BaseParser {
     private static final Logger logger = LogManager.getLogger();
 
@@ -47,7 +36,7 @@ public class LexicalUnitParser implements BaseParser {
             symbol.ifPresentOrElse(lexicalUnit::add, () -> logger.warn("Symbol '" + unit + "' is unknown, can't parse it."));
         }
         else {
-            if (unit.matches(WORD_REGEX)){
+            if (unit.matches(WORD_REGEX) || unit.matches(COMPLICATED_WORD)){
                 var word = wordParser.parseTextPart(unit);
                 lexicalUnit.add(word);
             }
@@ -58,6 +47,22 @@ public class LexicalUnitParser implements BaseParser {
                 lexicalUnit.add(word);
                 lexicalUnit.add(character);
             }
+            else if (unit.matches(WORD_WITH_PUNCT_BEGINS)){
+                var character = symbolParser.parseTextPart(String.valueOf(unit.charAt(0)), CharacterType.PUNCTUATION);
+                var word = wordParser.parseTextPart(unit.substring(1, unit.length() - 1));
+
+                lexicalUnit.add(character);
+                lexicalUnit.add(word);
+            }
+            else if (unit.matches(WORD_WITH_TWO_PUNCT_ENDS)){
+                var word = wordParser.parseTextPart(unit.substring(0, unit.length() - 2));
+                var character1 = symbolParser.parseTextPart(String.valueOf(unit.charAt(unit.length() - 2)), CharacterType.PUNCTUATION);
+                var character2 = symbolParser.parseTextPart(String.valueOf(unit.charAt(unit.length() - 1)), CharacterType.PUNCTUATION);
+
+                lexicalUnit.add(word);
+                lexicalUnit.add(character1);
+                lexicalUnit.add(character2);
+            }
             else if (unit.matches(WORD_WITH_PUNCT_BEGINS_ENDS)){
                 var character1 = symbolParser.parseTextPart(String.valueOf(unit.charAt(0)), CharacterType.PUNCTUATION);
                 var word = wordParser.parseTextPart(unit.substring(1, unit.length() - 1));
@@ -66,6 +71,17 @@ public class LexicalUnitParser implements BaseParser {
                 lexicalUnit.add(character1);
                 lexicalUnit.add(word);
                 lexicalUnit.add(character2);
+            }
+            else if (unit.matches(WORD_WITH_TWO_PUNCT_BEGINS_ENDS)){
+                var character1 = symbolParser.parseTextPart(String.valueOf(unit.charAt(0)), CharacterType.PUNCTUATION);
+                var word = wordParser.parseTextPart(unit.substring(1, unit.length() - 2));
+                var character2 = symbolParser.parseTextPart(String.valueOf(unit.charAt(unit.length() - 2)), CharacterType.PUNCTUATION);
+                var character3 = symbolParser.parseTextPart(String.valueOf(unit.charAt(unit.length() - 1)), CharacterType.PUNCTUATION);
+
+                lexicalUnit.add(character1);
+                lexicalUnit.add(word);
+                lexicalUnit.add(character2);
+                lexicalUnit.add(character3);
             }
             else if (unit.matches(EXPRESSION_REGEX)){
                 var expression = expressionParser.parseTextPart(unit);

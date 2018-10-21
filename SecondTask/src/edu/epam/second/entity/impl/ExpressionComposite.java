@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ExpressionComposite implements TextComponent<Symbol> {
-    public static final ComponentType TYPE = ComponentType.EXPRESSION;
+    private static final ComponentType TYPE = ComponentType.EXPRESSION;
     private List<Symbol> expressionSymbols;
 
     public ExpressionComposite(){

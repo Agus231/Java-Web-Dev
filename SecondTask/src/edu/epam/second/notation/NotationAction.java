@@ -1,6 +1,8 @@
-package edu.epam.second.action;
+package edu.epam.second.notation;
 
-import edu.epam.second.operation.NotationOperator;
+import edu.epam.second.interpreter.Context;
+import edu.epam.second.interpreter.expression.AbstractExpression;
+import edu.epam.second.interpreter.expression.impl.*;
 import edu.epam.second.parser.BaseParser;
 
 import java.util.ArrayDeque;
@@ -20,7 +22,7 @@ public class NotationAction {
         return (stackPeek != NotationOperator.OPEN_BRACKET && stackPeek.getPriority() > currentOperation.getPriority());
     }
 
-    public List<String> toPolishNotation(List<String> expressionParts){
+    private List<String> toPolishNotation(List<String> expressionParts){
         ArrayDeque<NotationOperator> stack = new ArrayDeque<>();
         List<String> polishExpression = new ArrayList<>();
 
@@ -90,5 +92,53 @@ public class NotationAction {
 
         return polishExpression;
     }
+
+    private List<AbstractExpression> prepareExpressionParts(List<String> parts){
+        ArrayList<AbstractExpression> listExpression = new ArrayList<>();
+        for (String part : parts) {
+            switch (part){
+                case "~":
+                    listExpression.add(new TerminalExpressionInverse());
+                    break;
+                case "|":
+                    listExpression.add(new TerminalExpressionOr());
+                    break;
+                case "&":
+                    listExpression.add(new TerminalExpressionAnd());
+                    break;
+                case "^":
+                    listExpression.add(new TerminalExpressionXor());
+                    break;
+                case "<<":
+                    listExpression.add(new TerminalExpressionSignedLeftShift());
+                    break;
+                case ">>":
+                    listExpression.add(new TerminalExpressionSignedRightShift());
+                    break;
+                case ">>>":
+                    listExpression.add(new TerminalExpressionUnsignedRightShift());
+                    break;
+                default:
+                    int value = Integer.parseInt(part);
+                    listExpression.add(new NonTerminalExpression(value));
+                    break;
+            }
+        }
+        return listExpression;
+    }
+
+    public Integer calculateExpression(List<String> expression){
+        List<String> polishExpression = toPolishNotation(expression);
+
+        List<AbstractExpression> expressions = prepareExpressionParts(polishExpression);
+        Context context = new Context();
+
+        for (AbstractExpression expressionPart: expressions) {
+            expressionPart.interpret(context);
+        }
+
+        return context.popValue();
+    }
+
 
 }
