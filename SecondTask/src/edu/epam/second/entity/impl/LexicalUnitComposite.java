@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LexicalUnitComposite implements TextComponent<TextComponent> {
+public class LexicalUnitComposite implements TextComponent<TextComponent>, Cloneable {
     private static final ComponentType TYPE = ComponentType.LEXICALUNIT;
     private List<TextComponent> lexemParts;
 
@@ -26,7 +26,31 @@ public class LexicalUnitComposite implements TextComponent<TextComponent> {
     }
 
     @Override
+    public List<TextComponent> getComponents() {
+        return lexemParts;
+    }
+
+    @Override
+    public ComponentType getComponentType() {
+        return TYPE;
+    }
+
+    @Override
     public boolean remove(TextComponent component) {
         return lexemParts.remove(component);
     }
+
+    @Override
+    public LexicalUnitComposite clone() throws CloneNotSupportedException {
+        LexicalUnitComposite lexicalUnitComposite = (LexicalUnitComposite) super.clone();
+        ArrayList<TextComponent> cloneList = new ArrayList<>();
+
+        for (TextComponent part: lexemParts) {
+            cloneList.add(part.clone());
+        }
+
+        lexicalUnitComposite.lexemParts = cloneList;
+        return lexicalUnitComposite;
+    }
 }
+

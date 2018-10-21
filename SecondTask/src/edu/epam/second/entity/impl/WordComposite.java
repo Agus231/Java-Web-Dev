@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class WordComposite implements TextComponent<Symbol> {
+public class WordComposite implements TextComponent<Symbol>, Cloneable {
     private static final ComponentType TYPE = ComponentType.WORD;
-    private List<Symbol> wordSymbols;
+    private ArrayList<Symbol> wordSymbols;
 
     public WordComposite(){
         wordSymbols = new ArrayList<>();
@@ -26,7 +26,30 @@ public class WordComposite implements TextComponent<Symbol> {
     }
 
     @Override
+    public List<Symbol> getComponents() {
+        return wordSymbols;
+    }
+
+    @Override
+    public ComponentType getComponentType() {
+        return TYPE;
+    }
+
+    @Override
     public boolean remove(Symbol symbol) {
         return wordSymbols.remove(symbol);
+    }
+
+    @Override
+    public WordComposite clone() throws CloneNotSupportedException {
+        WordComposite wordComposite = (WordComposite) super.clone();
+        ArrayList<Symbol> cloneList = new ArrayList<>();
+
+        for (Symbol symbol: wordSymbols) {
+            cloneList.add(symbol.clone());
+        }
+
+        wordComposite.wordSymbols = cloneList;
+        return wordComposite;
     }
 }

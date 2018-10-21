@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class NumberComposite implements TextComponent<Symbol> {
+public class NumberComposite implements TextComponent<Symbol>, Cloneable {
     private static final ComponentType TYPE = ComponentType.NUMBER;
     private List<Symbol> numerics;
 
@@ -26,7 +26,30 @@ public class NumberComposite implements TextComponent<Symbol> {
     }
 
     @Override
+    public List<Symbol> getComponents() {
+        return numerics;
+    }
+
+    @Override
+    public ComponentType getComponentType() {
+        return TYPE;
+    }
+
+    @Override
     public boolean remove(Symbol symbol) {
         return numerics.remove(symbol);
+    }
+
+    @Override
+    public NumberComposite clone() throws CloneNotSupportedException {
+        NumberComposite numberComposite = (NumberComposite) super.clone();
+        ArrayList<Symbol> cloneList = new ArrayList<>();
+
+        for (Symbol symbol: numerics) {
+            cloneList.add(symbol.clone());
+        }
+
+        numberComposite.numerics = cloneList;
+        return numberComposite;
     }
 }

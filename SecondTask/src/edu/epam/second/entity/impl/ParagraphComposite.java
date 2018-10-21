@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ParagraphComposite implements TextComponent<SentenceComposite> {
+public class ParagraphComposite implements TextComponent<SentenceComposite>, Cloneable {
     private static final ComponentType TYPE = ComponentType.PARAGRAPH;
     private List<SentenceComposite> sentences;
 
@@ -26,7 +26,30 @@ public class ParagraphComposite implements TextComponent<SentenceComposite> {
     }
 
     @Override
+    public List<SentenceComposite> getComponents() {
+        return sentences;
+    }
+
+    @Override
+    public ComponentType getComponentType() {
+        return TYPE;
+    }
+
+    @Override
     public boolean remove(SentenceComposite sentence) {
         return sentences.remove(sentence);
+    }
+
+    @Override
+    public ParagraphComposite clone() throws CloneNotSupportedException {
+        ParagraphComposite paragraphComposite = (ParagraphComposite) super.clone();
+        ArrayList<SentenceComposite> cloneList = new ArrayList<>();
+
+        for (SentenceComposite sentence: sentences) {
+            cloneList.add(sentence.clone());
+        }
+
+        paragraphComposite.sentences = cloneList;
+        return paragraphComposite;
     }
 }

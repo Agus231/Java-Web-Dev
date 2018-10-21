@@ -26,7 +26,30 @@ public class ExpressionComposite implements TextComponent<Symbol> {
     }
 
     @Override
+    public List<Symbol> getComponents() {
+        return expressionSymbols;
+    }
+
+    @Override
+    public ComponentType getComponentType() {
+        return TYPE;
+    }
+
+    @Override
     public boolean remove(Symbol symbol) {
         return expressionSymbols.remove(symbol);
+    }
+
+    @Override
+    public ExpressionComposite clone() throws CloneNotSupportedException {
+        ExpressionComposite expressionComposite = (ExpressionComposite) super.clone();
+        ArrayList<Symbol> cloneList = new ArrayList<>();
+
+        for (Symbol symbol: expressionSymbols) {
+            cloneList.add(symbol.clone());
+        }
+
+        expressionComposite.expressionSymbols = cloneList;
+        return expressionComposite;
     }
 }

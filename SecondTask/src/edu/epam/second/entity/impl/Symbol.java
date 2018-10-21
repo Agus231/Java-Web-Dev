@@ -4,7 +4,9 @@ import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.entity.TextComponent;
 import edu.epam.second.entity.type.CharacterType;
 
-public class Symbol implements TextComponent {
+import java.util.List;
+
+public class Symbol implements TextComponent, Cloneable {
     private static final ComponentType TYPE = ComponentType.SYMBOL;
     private Character value;
     private CharacterType type;
@@ -25,7 +27,22 @@ public class Symbol implements TextComponent {
     }
 
     @Override
+    public List getComponents() {
+        throw new UnsupportedOperationException("Symbol is a leaf element.");
+    }
+
+    @Override
+    public ComponentType getComponentType() {
+        return TYPE;
+    }
+
+    @Override
     public boolean remove(TextComponent component) {
         throw new UnsupportedOperationException("Removing element from symbol is not supported.");
+    }
+
+    @Override
+    public Symbol clone() throws CloneNotSupportedException {
+        return (Symbol) super.clone();
     }
 }
