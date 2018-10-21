@@ -26,15 +26,15 @@ public class ExpressionParser implements BaseParser {
     }
 
     private List<String> splitExpression(String expression){
-        List<String> splitExpression = new ArrayList<>();
+        var splitExpression = new ArrayList<String>();
         String[] splitByUnsignedShift = expression.split(UNSIGNED_SHIFT_SPLIT_REGEX);
         for (String expressionPart: splitByUnsignedShift) {
-            if (!expressionPart.matches(UNSIGNED_SHIFT_REGEX)){
-                List<String> array = Arrays.asList(expressionPart.split(EXPRESSION_SPLIT_REGEX));
-                splitExpression.addAll(array);
+            if (expressionPart.matches(UNSIGNED_SHIFT_REGEX)){
+                splitExpression.add(expressionPart);
             }
             else {
-                splitExpression.add(expressionPart);
+                List<String> array = Arrays.asList(expressionPart.split(EXPRESSION_SPLIT_REGEX));
+                splitExpression.addAll(array);
             }
         }
 

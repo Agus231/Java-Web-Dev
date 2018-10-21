@@ -12,6 +12,7 @@ import java.util.stream.Stream;
 public class TextReader {
     private static final Logger logger = LogManager.getLogger();
 
+    //todo: read question
     public String fileToString(String filePath){
         StringBuilder contentBuilder = new StringBuilder();
         try (Stream<String> stream = Files.lines(Paths.get(filePath))) {

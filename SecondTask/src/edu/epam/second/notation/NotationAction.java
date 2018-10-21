@@ -23,8 +23,8 @@ public class NotationAction {
     }
 
     private List<String> toPolishNotation(List<String> expressionParts){
-        ArrayDeque<NotationOperator> stack = new ArrayDeque<>();
-        List<String> polishExpression = new ArrayList<>();
+        var stack = new ArrayDeque<NotationOperator>();
+        var polishExpression = new ArrayList<String>();
 
         for (String part: expressionParts) {
             if (part.matches(BaseParser.NUMBER_REGEX)){
@@ -94,8 +94,8 @@ public class NotationAction {
     }
 
     private List<AbstractExpression> prepareExpressionParts(List<String> parts){
-        ArrayList<AbstractExpression> listExpression = new ArrayList<>();
-        for (String part : parts) {
+        var listExpression = new ArrayList<AbstractExpression>();
+        for (String part: parts) {
             switch (part){
                 case "~":
                     listExpression.add(new TerminalExpressionInverse());
@@ -120,7 +120,7 @@ public class NotationAction {
                     break;
                 default:
                     int value = Integer.parseInt(part);
-                    listExpression.add(new NonTerminalExpression(value));
+                    listExpression.add(new NonTerminalExpressionNumber(value));
                     break;
             }
         }
@@ -131,7 +131,7 @@ public class NotationAction {
         List<String> polishExpression = toPolishNotation(expression);
 
         List<AbstractExpression> expressions = prepareExpressionParts(polishExpression);
-        Context context = new Context();
+        var context = new Context();
 
         for (AbstractExpression expressionPart: expressions) {
             expressionPart.interpret(context);

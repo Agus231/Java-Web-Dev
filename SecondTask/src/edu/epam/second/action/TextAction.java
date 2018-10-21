@@ -6,28 +6,34 @@ import edu.epam.second.entity.impl.ParagraphComposite;
 import edu.epam.second.entity.impl.SentenceComposite;
 import edu.epam.second.entity.impl.TextComposite;
 import edu.epam.second.entity.type.ComponentType;
+import edu.epam.second.exception.TextException;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
 public class TextAction {
-    //todo: add exception
-    //todo: add optional
-    public TextComposite sortParagraphs(TextComposite text){
-        TextComposite clone = null;
+    private static final TextAction INSTANCE = new TextAction();
+    private TextAction(){}
+
+    public static TextAction getInstance(){
+        return INSTANCE;
+    }
+
+    public TextComposite sortParagraphs(TextComposite text) throws TextException {
+        TextComposite clone;
         try {
             clone = text.clone();
             List<ParagraphComposite> paragraphs = clone.getComponents();
             paragraphs.sort(Comparator.comparingInt(s -> s.getComponents().size()));
         } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
+            throw new TextException("Exception while cloning object : " + text, e);
         }
         return clone;
     }
 
-    public TextComposite sortWords(TextComposite text){
-        TextComposite clone = null;
+    public TextComposite sortWords(TextComposite text) throws TextException {
+        TextComposite clone;
         try {
             clone = text.clone();
             List<TextComponent> word = new ArrayList<>();
@@ -56,13 +62,13 @@ public class TextAction {
             }
 
         } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
+            throw new TextException("Exception while cloning object : " + text, e);
         }
         return clone;
     }
 
-    public TextComposite sortLexems(TextComposite text, Character symbol){
-        Comparator<LexicalUnitComposite> comparatorByEntetenceCount = (s1, s2) -> {
+    public TextComposite sortLicalUnits(TextComposite text, Character symbol) throws TextException {
+        Comparator<LexicalUnitComposite> comparatorByOccurrencesCount = (s1, s2) -> {
             String lexem1 = s1.operation();
             String lexem2 = s2.operation();
 
@@ -73,10 +79,9 @@ public class TextAction {
         };
 
         Comparator<LexicalUnitComposite> comparatorByAlphabet = Comparator.comparing(LexicalUnitComposite::operation);
+        Comparator<LexicalUnitComposite> compositeComparator = comparatorByOccurrencesCount.thenComparing(comparatorByAlphabet);
 
-        Comparator<LexicalUnitComposite> finalComparator = comparatorByEntetenceCount.thenComparing(comparatorByAlphabet);
-
-        TextComposite clone = null;
+        TextComposite clone;
         try {
             clone = text.clone();
             List<ParagraphComposite> paragraphs = clone.getComponents();
@@ -84,11 +89,11 @@ public class TextAction {
             for (ParagraphComposite paragraph : paragraphs) {
                 for (SentenceComposite sentence : paragraph.getComponents()) {
                     List<LexicalUnitComposite> units = sentence.getComponents();
-                    units.sort(finalComparator);
+                    units.sort(compositeComparator);
                 }
             }
         } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
+            throw new TextException("Exception while cloning object : " + text, e);
         }
 
         return clone;

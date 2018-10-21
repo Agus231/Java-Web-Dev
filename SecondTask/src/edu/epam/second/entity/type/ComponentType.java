@@ -6,7 +6,6 @@ public enum ComponentType {
     SENTENCE,
     LEXICALUNIT,
     WORD,
-    EXPRESSION,
     NUMBER,
-    SYMBOL,
+    SYMBOL
 }
