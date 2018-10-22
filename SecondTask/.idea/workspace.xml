@@ -1,56 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d483957a-9c57-4c72-9744-3f452615c0a8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/data/testSortLexicalUnits.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/testSortParagraphs.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/testSortWords.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/SuiteSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/action/TextActionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/action/TextActionTestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/notation/NotationActionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/notation/NotationActionTestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/ExpressionParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/ExpressionParserTestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/SymbolParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/SymbolParserTestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/reader/TextReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/edu/epam/second/reader/TextReaderTestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SecondTask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SecondTask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/text.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/text.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/action/TextAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/action/TextAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/LexicalUnitComposite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/LexicalUnitComposite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/NumberComposite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/NumberComposite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/ParagraphComposite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/ParagraphComposite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/SentenceComposite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/SentenceComposite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/Symbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/TextComposite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/TextComposite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/WordComposite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/WordComposite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/notation/NotationAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/notation/NotationAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/BaseParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/BaseParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/ExpressionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/ExpressionParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/LexicalUnitParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/LexicalUnitParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/SentenceParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/SentenceParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/TextParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/TextParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/reader/TextReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/reader/TextReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/LexicalUnitComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/LexicalUnitComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/NumberComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/NumberComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/ParagraphComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/ParagraphComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/SentenceComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/SentenceComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/WordComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/WordComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/ExpressionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/ExpressionParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/LexicalUnitParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/LexicalUnitParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/SentenceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/SentenceParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java" afterDir="false" />
-    </list>
+    <list default="true" id="d483957a-9c57-4c72-9744-3f452615c0a8" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -563,7 +514,7 @@
       <workItem from="1540212994229" duration="2134000" />
       <workItem from="1540216328366" duration="1820000" />
       <workItem from="1540218664872" duration="4785000" />
-      <workItem from="1540231577665" duration="363000" />
+      <workItem from="1540231577665" duration="964000" />
     </task>
     <servers />
   </component>
@@ -600,11 +551,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104797000" />
+    <option name="totallyTimeSpent" value="105398000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
