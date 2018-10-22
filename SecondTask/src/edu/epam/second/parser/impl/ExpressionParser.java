@@ -25,7 +25,7 @@ public class ExpressionParser implements BaseParser {
         return numberParser.parseTextPart(String.valueOf(expressionResult));
     }
 
-    private List<String> splitExpression(String expression){
+    public List<String> splitExpression(String expression){
         var splitExpression = new ArrayList<String>();
         String[] splitByUnsignedShift = expression.split(UNSIGNED_SHIFT_SPLIT_REGEX);
         for (String expressionPart: splitByUnsignedShift) {

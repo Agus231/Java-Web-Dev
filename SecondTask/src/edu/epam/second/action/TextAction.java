@@ -67,7 +67,7 @@ public class TextAction {
         return clone;
     }
 
-    public TextComposite sortLicalUnits(TextComposite text, Character symbol) throws TextException {
+    public TextComposite sortLexicalUnits(TextComposite text, Character symbol) throws TextException {
         Comparator<LexicalUnitComposite> comparatorByOccurrencesCount = (s1, s2) -> {
             String lexem1 = s1.operation();
             String lexem2 = s2.operation();

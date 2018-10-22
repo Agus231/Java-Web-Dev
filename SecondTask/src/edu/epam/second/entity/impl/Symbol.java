@@ -45,4 +45,22 @@ public class Symbol implements TextComponent, Cloneable {
     public Symbol clone() throws CloneNotSupportedException {
         return (Symbol) super.clone();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Symbol symbol = (Symbol) o;
+
+        if (value != null ? !value.equals(symbol.value) : symbol.value != null) return false;
+        return type == symbol.type;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = value != null ? value.hashCode() : 0;
+        result = 31 * result + (type != null ? type.hashCode() : 0);
+        return result;
+    }
 }

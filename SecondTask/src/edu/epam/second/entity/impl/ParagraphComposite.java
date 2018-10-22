@@ -52,4 +52,19 @@ public class ParagraphComposite implements TextComponent<SentenceComposite>, Clo
         paragraphComposite.sentences = cloneList;
         return paragraphComposite;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ParagraphComposite that = (ParagraphComposite) o;
+
+        return sentences != null ? sentences.equals(that.sentences) : that.sentences == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return sentences != null ? sentences.hashCode() : 0;
+    }
 }

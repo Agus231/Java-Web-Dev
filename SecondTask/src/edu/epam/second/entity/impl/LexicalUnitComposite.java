@@ -52,5 +52,20 @@ public class LexicalUnitComposite implements TextComponent<TextComponent>, Clone
         lexicalUnitComposite.lexemParts = cloneList;
         return lexicalUnitComposite;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        LexicalUnitComposite that = (LexicalUnitComposite) o;
+
+        return lexemParts != null ? lexemParts.equals(that.lexemParts) : that.lexemParts == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return lexemParts != null ? lexemParts.hashCode() : 0;
+    }
 }
 

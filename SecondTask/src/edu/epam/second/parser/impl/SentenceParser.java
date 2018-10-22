@@ -23,7 +23,7 @@ public class SentenceParser implements BaseParser {
         var sentenceComposite = new SentenceComposite();
 
         for (String unit: units) {
-            LexicalUnitComposite lexicalUnitComposite = unitParser.parseTextPart(unit);
+            LexicalUnitComposite lexicalUnitComposite = unitParser.parseTextPart(unit.trim());
             sentenceComposite.add(lexicalUnitComposite);
         }
 

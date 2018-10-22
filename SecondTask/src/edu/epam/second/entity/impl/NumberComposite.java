@@ -52,4 +52,19 @@ public class NumberComposite implements TextComponent<Symbol>, Cloneable {
         numberComposite.numerics = cloneList;
         return numberComposite;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        NumberComposite that = (NumberComposite) o;
+
+        return numerics != null ? numerics.equals(that.numerics) : that.numerics == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return numerics != null ? numerics.hashCode() : 0;
+    }
 }

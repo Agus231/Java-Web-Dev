@@ -1,0 +1,28 @@
+<suite name="TestSuite">
+    <test name="SuiteSetup">
+        <classes>
+            <class name="edu.epam.second.SuiteSetup"/>
+        </classes>
+    </test>
+    <test name="ReadTest">
+        <classes>
+            <class name="edu.epam.second.reader.TextReaderTest"/>
+        </classes>
+    </test>
+    <test name="ParserTest">
+        <classes>
+            <class name="edu.epam.second.parser.impl.ExpressionParserTest"/>
+            <class name="edu.epam.second.parser.impl.SymbolParserTest"/>
+        </classes>
+    </test>
+    <test name="CalculatingExpressionTest">
+        <classes>
+            <class name="edu.epam.second.notation.NotationActionTest"/>
+        </classes>
+    </test>
+    <test name="ActionTest">
+        <classes>
+            <class name="edu.epam.second.action.TextActionTest" />
+        </classes>
+    </test>
+</suite>

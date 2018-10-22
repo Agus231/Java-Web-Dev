@@ -52,4 +52,19 @@ public class SentenceComposite implements TextComponent<LexicalUnitComposite>, C
         sentenceComposite.lexicalUnits = cloneList;
         return sentenceComposite;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        SentenceComposite that = (SentenceComposite) o;
+
+        return lexicalUnits != null ? lexicalUnits.equals(that.lexicalUnits) : that.lexicalUnits == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return lexicalUnits != null ? lexicalUnits.hashCode() : 0;
+    }
 }

@@ -17,6 +17,7 @@ public class TextReader {
         StringBuilder contentBuilder = new StringBuilder();
         try (Stream<String> stream = Files.lines(Paths.get(filePath))) {
             stream.forEach(s -> contentBuilder.append(s).append("\n"));
+            contentBuilder.deleteCharAt(contentBuilder.length()- 1);
         }
         catch (IOException e) {
             logger.fatal("Can't find file: " + filePath, e);

@@ -49,7 +49,7 @@ public class LexicalUnitParser implements BaseParser {
             }
             else if (unit.matches(WORD_WITH_PUNCT_BEGINS)){
                 var character = symbolParser.parseTextPart(String.valueOf(unit.charAt(0)), CharacterType.PUNCTUATION);
-                var word = wordParser.parseTextPart(unit.substring(1, unit.length() - 1));
+                var word = wordParser.parseTextPart(unit.substring(1, unit.length()));
 
                 lexicalUnit.add(character);
                 lexicalUnit.add(word);

@@ -52,4 +52,19 @@ public class WordComposite implements TextComponent<Symbol>, Cloneable {
         wordComposite.wordSymbols = cloneList;
         return wordComposite;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        WordComposite that = (WordComposite) o;
+
+        return wordSymbols != null ? wordSymbols.equals(that.wordSymbols) : that.wordSymbols == null;
+    }
+
+    @Override
+    public int hashCode() {
+        return wordSymbols != null ? wordSymbols.hashCode() : 0;
+    }
 }
