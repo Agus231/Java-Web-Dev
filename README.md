@@ -6,4 +6,4 @@
 # Task 2
 Создать приложение, разбирающее текст из файла и позволяющее выполнять с текстом три различные операции.
 
-Применить: Composite, Chain of Responsibility, Iterator.
+Применить: Composite, Chain of Responsibility, Interpreter.
