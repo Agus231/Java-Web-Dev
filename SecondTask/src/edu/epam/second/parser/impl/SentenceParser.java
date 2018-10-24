@@ -1,7 +1,8 @@
 package edu.epam.second.parser.impl;
 
-import edu.epam.second.entity.impl.LexicalUnitComposite;
-import edu.epam.second.entity.impl.SentenceComposite;
+import edu.epam.second.entity.TextComponent;
+import edu.epam.second.entity.impl.TextComposite;
+import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.parser.BaseParser;
 
 import java.util.Arrays;
@@ -16,14 +17,14 @@ public class SentenceParser implements BaseParser {
     }
 
     @Override
-    public SentenceComposite parseTextPart(String sentence){
+    public TextComponent parseTextPart(String sentence){
         List<String> units = Arrays.stream(sentence.split(LEXICAL_UNIT_SPLIT_REGEX))
                                     .collect(Collectors.toList());
 
-        var sentenceComposite = new SentenceComposite();
+        var sentenceComposite = new TextComposite(ComponentType.SENTENCE);
 
         for (String unit: units) {
-            LexicalUnitComposite lexicalUnitComposite = unitParser.parseTextPart(unit.trim());
+            TextComponent lexicalUnitComposite = unitParser.parseTextPart(unit.trim());
             sentenceComposite.add(lexicalUnitComposite);
         }
 

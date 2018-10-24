@@ -1,8 +1,13 @@
 package edu.epam.second.parser.impl;
 
-import edu.epam.second.entity.impl.NumberComposite;
+import com.sun.javafx.tools.resource.DeployResource;
+import edu.epam.second.entity.TextComponent;
+import edu.epam.second.entity.impl.TextComposite;
 import edu.epam.second.entity.type.CharacterType;
+import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.parser.BaseParser;
+
+import javax.management.openmbean.CompositeType;
 
 public class NumberParser implements BaseParser {
     private SymbolParser symbolParser;
@@ -12,8 +17,8 @@ public class NumberParser implements BaseParser {
     }
 
     @Override
-    public NumberComposite parseTextPart(String number) {
-        var numberComposite = new NumberComposite();
+    public TextComponent parseTextPart(String number) {
+        var numberComposite = new TextComposite(ComponentType.NUMBER);
 
         char[] digits = number.toCharArray();
         for (char digit: digits) {

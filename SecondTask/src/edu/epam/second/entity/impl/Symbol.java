@@ -27,7 +27,7 @@ public class Symbol implements TextComponent, Cloneable {
     }
 
     @Override
-    public List getComponents() {
+    public List<TextComponent> getComponents() {
         throw new UnsupportedOperationException("Symbol is a leaf element.");
     }
 

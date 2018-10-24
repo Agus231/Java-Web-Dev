@@ -4,11 +4,11 @@ import edu.epam.second.entity.type.ComponentType;
 import java.util.List;
 
 //todo: question clone?
-public interface TextComponent<T extends TextComponent> extends Cloneable{
+public interface TextComponent extends Cloneable{
     String operation();
-    boolean add(T t);
-    List<T> getComponents();
+    boolean add(TextComponent t);
+    List<TextComponent> getComponents();
     ComponentType getComponentType();
-    boolean remove(T t);
+    boolean remove(TextComponent t);
     TextComponent clone() throws CloneNotSupportedException;
 }

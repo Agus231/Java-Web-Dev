@@ -1,9 +1,6 @@
 package edu.epam.second.action;
 
 import edu.epam.second.entity.TextComponent;
-import edu.epam.second.entity.impl.LexicalUnitComposite;
-import edu.epam.second.entity.impl.ParagraphComposite;
-import edu.epam.second.entity.impl.SentenceComposite;
 import edu.epam.second.entity.impl.TextComposite;
 import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.exception.TextException;
@@ -24,7 +21,7 @@ public class TextAction {
         TextComposite clone;
         try {
             clone = text.clone();
-            List<ParagraphComposite> paragraphs = clone.getComponents();
+            List<TextComponent> paragraphs = clone.getComponents();
             paragraphs.sort(Comparator.comparingInt(s -> s.getComponents().size()));
         } catch (CloneNotSupportedException e) {
             throw new TextException("Exception while cloning object : " + text, e);
@@ -37,11 +34,11 @@ public class TextAction {
         try {
             clone = text.clone();
             List<TextComponent> word = new ArrayList<>();
-            List<ParagraphComposite> paragraphs = clone.getComponents();
+            List<TextComponent> paragraphs = clone.getComponents();
 
-            for (ParagraphComposite paragraph : paragraphs) {
-                for (SentenceComposite sentence : paragraph.getComponents()) {
-                    for (LexicalUnitComposite unitComposite : sentence.getComponents()) {
+            for (TextComponent paragraph : paragraphs) {
+                for (TextComponent sentence : paragraph.getComponents()) {
+                    for (TextComponent unitComposite : sentence.getComponents()) {
                         for (TextComponent unitElement : unitComposite.getComponents()) {
                             if (unitElement.getComponentType() == ComponentType.WORD) {
                                 word.add(unitElement);
@@ -49,7 +46,7 @@ public class TextAction {
                         }
                     }
                     word.sort(Comparator.comparingInt(s -> s.getComponents().size()));
-                    for (LexicalUnitComposite anUnitComposite : sentence.getComponents()) {
+                    for (TextComponent anUnitComposite : sentence.getComponents()) {
                         List<TextComponent> unitElements = anUnitComposite.getComponents();
                         for (int m = 0; m < unitElements.size(); m++) {
                             if (unitElements.get(m).getComponentType() == ComponentType.WORD) {
@@ -68,7 +65,7 @@ public class TextAction {
     }
 
     public TextComposite sortLexicalUnits(TextComposite text, Character symbol) throws TextException {
-        Comparator<LexicalUnitComposite> comparatorByOccurrencesCount = (s1, s2) -> {
+        Comparator<TextComponent> comparatorByOccurrencesCount = (s1, s2) -> {
             String lexem1 = s1.operation();
             String lexem2 = s2.operation();
 
@@ -78,17 +75,17 @@ public class TextAction {
             return Long.compare(occurrencesCount1, occurrencesCount2);
         };
 
-        Comparator<LexicalUnitComposite> comparatorByAlphabet = Comparator.comparing(LexicalUnitComposite::operation);
-        Comparator<LexicalUnitComposite> compositeComparator = comparatorByOccurrencesCount.thenComparing(comparatorByAlphabet);
+        Comparator<TextComponent> comparatorByAlphabet = Comparator.comparing(TextComponent::operation);
+        Comparator<TextComponent> compositeComparator = comparatorByOccurrencesCount.thenComparing(comparatorByAlphabet);
 
         TextComposite clone;
         try {
             clone = text.clone();
-            List<ParagraphComposite> paragraphs = clone.getComponents();
+            List<TextComponent> paragraphs = clone.getComponents();
 
-            for (ParagraphComposite paragraph : paragraphs) {
-                for (SentenceComposite sentence : paragraph.getComponents()) {
-                    List<LexicalUnitComposite> units = sentence.getComponents();
+            for (TextComponent paragraph : paragraphs) {
+                for (TextComponent sentence : paragraph.getComponents()) {
+                    List<TextComponent> units = sentence.getComponents();
                     units.sort(compositeComparator);
                 }
             }

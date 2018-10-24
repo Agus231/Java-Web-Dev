@@ -1,8 +1,8 @@
 package edu.epam.second.notation;
 
 import edu.epam.second.interpreter.Context;
-import edu.epam.second.interpreter.expression.AbstractExpression;
-import edu.epam.second.interpreter.expression.impl.*;
+import edu.epam.second.interpreter.AbstractExpression;
+import edu.epam.second.interpreter.impl.*;
 import edu.epam.second.parser.BaseParser;
 
 import java.util.ArrayDeque;

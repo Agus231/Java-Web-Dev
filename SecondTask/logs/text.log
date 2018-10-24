@@ -1,4 +1,4 @@
-2018-10-22 21:11:14 [main] FATAL edu.epam.second.reader.TextReader - Can't find file: ./data/noSuchFile.txt
+2018-10-24 10:26:46 [main] FATAL edu.epam.second.reader.TextReader - Can't find file: ./data/noSuchFile.txt
 java.nio.file.NoSuchFileException: ./data/noSuchFile.txt
 	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
 	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
@@ -8,7 +8,7 @@ java.nio.file.NoSuchFileException: ./data/noSuchFile.txt
 	at java.nio.channels.FileChannel.open(FileChannel.java:340) ~[?:?]
 	at java.nio.file.Files.lines(Files.java:3866) ~[?:?]
 	at java.nio.file.Files.lines(Files.java:3958) ~[?:?]
-	at edu.epam.second.reader.TextReader.fileToString(TextReader.java:18) [SecondTask/:?]
+	at edu.epam.second.reader.TextReader.fileToString(TextReader.java:26) [SecondTask/:?]
 	at edu.epam.second.reader.TextReaderTest.testFileToStringNegative(TextReaderTest.java:22) [SecondTask/:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]

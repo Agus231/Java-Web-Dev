@@ -1,8 +1,9 @@
 package edu.epam.second.parser.impl;
 
 import edu.epam.second.entity.TextComponent;
-import edu.epam.second.entity.impl.LexicalUnitComposite;
+import edu.epam.second.entity.impl.TextComposite;
 import edu.epam.second.entity.type.CharacterType;
+import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.parser.BaseParser;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,8 +24,8 @@ public class LexicalUnitParser implements BaseParser {
     }
 
     @Override
-    public LexicalUnitComposite parseTextPart(String unit){
-        var lexicalUnit = new LexicalUnitComposite();
+    public TextComponent parseTextPart(String unit){
+        var lexicalUnit = new TextComposite(ComponentType.LEXICALUNIT);
 
         if (unit.length() == 1){
             Optional<? extends TextComponent> symbol;

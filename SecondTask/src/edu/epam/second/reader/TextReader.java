@@ -15,14 +15,22 @@ public class TextReader {
     //todo: read question
     public String fileToString(String filePath){
         StringBuilder contentBuilder = new StringBuilder();
+       /* try {
+            byte[] bytes = Files.readAllBytes(Paths.get(filePath));
+            String str = new String(bytes);
+            contentBuilder = new StringBuilder(str);
+        } catch (IOException e) {
+            logger.fatal("Can't find file: " + filePath, e);
+            throw new RuntimeException("Impossible to read file: " + filePath, e);
+        }*/
         try (Stream<String> stream = Files.lines(Paths.get(filePath))) {
             stream.forEach(s -> contentBuilder.append(s).append("\n"));
-            contentBuilder.deleteCharAt(contentBuilder.length()- 1);
         }
         catch (IOException e) {
             logger.fatal("Can't find file: " + filePath, e);
             throw new RuntimeException("Impossible to read file: " + filePath, e);
         }
+        contentBuilder.deleteCharAt(contentBuilder.length() - 1);
         return contentBuilder.toString();
     }
 

@@ -1,7 +1,8 @@
 package edu.epam.second.parser.impl;
 
-import edu.epam.second.entity.impl.ParagraphComposite;
+import edu.epam.second.entity.TextComponent;
 import edu.epam.second.entity.impl.TextComposite;
+import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.parser.BaseParser;
 
 import java.util.Arrays;
@@ -20,10 +21,10 @@ public class TextParser implements BaseParser {
         List<String> paragraphs = Arrays.stream(text.split(PARAGRAPH_SPLIT_REGEX))
                                         .collect(Collectors.toList());
 
-        var textComposite = new TextComposite();
+        var textComposite = new TextComposite(ComponentType.TEXT);
 
         for (String paragraph: paragraphs) {
-            ParagraphComposite paragraphComposite = paragraphParser.parseTextPart(paragraph.trim());
+            TextComponent paragraphComposite = paragraphParser.parseTextPart(paragraph.trim());
             textComposite.add(paragraphComposite);
         }
 

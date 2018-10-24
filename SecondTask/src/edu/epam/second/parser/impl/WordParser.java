@@ -1,7 +1,9 @@
 package edu.epam.second.parser.impl;
 
-import edu.epam.second.entity.impl.WordComposite;
+import edu.epam.second.entity.TextComponent;
+import edu.epam.second.entity.impl.TextComposite;
 import edu.epam.second.entity.type.CharacterType;
+import edu.epam.second.entity.type.ComponentType;
 import edu.epam.second.parser.BaseParser;
 
 public class WordParser implements BaseParser {
@@ -12,8 +14,8 @@ public class WordParser implements BaseParser {
     }
 
     @Override
-    public WordComposite parseTextPart(String word){
-        var wordComposite = new WordComposite();
+    public TextComponent parseTextPart(String word){
+        var wordComposite = new TextComposite(ComponentType.WORD);
 
         char[] letters = word.toCharArray();
         for (char letter: letters) {

@@ -1,28 +1,30 @@
 package edu.epam.second.parser.impl;
 
-import edu.epam.second.entity.impl.NumberComposite;
+import edu.epam.second.entity.TextComponent;
 import edu.epam.second.entity.impl.Symbol;
+import edu.epam.second.entity.impl.TextComposite;
 import edu.epam.second.entity.type.CharacterType;
+import edu.epam.second.entity.type.ComponentType;
 import org.testng.annotations.DataProvider;
 
 public class ExpressionParserTestData {
     @DataProvider(name = "expressionParserData")
     public static Object[][] expressionParserData(){
-        NumberComposite firstExpressionResult = new NumberComposite();
+        TextComponent firstExpressionResult = new TextComposite(ComponentType.NUMBER);
         firstExpressionResult.add(new Symbol('5', CharacterType.NUMBER));
         firstExpressionResult.add(new Symbol('2', CharacterType.NUMBER));
 
-        NumberComposite secondAndThirdResult = new NumberComposite();
+        TextComponent secondAndThirdResult = new TextComposite(ComponentType.NUMBER);
         secondAndThirdResult.add(new Symbol('0', CharacterType.NUMBER));
 
-        NumberComposite fourthExpressionResult = new NumberComposite();
+        TextComponent fourthExpressionResult = new TextComposite(ComponentType.NUMBER);
         fourthExpressionResult.add(new Symbol('5', CharacterType.NUMBER));
 
-        NumberComposite fiveExpressionResult = new NumberComposite();
+        TextComponent fiveExpressionResult = new TextComposite(ComponentType.NUMBER);
         fiveExpressionResult.add(new Symbol('7', CharacterType.NUMBER));
         fiveExpressionResult.add(new Symbol('9', CharacterType.NUMBER));
 
-        NumberComposite sixExpressionResult = new NumberComposite();
+        TextComponent sixExpressionResult = new TextComposite(ComponentType.NUMBER);
         sixExpressionResult.add(new Symbol('1', CharacterType.NUMBER));
         sixExpressionResult.add(new Symbol('2', CharacterType.NUMBER));
         sixExpressionResult.add(new Symbol('1', CharacterType.NUMBER));

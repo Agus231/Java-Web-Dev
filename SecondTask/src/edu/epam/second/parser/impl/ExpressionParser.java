@@ -1,7 +1,7 @@
 package edu.epam.second.parser.impl;
 
+import edu.epam.second.entity.TextComponent;
 import edu.epam.second.notation.NotationAction;
-import edu.epam.second.entity.impl.NumberComposite;
 import edu.epam.second.parser.BaseParser;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class ExpressionParser implements BaseParser {
     }
 
     @Override
-    public NumberComposite parseTextPart(String expression){
+    public TextComponent parseTextPart(String expression){
         List<String> splitExpression = splitExpression(expression);
         NotationAction notationAction = NotationAction.getInstance();
 

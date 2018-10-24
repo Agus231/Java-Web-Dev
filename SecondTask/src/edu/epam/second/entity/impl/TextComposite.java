@@ -7,27 +7,52 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class TextComposite implements TextComponent<ParagraphComposite>, Cloneable {
-    private static final ComponentType TYPE = ComponentType.TEXT;
-    private List<ParagraphComposite> paragraphs;
+public class TextComposite implements TextComponent, Cloneable {
+    private ComponentType TYPE;
+    private List<TextComponent> textComponents;
 
-    public TextComposite(){
-        paragraphs = new ArrayList<>();
+    public TextComposite(ComponentType type){
+        this.TYPE = type;
+        textComponents = new ArrayList<>();
     }
 
     @Override
     public String operation() {
-        return paragraphs.stream().map((s) -> "\t" + s.operation()).collect(Collectors.joining("\n"));
+        String resultString = null;
+        switch (TYPE){
+            case SYMBOL:
+                resultString = operation();
+                break;
+            case NUMBER:
+                resultString = textComponents.stream().map(TextComponent::operation).collect(Collectors.joining());
+                break;
+            case WORD:
+                resultString = textComponents.stream().map(TextComponent::operation).collect(Collectors.joining());
+                break;
+            case LEXICALUNIT:
+                resultString = textComponents.stream().map(TextComponent::operation).collect(Collectors.joining());
+                break;
+            case SENTENCE:
+                resultString = textComponents.stream().map(TextComponent::operation).collect(Collectors.joining(" "));
+                break;
+            case PARAGRAPH:
+                resultString = textComponents.stream().map(TextComponent::operation).collect(Collectors.joining(" "));
+                break;
+            case TEXT:
+                resultString = textComponents.stream().map((s) -> '\t' + s.operation()).collect(Collectors.joining("\n"));
+                break;
+        }
+        return resultString;
     }
 
     @Override
-    public boolean add(ParagraphComposite paragraph) {
-        return paragraphs.add(paragraph);
+    public boolean add(TextComponent textComponent) {
+        return textComponents.add(textComponent);
     }
 
     @Override
-    public List<ParagraphComposite> getComponents() {
-        return paragraphs;
+    public List<TextComponent> getComponents() {
+        return textComponents;
     }
 
     @Override
@@ -36,20 +61,20 @@ public class TextComposite implements TextComponent<ParagraphComposite>, Cloneab
     }
 
     @Override
-    public boolean remove(ParagraphComposite paragraph) {
-        return paragraphs.remove(paragraph);
+    public boolean remove(TextComponent textComponents) {
+        return textComponents.remove(textComponents);
     }
 
     @Override
     public TextComposite clone() throws CloneNotSupportedException {
         TextComposite textComposite = (TextComposite) super.clone();
-        ArrayList<ParagraphComposite> cloneList = new ArrayList<>();
+        ArrayList<TextComponent> cloneList = new ArrayList<>();
 
-        for (ParagraphComposite paragraph: paragraphs) {
-            cloneList.add(paragraph.clone());
+        for (TextComponent textComponent: textComponents) {
+            cloneList.add(textComponent.clone());
         }
 
-        textComposite.paragraphs = cloneList;
+        textComposite.textComponents = cloneList;
         return textComposite;
     }
 
@@ -60,11 +85,11 @@ public class TextComposite implements TextComponent<ParagraphComposite>, Cloneab
 
         TextComposite that = (TextComposite) o;
 
-        return paragraphs != null ? paragraphs.equals(that.paragraphs) : that.paragraphs == null;
+        return textComponents != null ? textComponents.equals(that.textComponents) : that.textComponents == null;
     }
 
     @Override
     public int hashCode() {
-        return paragraphs != null ? paragraphs.hashCode() : 0;
+        return textComponents != null ? textComponents.hashCode() : 0;
     }
 }
