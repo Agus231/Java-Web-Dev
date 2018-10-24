@@ -22,14 +22,10 @@ public class Symbol implements TextComponent, Cloneable {
     }
 
     @Override
-    public boolean add(TextComponent component) {
-        throw new UnsupportedOperationException("Adding element to symbol is not supported.");
-    }
+    public boolean add(TextComponent component) { throw new UnsupportedOperationException("Adding element to symbol is not supported."); }
 
     @Override
-    public List<TextComponent> getComponents() {
-        throw new UnsupportedOperationException("Symbol is a leaf element.");
-    }
+    public List<TextComponent> getComponents() { throw new UnsupportedOperationException("Symbol is a leaf element."); }
 
     @Override
     public ComponentType getComponentType() {
@@ -37,14 +33,10 @@ public class Symbol implements TextComponent, Cloneable {
     }
 
     @Override
-    public boolean remove(TextComponent component) {
-        throw new UnsupportedOperationException("Removing element from symbol is not supported.");
-    }
+    public boolean remove(TextComponent component) { throw new UnsupportedOperationException("Removing element from symbol is not supported."); }
 
     @Override
-    public Symbol clone() throws CloneNotSupportedException {
-        return (Symbol) super.clone();
-    }
+    public Symbol clone() throws CloneNotSupportedException { return (Symbol) super.clone(); }
 
     @Override
     public boolean equals(Object o) {

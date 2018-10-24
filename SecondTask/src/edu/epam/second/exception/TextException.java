@@ -1,8 +1,7 @@
 package edu.epam.second.exception;
 
 public class TextException extends Exception {
-    public TextException() {
-    }
+    public TextException() {}
 
     public TextException(String message) {
         super(message);

@@ -46,8 +46,8 @@ public class TextAction {
                         }
                     }
                     word.sort(Comparator.comparingInt(s -> s.getComponents().size()));
-                    for (TextComponent anUnitComposite : sentence.getComponents()) {
-                        List<TextComponent> unitElements = anUnitComposite.getComponents();
+                    for (TextComponent unitComposite : sentence.getComponents()) {
+                        List<TextComponent> unitElements = unitComposite.getComponents();
                         for (int m = 0; m < unitElements.size(); m++) {
                             if (unitElements.get(m).getComponentType() == ComponentType.WORD) {
                                 unitElements.set(m, word.get(0));

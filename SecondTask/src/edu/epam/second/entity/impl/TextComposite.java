@@ -19,10 +19,7 @@ public class TextComposite implements TextComponent, Cloneable {
     @Override
     public String operation() {
         String resultString = null;
-        switch (TYPE){
-            case SYMBOL:
-                resultString = operation();
-                break;
+        switch (TYPE) {
             case NUMBER:
                 resultString = textComponents.stream().map(TextComponent::operation).collect(Collectors.joining());
                 break;
@@ -61,8 +58,8 @@ public class TextComposite implements TextComponent, Cloneable {
     }
 
     @Override
-    public boolean remove(TextComponent textComponents) {
-        return textComponents.remove(textComponents);
+    public boolean remove(TextComponent textComponent) {
+        return textComponents.remove(textComponent);
     }
 
     @Override
