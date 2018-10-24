@@ -1,7 +1,7 @@
 package edu.epam.second.parser.impl;
 
 import edu.epam.second.entity.impl.Symbol;
-import edu.epam.second.entity.type.CharacterType;
+import edu.epam.second.entity.CharacterType;
 import edu.epam.second.parser.BaseParser;
 
 public class SymbolParser implements BaseParser {

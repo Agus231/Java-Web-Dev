@@ -2,68 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d483957a-9c57-4c72-9744-3f452615c0a8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/text.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/text.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/action/TextAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/action/TextAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/TextComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/TextComponent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/LexicalUnitComposite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/NumberComposite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/ParagraphComposite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/SentenceComposite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/Symbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/TextComposite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/TextComposite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/entity/impl/WordComposite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/AbstractExpression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/impl/NonTerminalExpressionNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/impl/TerminalExpressionAnd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/impl/TerminalExpressionInverse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/impl/TerminalExpressionOr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/impl/TerminalExpressionSignedLeftShift.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/impl/TerminalExpressionSignedRightShift.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/impl/TerminalExpressionUnsignedRightShift.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/interpreter/expression/impl/TerminalExpressionXor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/notation/NotationAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/notation/NotationAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/ExpressionParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/ExpressionParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/LexicalUnitParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/LexicalUnitParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/NumberParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/NumberParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/ParagraphParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/ParagraphParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/SentenceParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/SentenceParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/TextParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/TextParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/WordParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/parser/impl/WordParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/reader/TextReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/reader/TextReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/SecondTask/edu/epam/second/parser/impl/ExpressionParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/SecondTask/edu/epam/second/parser/impl/ExpressionParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/SecondTask/edu/epam/second/parser/impl/ExpressionParserTestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/SecondTask/edu/epam/second/parser/impl/ExpressionParserTestData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/LexicalUnitComposite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/NumberComposite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/ParagraphComposite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/SentenceComposite.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/WordComposite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/AbstractExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/AbstractExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/NonTerminalExpressionNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/NonTerminalExpressionNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/TerminalExpressionAnd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionAnd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/TerminalExpressionInverse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionInverse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/TerminalExpressionOr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionOr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/TerminalExpressionSignedLeftShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionSignedLeftShift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/TerminalExpressionSignedRightShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionSignedRightShift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/TerminalExpressionUnsignedRightShift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionUnsignedRightShift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/TerminalExpressionXor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionXor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/notation/NotationAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/notation/NotationAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/ExpressionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/ExpressionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/type/CharacterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/CharacterType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/type/ComponentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/ComponentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/LexicalUnitParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/LexicalUnitParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/NumberParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/NumberParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/ParagraphParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/ParagraphParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/SentenceParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/SentenceParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/SymbolParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/SymbolParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/TextParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/TextParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/WordParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/parser/impl/WordParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/ExpressionParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/ExpressionParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/ExpressionParserTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/ExpressionParserTestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/SymbolParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/SymbolParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/SymbolParserTestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/edu/epam/second/parser/impl/SymbolParserTestData.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,24 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testSortParagraphs.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testSortParagraphs.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/testSortParagraphs.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextComposite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="41" column="118" selection-start-line="41" selection-start-column="118" selection-end-line="41" selection-end-column="118" />
-              <folding>
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-              </folding>
+              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -124,6 +66,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="BaseParser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SymbolParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/SymbolParser.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,23 +87,23 @@
       <file leaf-file-name="TextComponent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ComponentType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/type/ComponentType.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/ComponentType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="25" />
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CharacterType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/type/CharacterType.java">
+        <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/CharacterType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
@@ -231,10 +182,8 @@
         <option value="$PROJECT_DIR$/test/edu/epam/second/action/TextActionTest.java" />
         <option value="$PROJECT_DIR$/data/testSortLexicalUnits.txt" />
         <option value="$PROJECT_DIR$/data/testSortWords.txt" />
-        <option value="$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java" />
         <option value="$PROJECT_DIR$/test/edu/epam/second/reader/TextReaderTest.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/impl/ExpressionParser.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/impl/NumberParser.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/impl/LexicalUnitParser.java" />
@@ -250,6 +199,8 @@
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/impl/TextParser.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/impl/SentenceParser.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java" />
       </list>
     </option>
   </component>
@@ -296,6 +247,13 @@
               <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="second" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="second" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
@@ -563,7 +521,7 @@
       <workItem from="1540231577665" duration="1640000" />
       <workItem from="1540233717255" duration="1501000" />
       <workItem from="1540360900430" duration="220000" />
-      <workItem from="1540361129991" duration="4891000" />
+      <workItem from="1540361129991" duration="4982000" />
     </task>
     <servers />
   </component>
@@ -600,7 +558,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112686000" />
+    <option name="totallyTimeSpent" value="112777000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,7 +574,7 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32910052" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.32910052" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32910052" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
@@ -624,7 +582,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32910052" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32910052" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32910052" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
@@ -858,13 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/edu/epam/second/parser/impl/ExpressionParserTestData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -963,27 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/type/ComponentType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/type/CharacterType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/TextParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1022,7 +952,35 @@
     <entry file="file://$PROJECT_DIR$/data/testSortParagraphs.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/CharacterType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/ComponentType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>

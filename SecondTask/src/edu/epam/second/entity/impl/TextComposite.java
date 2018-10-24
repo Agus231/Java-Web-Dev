@@ -1,6 +1,6 @@
 package edu.epam.second.entity.impl;
 
-import edu.epam.second.entity.type.ComponentType;
+import edu.epam.second.entity.ComponentType;
 import edu.epam.second.entity.TextComponent;
 
 import java.util.ArrayList;

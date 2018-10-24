@@ -3,8 +3,8 @@ package edu.epam.second.parser.impl;
 import edu.epam.second.entity.TextComponent;
 import edu.epam.second.entity.impl.Symbol;
 import edu.epam.second.entity.impl.TextComposite;
-import edu.epam.second.entity.type.CharacterType;
-import edu.epam.second.entity.type.ComponentType;
+import edu.epam.second.entity.CharacterType;
+import edu.epam.second.entity.ComponentType;
 import org.testng.annotations.DataProvider;
 
 public class ExpressionParserTestData {

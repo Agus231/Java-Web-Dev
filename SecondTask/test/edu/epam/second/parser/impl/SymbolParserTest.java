@@ -1,13 +1,11 @@
 package edu.epam.second.parser.impl;
 
 import edu.epam.second.entity.impl.Symbol;
-import edu.epam.second.entity.type.CharacterType;
+import edu.epam.second.entity.CharacterType;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.*;
 
 public class SymbolParserTest {
     private SymbolParser symbolParser;

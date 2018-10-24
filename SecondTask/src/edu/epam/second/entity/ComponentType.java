@@ -1,4 +1,4 @@
-package edu.epam.second.entity.type;
+package edu.epam.second.entity;
 
 public enum ComponentType {
     TEXT,

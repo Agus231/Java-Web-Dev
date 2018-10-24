@@ -2,22 +2,7 @@ package edu.epam.second.parser;
 
 import edu.epam.second.entity.TextComponent;
 
-//todo: ask about constants
 public interface BaseParser {
-    /**
-     * … - 2026
-     * all the possible lexems:
-     * -
-     * a
-     * 2
-     * word,
-     * word
-     * (word)
-     * 13<<2
-     * (word),
-     * (Content
-     * here),
-     */
     //splitting regex:
     String PARAGRAPH_SPLIT_REGEX = "(?=(\\t)|(\\s){4})";
     String SENTENCE_SPLIT_REGEX = "(?<=[.!?\\u2026])";
