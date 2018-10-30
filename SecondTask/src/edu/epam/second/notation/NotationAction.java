@@ -12,15 +12,15 @@ import java.util.List;
 public class NotationAction {
     private static final NotationAction INSTANCE = new NotationAction();
 
-    private static final String INVERSE_VALUE = "~";
-    private static final String OPEN_BRACKET_VALUE = "(";
-    private static final String CLOSE_BRACKET_VALUE = ")";
-    private static final String SIGNED_LEFT_SHIFT_VALUE = "<<";
-    private static final String SIGNED_RIGHT_SHIFT_VALUE = ">>";
-    private static final String UNSIGNED_RIGHT_SHIFT_VALUE = ">>>";
-    private static final String AND_VALUE = "&";
-    private static final String XOR_VALUE = "^";
-    private static final String OR_VALUE = "|";
+    private static final String INVERSE = "~";
+    private static final String OPEN_BRACKET = "(";
+    private static final String CLOSE_BRACKET = ")";
+    private static final String SIGNED_LEFT_SHIFT = "<<";
+    private static final String SIGNED_RIGHT_SHIFT = ">>";
+    private static final String UNSIGNED_RIGHT_SHIFT = ">>>";
+    private static final String AMPERSAND = "&";
+    private static final String CIRCUMFLEX = "^";
+    private static final String VERTICAL_LINE = "|";
 
     private NotationAction(){}
 
@@ -42,49 +42,49 @@ public class NotationAction {
             }
             else {
                 switch (part){
-                    case INVERSE_VALUE:
+                    case INVERSE:
                         stack.push(NotationOperator.INVERSE);
                         break;
-                    case OPEN_BRACKET_VALUE:
+                    case OPEN_BRACKET:
                         stack.push(NotationOperator.OPEN_BRACKET);
                         break;
-                    case CLOSE_BRACKET_VALUE:
+                    case CLOSE_BRACKET:
                         while (stack.peek() != NotationOperator.OPEN_BRACKET){
                             polishExpression.add(stack.pop().getValue());
                         }
                         stack.pop();
                         break;
-                    case SIGNED_LEFT_SHIFT_VALUE:
+                    case SIGNED_LEFT_SHIFT:
                         while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.SIGNED_LEFT_SHIFT)){
                             polishExpression.add(stack.pop().getValue());
                         }
                         stack.push(NotationOperator.SIGNED_LEFT_SHIFT);
                         break;
-                    case SIGNED_RIGHT_SHIFT_VALUE:
+                    case SIGNED_RIGHT_SHIFT:
                         while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.SIGNED_RIGHT_SHIFT)){
                             polishExpression.add(stack.pop().getValue());
                         }
                         stack.push(NotationOperator.SIGNED_RIGHT_SHIFT);
                         break;
-                    case UNSIGNED_RIGHT_SHIFT_VALUE:
+                    case UNSIGNED_RIGHT_SHIFT:
                         while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.UNSIGNED_RIGHT_SHIFT)){
                             polishExpression.add(stack.pop().getValue());
                         }
                         stack.push(NotationOperator.UNSIGNED_RIGHT_SHIFT);
                         break;
-                    case AND_VALUE:
+                    case AMPERSAND:
                         while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.AND)){
                             polishExpression.add(stack.pop().getValue());
                         }
                         stack.push(NotationOperator.AND);
                         break;
-                    case XOR_VALUE:
+                    case CIRCUMFLEX:
                         while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.XOR)){
                             polishExpression.add(stack.pop().getValue());
                         }
                         stack.push(NotationOperator.XOR);
                         break;
-                    case OR_VALUE:
+                    case VERTICAL_LINE:
                         while (!stack.isEmpty() && checkPriority(stack.peek(), NotationOperator.OR)){
                             polishExpression.add(stack.pop().getValue());
                         }
@@ -107,25 +107,25 @@ public class NotationAction {
         var listExpression = new ArrayList<AbstractExpression>();
         for (String part: parts) {
             switch (part){
-                case INVERSE_VALUE:
+                case INVERSE:
                     listExpression.add(new TerminalExpressionInverse());
                     break;
-                case OR_VALUE:
+                case VERTICAL_LINE:
                     listExpression.add(new TerminalExpressionOr());
                     break;
-                case AND_VALUE:
+                case AMPERSAND:
                     listExpression.add(new TerminalExpressionAnd());
                     break;
-                case XOR_VALUE:
+                case CIRCUMFLEX:
                     listExpression.add(new TerminalExpressionXor());
                     break;
-                case SIGNED_LEFT_SHIFT_VALUE:
+                case SIGNED_LEFT_SHIFT:
                     listExpression.add(new TerminalExpressionSignedLeftShift());
                     break;
-                case SIGNED_RIGHT_SHIFT_VALUE:
+                case SIGNED_RIGHT_SHIFT:
                     listExpression.add(new TerminalExpressionSignedRightShift());
                     break;
-                case UNSIGNED_RIGHT_SHIFT_VALUE:
+                case UNSIGNED_RIGHT_SHIFT:
                     listExpression.add(new TerminalExpressionUnsignedRightShift());
                     break;
                 default:

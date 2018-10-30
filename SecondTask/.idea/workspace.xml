@@ -4,14 +4,20 @@
     <list default="true" id="d483957a-9c57-4c72-9744-3f452615c0a8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/text.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/text.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/notation/NotationAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SecondTask/edu/epam/second/notation/NotationAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Runner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/exception/TextException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/exception/TextException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/interpreter/AbstractExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/interpreter/AbstractExpression.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/epam/second/notation/NotationAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/notation/NotationAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ThirdTask/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/ThirdTask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ThirdTask/ThirdTask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/out/production/ThirdTask/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ThirdTask/out/production/ThirdTask/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/out/production/ThirdTask/entity/Harbor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/out/production/ThirdTask/entity/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ThirdTask/out/production/ThirdTask/entity/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/out/production/ThirdTask/entity/Wharf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThirdTask/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/src/entity/Harbor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/src/entity/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThirdTask/src/entity/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThirdTask/src/entity/Wharf.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,8 +41,8 @@
       <file leaf-file-name="TextReader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="240">
+              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,7 +53,7 @@
       <file leaf-file-name="ExpressionParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/ExpressionParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="240">
               <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -69,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/NumberParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -77,11 +83,8 @@
       <file leaf-file-name="ParagraphParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/ParagraphParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="195">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -89,11 +92,8 @@
       <file leaf-file-name="SentenceParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/SentenceParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="300">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -110,8 +110,8 @@
       <file leaf-file-name="TextParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/TextParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="60">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -155,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/edu/epam/second/interpreter/TerminalExpressionUnsignedRightShift.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/action/NotationAction.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/interpreter/expression/impl/TerminalExpressionSignedLeftShift.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/entity/impl/ExpressionComposite.java" />
@@ -197,15 +196,16 @@
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/impl/ParagraphParser.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/impl/TextParser.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/impl/SentenceParser.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/parser/BaseParser.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/second/notation/NotationAction.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java" />
-        <option value="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/interpreter/AbstractExpression.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/exception/TextException.java" />
         <option value="$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/second/notation/NotationOperator.java" />
+        <option value="$PROJECT_DIR$/src/edu/epam/second/notation/NotationAction.java" />
       </list>
     </option>
   </component>
@@ -218,7 +218,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="811" />
@@ -230,7 +230,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,11 +243,6 @@
             <path>
               <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,84 +250,22 @@
               <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="second" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="interpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="second" type="462c0819:PsiDirectoryNode" />
-              <item name="reader" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SecondTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecondTask" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="second" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,7 +273,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ThirdTask" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -587,17 +522,15 @@
       <workItem from="1540360900430" duration="220000" />
       <workItem from="1540361129991" duration="5132000" />
       <workItem from="1540371777636" duration="738000" />
-      <workItem from="1540380331817" duration="532000" />
+      <workItem from="1540380331817" duration="790000" />
+      <workItem from="1540381798286" duration="322000" />
+      <workItem from="1540836006536" duration="1431000" />
+      <workItem from="1540893761053" duration="596000" />
+      <workItem from="1540894924320" duration="27000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="_home_verdas_EPAM_SecondTask_testng_xml - 2018.10.24 at 10h 08m 11s.xml">
-      <configuration name="/home/verdas/EPAM/SecondTask/testng.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_home_verdas_EPAM_SecondTask_testng_xml - 2018.10.24 at 10h 13m 48s.xml">
-      <configuration name="/home/verdas/EPAM/SecondTask/testng.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_home_verdas_EPAM_SecondTask_testng_xml - 2018.10.24 at 10h 18m 30s.xml">
       <configuration name="/home/verdas/EPAM/SecondTask/testng.xml" configurationId="TestNG" />
     </history-entry>
@@ -622,9 +555,15 @@
     <history-entry file="_home_verdas_EPAM_SecondTask_testng_xml - 2018.10.24 at 12h 15m 17s.xml">
       <configuration name="/home/verdas/EPAM/SecondTask/testng.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_home_verdas_EPAM_SecondTask_testng_xml - 2018.10.24 at 14h 34m 33s.xml">
+      <configuration name="/home/verdas/EPAM/SecondTask/testng.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_home_verdas_EPAM_SecondTask_testng_xml - 2018.10.29 at 21h 01m 08s.xml">
+      <configuration name="/home/verdas/EPAM/SecondTask/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114197000" />
+    <option name="totallyTimeSpent" value="116831000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -637,7 +576,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32910052" />
@@ -648,11 +586,11 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32910052" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32910052" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3281893" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22018349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21964382" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -662,11 +600,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32910052" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32910052" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32910052" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,13 +619,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logs/text.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -783,16 +714,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Runner.java" />
     <entry file="file://$PROJECT_DIR$/data/testSortLexicalUnits.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -814,33 +736,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionInverse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="75" column="10" lean-forward="true" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionOr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="42" column="35" lean-forward="true" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionSignedLeftShift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionSignedRightShift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionUnsignedRightShift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionXor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-10-oracle/lib/src.zip!/java.base/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="92" column="78" selection-start-line="92" selection-start-column="78" selection-end-line="92" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/action/TextAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/impl/TextComposite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/impl/Symbol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="43" column="32" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -860,8 +822,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/entity/TextComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="135">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -872,87 +834,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionAnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/NonTerminalExpressionNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionAnd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionInverse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionOr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionSignedLeftShift.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionSignedRightShift.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionUnsignedRightShift.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/impl/TerminalExpressionXor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/AbstractExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -963,23 +855,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/epam/second/interpreter/AbstractExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/notation/NotationAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="-1120">
+          <caret line="22" column="52" lean-forward="true" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/notation/NotationOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="195">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/ExpressionParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="240">
           <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -997,27 +896,21 @@
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/NumberParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/ParagraphParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="195">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/SentenceParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="300">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1030,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/parser/impl/TextParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1051,8 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/epam/second/reader/TextReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="240">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

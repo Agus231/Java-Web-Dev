@@ -1,0 +1,10 @@
+2018-10-27 12:23:25 [Thread-2] DEBUG entity.Ship - Thread-2; Got berth : entity.Berth@518e6ad; Working with it;
+2018-10-27 12:23:25 [Thread-1] DEBUG entity.Ship - Thread-1; Got berth : entity.Berth@6a036456; Working with it;
+2018-10-27 12:23:25 [Thread-4] DEBUG entity.Ship - Thread-4; Got berth : entity.Berth@68593e6; Working with it;
+2018-10-27 12:23:25 [Thread-5] DEBUG entity.Ship - Thread-5; Got berth : entity.Berth@32873596; Working with it;
+2018-10-27 12:23:26 [Thread-7] DEBUG entity.Ship - Thread-7; Got berth : entity.Berth@16959089; Working with it;
+2018-10-27 12:23:26 [Thread-8] DEBUG entity.Ship - Thread-8; Got berth : entity.Berth@53f3e0c6; Working with it;
+2018-10-27 12:23:26 [Thread-10] DEBUG entity.Ship - Thread-10; Got berth : entity.Berth@68593e6; Working with it;
+2018-10-27 12:23:26 [Thread-9] DEBUG entity.Ship - Thread-9; Got berth : entity.Berth@518e6ad; Working with it;
+2018-10-27 12:23:26 [Thread-6] DEBUG entity.Ship - Thread-6; Got berth : entity.Berth@32873596; Working with it;
+2018-10-27 12:23:26 [Thread-11] DEBUG entity.Ship - Thread-11; Got berth : entity.Berth@6a036456; Working with it;

@@ -1,0 +1,8 @@
+2018-10-30 17:50:55 [Timer-0] INFO  timer.TimedInfo - Port WH : Warehouse[max = 1000; current = 97];
+2018-10-30 17:50:55 [Thread-120] DEBUG entity.Ship - Thread-120; Done with berth : Berth[id = 5]; Ship wh: Warehouse[max = 100; current = 1];
+2018-10-30 17:50:57 [Thread-114] DEBUG entity.Ship - Thread-114; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 73];
+2018-10-30 17:50:57 [Thread-116] DEBUG entity.Ship - Thread-116; Done with berth : Berth[id = 6]; Ship wh: Warehouse[max = 100; current = 97];
+2018-10-30 17:50:58 [Thread-118] DEBUG entity.Ship - Thread-118; Done with berth : Berth[id = 1]; Ship wh: Warehouse[max = 100; current = 38];
+2018-10-30 17:50:58 [Thread-117] DEBUG entity.Ship - Thread-117; Done with berth : Berth[id = 2]; Ship wh: Warehouse[max = 100; current = 85];
+2018-10-30 17:51:00 [Thread-115] DEBUG entity.Ship - Thread-115; Done with berth : Berth[id = 4]; Ship wh: Warehouse[max = 100; current = 91];
+2018-10-30 17:51:00 [Timer-0] INFO  timer.TimedInfo - Port WH : Warehouse[max = 1000; current = 97];

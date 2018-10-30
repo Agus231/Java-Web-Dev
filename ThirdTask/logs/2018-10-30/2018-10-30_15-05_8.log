@@ -1,0 +1,6 @@
+2018-10-30 15:05:57 [Thread-23] DEBUG entity.Ship - Thread-23; Got berth : Berth[id = 4]; Working with it; Ship wh: Warehouse[max = 100; current = 36];; delta = 19  Port wh: Warehouse[max = 1000; current = 274];
+2018-10-30 15:05:58 [Thread-18] DEBUG entity.Ship - Thread-18; Done with berth : Berth[id = 6]; Ship wh: Warehouse[max = 100; current = 34]; Port wh: Warehouse[max = 1000; current = 293];
+2018-10-30 15:05:58 [Thread-24] DEBUG entity.Ship - Thread-24; Got berth : Berth[id = 6]; Working with it; Ship wh: Warehouse[max = 100; current = 51];; delta = 5  Port wh: Warehouse[max = 1000; current = 293];
+2018-10-30 15:05:58 [Thread-7] DEBUG entity.Ship - Thread-7; Done with berth : Berth[id = 1]; Ship wh: Warehouse[max = 100; current = 90]; Port wh: Warehouse[max = 1000; current = 298];
+2018-10-30 15:05:58 [Thread-25] DEBUG entity.Ship - Thread-25; Got berth : Berth[id = 1]; Working with it; Ship wh: Warehouse[max = 100; current = 55];; delta = 41  Port wh: Warehouse[max = 1000; current = 298];
+2018-10-30 15:05:58 [Thread-17] DEBUG entity.Ship - Thread-17; Done with berth : Berth[id = 5]; Ship wh: Warehouse[max = 100; current = 61]; Port wh: Warehouse[max = 1000; current = 257];

@@ -1,32 +1,66 @@
 package entity;
 
-public class Ship implements Runnable{
-    private int maxCapacity;
-    private int currentCapacity;
+import exception.PortException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-    public Ship(int maxCapacity, int currentCapacity){
-        this.maxCapacity = maxCapacity;
-        this.currentCapacity = currentCapacity;
+import java.util.concurrent.TimeUnit;
+
+public class Ship extends Thread{
+    private static Logger logger = LogManager.getLogger();
+    private Warehouse shipWarehouse;
+    private boolean isLoading;
+    private int delta;
+
+    public Ship(String threadName, int delta){
+        Thread.currentThread().setName(threadName);
+        this.delta = delta;
     }
 
-    public int getMaxCapacity() {
-        return maxCapacity;
+    public void setShipWarehouse(Warehouse shipWarehouse) {
+        this.shipWarehouse = shipWarehouse;
     }
 
-    public int getCurrentCapacity() {
-        return currentCapacity;
+    public void setLoading(boolean loading) {
+        isLoading = loading;
     }
 
-    public void setCurrentCapacity(int currentCapacity) {
-        this.currentCapacity = currentCapacity;
+    public Warehouse getShipWarehouse() {
+        return shipWarehouse;
     }
 
     @Override
     public void run() {
-        Harbor instance = Harbor.getInstance();
+        var instance = Port.getInstance();
 
-        Wharf wharf = instance.getResource();
+        Berth berth = null;
+        try {
+            berth = instance.getResource();
+        } catch (PortException e) {
+            logger.error("Exception from : " + Thread.currentThread().getName() + "; While getting berth.");
+        }
 
-        System.out.println(wharf);
+        var portWarehouse = instance.getPortWarehouse();
+        logger.debug(Thread.currentThread().getName() + "; Got berth : " + berth +
+                        "; Working with it; Ship wh: " + shipWarehouse + "; delta = " + delta +"  Port wh: " + portWarehouse);
+
+        if (isLoading){
+            instance.retrieveContainers(delta);
+            shipWarehouse.addContainers(delta);
+        }
+        else {
+            instance.addContainers(delta);
+            shipWarehouse.retriveContainers(delta);
+        }
+
+        try {
+            TimeUnit.MILLISECONDS.sleep(delta * 100);
+            logger.debug(Thread.currentThread().getName() + "; Done with berth : " + berth +
+                    "; Ship wh: " + shipWarehouse);
+        } catch (InterruptedException e) {
+            logger.error("Exception from : " + Thread.currentThread().getName() + "; While working with berth.");
+        }
+
+        instance.returnResource(berth);
     }
 }

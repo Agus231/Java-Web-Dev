@@ -11,6 +11,9 @@ public class TextComposite implements TextComponent, Cloneable {
     private ComponentType TYPE;
     private List<TextComponent> textComponents;
 
+    private final String NEW_LINE_REGEX = "\n";
+    private final String TABULATION_REGEX = "\t";
+
     public TextComposite(ComponentType type){
         this.TYPE = type;
         textComponents = new ArrayList<>();
@@ -36,15 +39,15 @@ public class TextComposite implements TextComponent, Cloneable {
                 resultString = textComponents.stream().map(TextComponent::operation).collect(Collectors.joining(" "));
                 break;
             case TEXT:
-                resultString = textComponents.stream().map((s) -> '\t' + s.operation()).collect(Collectors.joining("\n"));
+                resultString = textComponents.stream().map((s) -> TABULATION_REGEX + s.operation()).collect(Collectors.joining(NEW_LINE_REGEX));
                 break;
         }
         return resultString;
     }
 
     @Override
-    public boolean add(TextComponent textComponent) {
-        return textComponents.add(textComponent);
+    public boolean add(TextComponent component) {
+        return textComponents.add(component);
     }
 
     @Override
@@ -58,8 +61,8 @@ public class TextComposite implements TextComponent, Cloneable {
     }
 
     @Override
-    public boolean remove(TextComponent textComponent) {
-        return textComponents.remove(textComponent);
+    public boolean remove(TextComponent component) {
+        return textComponents.remove(component);
     }
 
     @Override
