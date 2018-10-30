@@ -1,0 +1,7 @@
+2018-10-31 01:03:29 [Thread-8] DEBUG entity.Ship - Thread-8; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 29]; Port wh: Warehouse[max = 1000; current = 123];
+2018-10-31 01:03:29 [Thread-4] DEBUG entity.Ship - Thread-4; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 47];; delta = 7  Port wh: Warehouse[max = 1000; current = 123];
+2018-10-31 01:03:30 [Thread-4] DEBUG entity.Ship - Thread-4; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 40]; Port wh: Warehouse[max = 1000; current = 130];
+2018-10-31 01:03:30 [Thread-3] DEBUG entity.Ship - Thread-3; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 38];; delta = 5  Port wh: Warehouse[max = 1000; current = 130];
+2018-10-31 01:03:30 [Thread-3] WARN  entity.Port - Thread-3 waiting : EMPTY PORT
+2018-10-31 01:03:31 [Timer-0] INFO  entity.Train - isEmptyCondition signaled from train
+2018-10-31 01:03:31 [Thread-10] DEBUG entity.Ship - Thread-10; Done with berth : Berth[id = 5]; Ship wh: Warehouse[max = 100; current = 89]; Port wh: Warehouse[max = 1000; current = 392];

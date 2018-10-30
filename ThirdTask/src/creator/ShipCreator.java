@@ -5,23 +5,23 @@ import entity.Warehouse;
 
 import java.util.Random;
 
-//todo: random bounds, atomic intger?
 public class ShipCreator {
+    public static final int MAX_SHIP_WAREHOUSE_CAPACITY = 100;
 
-    private static final int RANDOM_BOUND = 100;
-
+    //todo: islloading and max
     public static Ship createShip(String name){
         Random random = new Random();
 
         boolean isLoading  = random.nextBoolean();
-        int shipContainers = random.nextInt(RANDOM_BOUND);
-        Warehouse warehouse = WarehouseCreator.createWarehouse(shipContainers, RANDOM_BOUND);
+        int shipContainers = 1 + random.nextInt(MAX_SHIP_WAREHOUSE_CAPACITY);
+        Warehouse warehouse = WarehouseCreator.createWarehouse(shipContainers, MAX_SHIP_WAREHOUSE_CAPACITY);
+
         int containerDelta;
         if (isLoading) {
-            containerDelta = random.nextInt(RANDOM_BOUND - shipContainers);
+            containerDelta = 1 + random.nextInt(MAX_SHIP_WAREHOUSE_CAPACITY - shipContainers);
         }
         else{
-            containerDelta = random.nextInt(shipContainers);
+            containerDelta = 1 + random.nextInt(shipContainers);
         }
 
         var result = new Ship(name, containerDelta);

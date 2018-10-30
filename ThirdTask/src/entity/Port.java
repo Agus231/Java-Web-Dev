@@ -2,21 +2,27 @@ package entity;
 
 import creator.WarehouseCreator;
 import exception.PortException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Port {
-    private static final int BERTH_COUNT = 6;
-    private static final int WAREHOUSE_CONTAINERS = 300;
+    private static Logger logger = LogManager.getLogger();
+
+    private static final int BERTH_COUNT = 3;
+    private static final int WAREHOUSE_CONTAINERS = 30;
     private static final int WAREHOUSE_CONTAINERS_MAX = 1_000;
 
     private static ReentrantLock lock = new ReentrantLock();
-    private static Semaphore semaphore = new Semaphore(BERTH_COUNT, true);
+    private Semaphore semaphore = new Semaphore(BERTH_COUNT, true);
+    private Condition isEmpty = lock.newCondition();
+    private Condition isFull = lock.newCondition();
 
     private static Port instance;
     private static AtomicBoolean isAvailable = new AtomicBoolean(true);
@@ -77,25 +83,53 @@ public class Port {
         }
     }
 
-    public void addContainers(int containers){
+    //todo: exception
+    public void addContainers(int containers) {
         try {
             lock.lock();
+            if (portWarehouse.isFull()){
+                logger.warn(Thread.currentThread().getName() + " waiting : FULL PORT");
+                isFull.await();
+            }
+
             portWarehouse.addContainers(containers);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         } finally {
             lock.unlock();
         }
     }
 
-    public void retrieveContainers(int containers){
+    //todo: exception
+    public void retrieveContainers(int containers) {
         try{
             lock.lock();
-            portWarehouse.retriveContainers(containers);
+            if (portWarehouse.isEmpty()){
+                logger.warn(Thread.currentThread().getName() + " waiting : EMPTY PORT");
+                isEmpty.await();
+            }
+
+            portWarehouse.retrieveContainers(containers);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         } finally {
             lock.unlock();
         }
+    }
+
+    public Condition getIsEmpty() {
+        return isEmpty;
+    }
+
+    public Condition getIsFull() {
+        return isFull;
     }
 
     public Warehouse getPortWarehouse() {
         return portWarehouse;
+    }
+
+    public ReentrantLock getLock() {
+        return lock;
     }
 }

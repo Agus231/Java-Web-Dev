@@ -50,13 +50,13 @@ public class Ship extends Thread{
         }
         else {
             instance.addContainers(delta);
-            shipWarehouse.retriveContainers(delta);
+            shipWarehouse.retrieveContainers(delta);
         }
 
         try {
             TimeUnit.MILLISECONDS.sleep(delta * 100);
             logger.debug(Thread.currentThread().getName() + "; Done with berth : " + berth +
-                    "; Ship wh: " + shipWarehouse);
+                    "; Ship wh: " + shipWarehouse + " Port wh: " + portWarehouse);
         } catch (InterruptedException e) {
             logger.error("Exception from : " + Thread.currentThread().getName() + "; While working with berth.");
         }
