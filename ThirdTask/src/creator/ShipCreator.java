@@ -17,6 +17,10 @@ public class ShipCreator {
         Warehouse warehouse = WarehouseCreator.createWarehouse(shipContainers, MAX_SHIP_WAREHOUSE_CAPACITY);
 
         int containerDelta;
+        if (isLoading && shipContainers == MAX_SHIP_WAREHOUSE_CAPACITY){
+            isLoading = false;
+        }
+
         if (isLoading) {
             containerDelta = 1 + random.nextInt(MAX_SHIP_WAREHOUSE_CAPACITY - shipContainers);
         }

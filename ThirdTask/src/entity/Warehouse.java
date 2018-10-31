@@ -6,8 +6,8 @@ public class Warehouse {
     private AtomicInteger currentContainers;
     private int maxContainers;
 
-    private static double MINIMUM_PERCENTAGE = 0.2;
-    private static double MAXIMUM_PERCENTAGE = 0.8;
+    private static double MINIMUM_PERCENTAGE = 0.1;
+    private static double MAXIMUM_PERCENTAGE = 0.9;
 
     public Warehouse(int currentContainers, int maxContainers){
         this.currentContainers = new AtomicInteger(currentContainers);

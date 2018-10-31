@@ -7,6 +7,8 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.Condition;
@@ -20,9 +22,9 @@ public class Port {
     private static final int WAREHOUSE_CONTAINERS_MAX = 1_000;
 
     private static ReentrantLock lock = new ReentrantLock();
-    private Semaphore semaphore = new Semaphore(BERTH_COUNT, true);
-    private Condition isEmpty = lock.newCondition();
-    private Condition isFull = lock.newCondition();
+    private static Semaphore semaphore = new Semaphore(BERTH_COUNT, true);
+    private static Condition isEmpty = lock.newCondition();
+    private static Condition isFull = lock.newCondition();
 
     private static Port instance;
     private static AtomicBoolean isAvailable = new AtomicBoolean(true);
@@ -33,6 +35,8 @@ public class Port {
     private Port(){
         berthQueue = new LinkedList<>();
         portWarehouse = WarehouseCreator.createWarehouse(WAREHOUSE_CONTAINERS, WAREHOUSE_CONTAINERS_MAX);
+        Timer timer = new Timer();
+        timer.schedule(new Train(), 1000, 3000);
         init();
     }
 
@@ -48,7 +52,6 @@ public class Port {
                 lock.unlock();
             }
         }
-
         return instance;
     }
 
@@ -93,6 +96,9 @@ public class Port {
             }
 
             portWarehouse.addContainers(containers);
+            if (!portWarehouse.isEmpty()){
+                isEmpty.signalAll();
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -110,6 +116,9 @@ public class Port {
             }
 
             portWarehouse.retrieveContainers(containers);
+            if(!portWarehouse.isFull()){
+                isFull.signalAll();
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -117,19 +126,30 @@ public class Port {
         }
     }
 
-    public Condition getIsEmpty() {
-        return isEmpty;
-    }
-
-    public Condition getIsFull() {
-        return isFull;
-    }
-
     public Warehouse getPortWarehouse() {
         return portWarehouse;
     }
 
-    public ReentrantLock getLock() {
-        return lock;
+    class Train extends TimerTask {
+        private static final double CHANGE_PERCENTAGE = 0.3;
+        private static final int MAX_TRAIN_CAPACITY = 1_000;
+
+        @Override
+        public void run() {
+            try {
+                lock.lock();
+                if (portWarehouse.isEmpty()) {
+                    portWarehouse.addContainers((int) (CHANGE_PERCENTAGE * MAX_TRAIN_CAPACITY));
+                    logger.info("isEmptyCondition signaled from train");
+                    isEmpty.signalAll();
+                } else if (portWarehouse.isFull()) {
+                    portWarehouse.retrieveContainers((int) (CHANGE_PERCENTAGE * MAX_TRAIN_CAPACITY));
+                    logger.info("isFullCondition signaled from train");
+                    isFull.signalAll();
+                }
+            } finally {
+                lock.unlock();
+            }
+        }
     }
 }
