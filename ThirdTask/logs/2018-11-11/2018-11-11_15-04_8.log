@@ -1,0 +1,5 @@
+2018-11-11 15:04:21 [Thread-14] DEBUG edu.epam.third.entity.Ship - Thread-14; Got berth : Berth[id = 1]; Working with it; Ship wh: Warehouse[max = 100; current = 30]; Port wh: Warehouse[max = 1000; current = 255];
+2018-11-11 15:04:21 [Thread-14] DEBUG edu.epam.third.entity.Ship - Thread-14; Done with berth : Berth[id = 1]; Ship wh: Warehouse[max = 100; current = 60]; Operation: -30; Port wh: Warehouse[max = 1000; current = 225];
+2018-11-11 15:04:21 [Thread-14] DEBUG edu.epam.third.entity.Ship - Thread-14; Done with berth : Berth[id = 1]; Ship wh: Warehouse[max = 100; current = 70]; Operation: -10; Port wh: Warehouse[max = 1000; current = 215];
+2018-11-11 15:04:21 [Thread-4] DEBUG edu.epam.third.entity.Ship - Thread-4; Got berth : Berth[id = 1]; Working with it; Ship wh: Warehouse[max = 100; current = 70]; Port wh: Warehouse[max = 1000; current = 215];
+2018-11-11 15:04:22 [Thread-11] DEBUG edu.epam.third.entity.Ship - Thread-11; Done with berth : Berth[id = 2]; Ship wh: Warehouse[max = 100; current = 110]; Operation: 10; Port wh: Warehouse[max = 1000; current = 175];

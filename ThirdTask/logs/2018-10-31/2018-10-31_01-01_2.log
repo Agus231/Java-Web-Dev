@@ -1,7 +1,7 @@
-2018-10-31 01:01:25 [Thread-12] WARN  entity.Port - Thread-12 waiting : EMPTY PORT
-2018-10-31 01:01:25 [Thread-13] WARN  entity.Port - Thread-13 waiting : EMPTY PORT
-2018-10-31 01:01:25 [Thread-4] WARN  entity.Port - Thread-4 waiting : EMPTY PORT
-2018-10-31 01:01:25 [Thread-11] DEBUG entity.Ship - Thread-11; Done with berth : Berth[id = 2]; Ship wh: Warehouse[max = 100; current = 2]; Port wh: Warehouse[max = 1000; current = 91];
-2018-10-31 01:01:25 [Thread-5] DEBUG entity.Ship - Thread-5; Got berth : Berth[id = 2]; Working with it; Ship wh: Warehouse[max = 100; current = 97];; delta = 81  Port wh: Warehouse[max = 1000; current = 91];
-2018-10-31 01:01:25 [Thread-3] DEBUG entity.Ship - Thread-3; Done with berth : Berth[id = 5]; Ship wh: Warehouse[max = 100; current = 81]; Port wh: Warehouse[max = 1000; current = 172];
-2018-10-31 01:01:25 [Thread-2] DEBUG entity.Ship - Thread-2; Got berth : Berth[id = 5]; Working with it; Ship wh: Warehouse[max = 100; current = 79];; delta = 12  Port wh: Warehouse[max = 1000; current = 172];
+2018-10-31 01:01:25 [Thread-12] WARN  edu.epam.third.entity.Port - Thread-12 waiting : EMPTY PORT
+2018-10-31 01:01:25 [Thread-13] WARN  edu.epam.third.entity.Port - Thread-13 waiting : EMPTY PORT
+2018-10-31 01:01:25 [Thread-4] WARN  edu.epam.third.entity.Port - Thread-4 waiting : EMPTY PORT
+2018-10-31 01:01:25 [Thread-11] DEBUG edu.epam.third.entity.Ship - Thread-11; Done with berth : Berth[id = 2]; Ship wh: Warehouse[max = 100; current = 2]; Port wh: Warehouse[max = 1000; current = 91];
+2018-10-31 01:01:25 [Thread-5] DEBUG edu.epam.third.entity.Ship - Thread-5; Got berth : Berth[id = 2]; Working with it; Ship wh: Warehouse[max = 100; current = 97];; delta = 81  Port wh: Warehouse[max = 1000; current = 91];
+2018-10-31 01:01:25 [Thread-3] DEBUG edu.epam.third.entity.Ship - Thread-3; Done with berth : Berth[id = 5]; Ship wh: Warehouse[max = 100; current = 81]; Port wh: Warehouse[max = 1000; current = 172];
+2018-10-31 01:01:25 [Thread-2] DEBUG edu.epam.third.entity.Ship - Thread-2; Got berth : Berth[id = 5]; Working with it; Ship wh: Warehouse[max = 100; current = 79];; delta = 12  Port wh: Warehouse[max = 1000; current = 172];

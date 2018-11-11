@@ -1,6 +1,6 @@
-2018-10-30 15:05:56 [Thread-20] DEBUG entity.Ship - Thread-20; Got berth : Berth[id = 2]; Working with it; Ship wh: Warehouse[max = 100; current = 14];; delta = 54  Port wh: Warehouse[max = 1000; current = 355];
-2018-10-30 15:05:57 [Thread-6] DEBUG entity.Ship - Thread-6; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 15]; Port wh: Warehouse[max = 1000; current = 301];
-2018-10-30 15:05:57 [Thread-19] DEBUG entity.Ship - Thread-19; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 25];; delta = 1  Port wh: Warehouse[max = 1000; current = 301];
-2018-10-30 15:05:57 [Thread-19] DEBUG entity.Ship - Thread-19; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 24]; Port wh: Warehouse[max = 1000; current = 302];
-2018-10-30 15:05:57 [Thread-22] DEBUG entity.Ship - Thread-22; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 54];; delta = 28  Port wh: Warehouse[max = 1000; current = 302];
-2018-10-30 15:05:57 [Thread-10] DEBUG entity.Ship - Thread-10; Done with berth : Berth[id = 4]; Ship wh: Warehouse[max = 100; current = 36]; Port wh: Warehouse[max = 1000; current = 274];
+2018-10-30 15:05:56 [Thread-20] DEBUG edu.epam.third.entity.Ship - Thread-20; Got berth : Berth[id = 2]; Working with it; Ship wh: Warehouse[max = 100; current = 14];; delta = 54  Port wh: Warehouse[max = 1000; current = 355];
+2018-10-30 15:05:57 [Thread-6] DEBUG edu.epam.third.entity.Ship - Thread-6; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 15]; Port wh: Warehouse[max = 1000; current = 301];
+2018-10-30 15:05:57 [Thread-19] DEBUG edu.epam.third.entity.Ship - Thread-19; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 25];; delta = 1  Port wh: Warehouse[max = 1000; current = 301];
+2018-10-30 15:05:57 [Thread-19] DEBUG edu.epam.third.entity.Ship - Thread-19; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 24]; Port wh: Warehouse[max = 1000; current = 302];
+2018-10-30 15:05:57 [Thread-22] DEBUG edu.epam.third.entity.Ship - Thread-22; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 54];; delta = 28  Port wh: Warehouse[max = 1000; current = 302];
+2018-10-30 15:05:57 [Thread-10] DEBUG edu.epam.third.entity.Ship - Thread-10; Done with berth : Berth[id = 4]; Ship wh: Warehouse[max = 100; current = 36]; Port wh: Warehouse[max = 1000; current = 274];

@@ -1,8 +1,8 @@
-2018-10-30 18:09:03 [Thread-109] DEBUG entity.Ship - Thread-109; Done with berth : Berth[id = 6]; Ship wh: Warehouse[max = 100; current = 24];
-2018-10-30 18:09:04 [Thread-110] DEBUG entity.Ship - Thread-110; Done with berth : Berth[id = 2]; Ship wh: Warehouse[max = 100; current = 21];
-2018-10-30 18:09:04 [Thread-116] DEBUG entity.Ship - Thread-116; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 93];
-2018-10-30 18:09:04 [Thread-117] DEBUG entity.Ship - Thread-117; Done with berth : Berth[id = 5]; Ship wh: Warehouse[max = 100; current = 6];
-2018-10-30 18:09:05 [Thread-119] DEBUG entity.Ship - Thread-119; Done with berth : Berth[id = 1]; Ship wh: Warehouse[max = 100; current = 9];
+2018-10-30 18:09:03 [Thread-109] DEBUG edu.epam.third.entity.Ship - Thread-109; Done with berth : Berth[id = 6]; Ship wh: Warehouse[max = 100; current = 24];
+2018-10-30 18:09:04 [Thread-110] DEBUG edu.epam.third.entity.Ship - Thread-110; Done with berth : Berth[id = 2]; Ship wh: Warehouse[max = 100; current = 21];
+2018-10-30 18:09:04 [Thread-116] DEBUG edu.epam.third.entity.Ship - Thread-116; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 93];
+2018-10-30 18:09:04 [Thread-117] DEBUG edu.epam.third.entity.Ship - Thread-117; Done with berth : Berth[id = 5]; Ship wh: Warehouse[max = 100; current = 6];
+2018-10-30 18:09:05 [Thread-119] DEBUG edu.epam.third.entity.Ship - Thread-119; Done with berth : Berth[id = 1]; Ship wh: Warehouse[max = 100; current = 9];
 2018-10-30 18:09:05 [Timer-0] INFO  timer.TimedInfo - Port WH : Warehouse[max = 1000; current = 750];
-2018-10-30 18:09:07 [Thread-120] DEBUG entity.Ship - Thread-120; Done with berth : Berth[id = 4]; Ship wh: Warehouse[max = 100; current = 16];
+2018-10-30 18:09:07 [Thread-120] DEBUG edu.epam.third.entity.Ship - Thread-120; Done with berth : Berth[id = 4]; Ship wh: Warehouse[max = 100; current = 16];
 2018-10-30 18:09:10 [Timer-0] INFO  timer.TimedInfo - Port WH : Warehouse[max = 1000; current = 750];

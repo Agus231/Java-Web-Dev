@@ -1,6 +1,6 @@
-2018-10-30 15:17:57 [Thread-7] DEBUG entity.Ship - Thread-7; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 10];
-2018-10-30 15:17:57 [Thread-13] DEBUG entity.Ship - Thread-13; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 22];; delta = 2  Port wh: Warehouse[max = 1000; current = 472];
-2018-10-30 15:17:57 [Thread-11] DEBUG entity.Ship - Thread-11; Done with berth : Berth[id = 6]; Ship wh: Warehouse[max = 100; current = 4];
-2018-10-30 15:17:57 [Thread-14] DEBUG entity.Ship - Thread-14; Got berth : Berth[id = 6]; Working with it; Ship wh: Warehouse[max = 100; current = 81];; delta = 46  Port wh: Warehouse[max = 1000; current = 474];
-2018-10-30 15:17:57 [Thread-13] DEBUG entity.Ship - Thread-13; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 20];
-2018-10-30 15:17:57 [Thread-15] DEBUG entity.Ship - Thread-15; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 57];; delta = 32  Port wh: Warehouse[max = 1000; current = 520];
+2018-10-30 15:17:57 [Thread-7] DEBUG edu.epam.third.entity.Ship - Thread-7; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 10];
+2018-10-30 15:17:57 [Thread-13] DEBUG edu.epam.third.entity.Ship - Thread-13; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 22];; delta = 2  Port wh: Warehouse[max = 1000; current = 472];
+2018-10-30 15:17:57 [Thread-11] DEBUG edu.epam.third.entity.Ship - Thread-11; Done with berth : Berth[id = 6]; Ship wh: Warehouse[max = 100; current = 4];
+2018-10-30 15:17:57 [Thread-14] DEBUG edu.epam.third.entity.Ship - Thread-14; Got berth : Berth[id = 6]; Working with it; Ship wh: Warehouse[max = 100; current = 81];; delta = 46  Port wh: Warehouse[max = 1000; current = 474];
+2018-10-30 15:17:57 [Thread-13] DEBUG edu.epam.third.entity.Ship - Thread-13; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 20];
+2018-10-30 15:17:57 [Thread-15] DEBUG edu.epam.third.entity.Ship - Thread-15; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 57];; delta = 32  Port wh: Warehouse[max = 1000; current = 520];

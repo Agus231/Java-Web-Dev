@@ -1,0 +1,6 @@
+2018-11-11 13:44:20 [Thread-9] DEBUG edu.epam.third.entity.Ship - Thread-9; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 87]; Port wh: Warehouse[max = 1000; current = 50];
+2018-11-11 13:44:20 [Thread-11] DEBUG edu.epam.third.entity.Ship - Thread-11; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 89];; delta = 3  Port wh: Warehouse[max = 1000; current = 50];
+2018-11-11 13:44:21 [Thread-11] DEBUG edu.epam.third.entity.Ship - Thread-11; Done with berth : Berth[id = 3]; Ship wh: Warehouse[max = 100; current = 86]; Port wh: Warehouse[max = 1000; current = 53];
+2018-11-11 13:44:21 [Thread-5] DEBUG edu.epam.third.entity.Ship - Thread-5; Got berth : Berth[id = 3]; Working with it; Ship wh: Warehouse[max = 100; current = 99];; delta = 88  Port wh: Warehouse[max = 1000; current = 53];
+2018-11-11 13:44:21 [Timer-0] INFO  edu.epam.third.entity.Port - isEmptyCondition signaled from train
+2018-11-11 13:44:22 [Thread-2] DEBUG edu.epam.third.entity.Ship - Thread-2; Done with berth : Berth[id = 1]; Ship wh: Warehouse[max = 100; current = 28]; Port wh: Warehouse[max = 1000; current = 353];
