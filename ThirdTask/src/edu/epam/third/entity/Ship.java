@@ -42,6 +42,7 @@ public class Ship extends Thread{
                 logger.debug(Thread.currentThread().getName() + "; Done with berth : " + berth +
                         "; Ship wh: " + shipWarehouse + " Operation: " + operation + "; Port wh: " + portWarehouse);
             } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
                 logger.error("Exception from : " + Thread.currentThread().getName() + "; While working with berth.");
             }
 

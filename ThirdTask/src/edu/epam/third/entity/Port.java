@@ -20,7 +20,7 @@ public class Port {
     private static final int TIMER_REPEAT = 3000;
 
     private static final int BERTH_COUNT = 3;
-    private static final int WAREHOUSE_CONTAINERS = 300;
+    private static final int WAREHOUSE_CONTAINERS = 30;
     private static final int WAREHOUSE_CONTAINERS_MAX = 1_000;
 
     private static ReentrantLock lock = new ReentrantLock();

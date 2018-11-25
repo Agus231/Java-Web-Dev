@@ -1,0 +1,38 @@
+<candies xmlns="http://www.example.com/candy">
+    <simple-candy id="Candy1" type="Caramel">
+        <name>FirstCandy</name>
+        <energy>10</energy>
+        <values>
+            <proteins>10</proteins>
+            <fats>10</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>10</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Komunarka</production>
+        <produced-date>2002-12-24</produced-date>
+    </simple-candy>
+
+    <chocolate-candy id="Candy2" type="Chocolate">
+        <name>SecondCandy</name>
+        <energy>10</energy>
+        <values>
+            <proteins>10</proteins>
+            <fats>19</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>10</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Komunarka</production>
+        <produced-date>2010-11-18</produced-date>
+        <chocolate-type>dark</chocolate-type>
+    </chocolate-candy>
+</candies>

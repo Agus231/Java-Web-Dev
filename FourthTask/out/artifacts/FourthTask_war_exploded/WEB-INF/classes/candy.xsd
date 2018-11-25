@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/candy"
+        xmlns:tns="http://www.example.com/candy"
+        elementFormDefault="qualified">
+
+    <element name="candies">
+        <complexType>
+            <sequence>
+                <element ref="tns:candy" minOccurs="2" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="candy" type="tns:Candy" abstract="true"/>
+    <element name="simple-candy" type="tns:SimpleCandy" substitutionGroup="tns:candy"/>
+    <element name="chocolate-candy" type="tns:ChocolateCandy" substitutionGroup="tns:candy"/>
+
+    <complexType name="Candy">
+        <sequence>
+            <element name="name" type="tns:Word" />
+
+            <element name="energy">
+                <simpleType>
+                    <restriction base="unsignedInt">
+                        <maxInclusive value="1000"/>
+                    </restriction>
+                </simpleType>
+            </element>
+
+            <element name="values">
+                <complexType>
+                    <sequence>
+                        <element name="proteins" type="tns:ValueType"/>
+                        <element name="fats" type="tns:ValueType"/>
+                        <element name="starches" type="tns:ValueType"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="ingredients">
+                <complexType>
+                    <sequence>
+                        <element name="water" type="tns:IngredientType"/>
+                        <element name="sugar" type="tns:IngredientType"/>
+                        <element name="fructose" type="tns:IngredientType" />
+                        <element name="vanilla" type="tns:IngredientType" />
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="production" type="tns:Word"/>
+            <element name="produced-date" type="date"/>
+        </sequence>
+
+        <attribute name="id" use="required">
+            <simpleType>
+                <restriction base="ID">
+                    <pattern value="(Candy)[0-9]{1,8}"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+
+    <complexType name="SimpleCandy">
+        <complexContent>
+            <extension base="tns:Candy">
+                <attribute name="type" type="tns:SimpleCandyType" use="optional"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="ChocolateCandy">
+        <complexContent>
+            <extension base="tns:Candy">
+                <sequence>
+                    <element name="chocolate-type" type="tns:ChocolateType" />
+                </sequence>
+                <attribute name="type" type="tns:ChocolateCandyType" default="Chocolate" use="required"/>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <simpleType name="ChocolateCandyType">
+        <restriction base="string">
+            <enumeration value="Chocolate"/>
+            <enumeration value="Chocolate with filling"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="SimpleCandyType">
+        <restriction base="string">
+            <enumeration value="Caramel"/>
+            <enumeration value="Iris"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="ValueType">
+        <restriction base="unsignedInt">
+            <maxInclusive value="50"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="IngredientType">
+        <restriction base="unsignedInt">
+            <maxInclusive value="50" />
+        </restriction>
+    </simpleType>
+
+    <simpleType name="ChocolateType">
+        <restriction base="string">
+            <enumeration value="dark"/>
+            <enumeration value="milk"/>
+            <enumeration value="white"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="Word">
+        <restriction base="string">
+            <pattern value="[a-zA-Za-яА-Я]+"/>
+        </restriction>
+    </simpleType>
+
+</schema>
