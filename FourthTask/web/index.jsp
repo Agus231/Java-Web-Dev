@@ -12,15 +12,15 @@
   </head>
   <body>
 
-  <form action="Controller" method="POST">
+  <form action="Controller" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="command" value="parse"/>
       <label> Введите парсер(DOM, SAX, StAX) :
-        <input type="text" name="parser" size="10"><br/>
+        <input type="text" name="parser" size="10"/><br/>
+        <input type="file" name="file" id="upload" accept=".xml"/><br/>
       </label>
         <input type="submit" value="OK"/><br/>
 
       ${errorLoginPassMessage}
   </form>
-
   </body>
 </html>

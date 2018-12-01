@@ -2,8 +2,8 @@ package edu.epam.xml.model.parser.dom;
 
 import edu.epam.xml.model.exception.CustomParsingXMLException;
 import edu.epam.xml.model.entity.*;
-import edu.epam.xml.model.entity.component.Ingredients;
-import edu.epam.xml.model.entity.component.Values;
+import edu.epam.xml.model.entity.Ingredients;
+import edu.epam.xml.model.entity.Values;
 import edu.epam.xml.model.parser.AbstractCandyBuilder;
 
 import edu.epam.xml.model.util.DateXMLFilter;
@@ -119,7 +119,7 @@ public class CandyDOMBuilder extends AbstractCandyBuilder {
         SimpleCandy candy = (SimpleCandy) buildCandy(candyElement, CandyEnum.SIMPLE_CANDY);
         String type = candyElement.getAttribute(CandyEnum.TYPE.getTag());
 
-        if (type != null) {
+        if (type != null && !type.isEmpty()) {
             candy.setType(SimpleCandyType.valueOf(type.toUpperCase()));
         }
 

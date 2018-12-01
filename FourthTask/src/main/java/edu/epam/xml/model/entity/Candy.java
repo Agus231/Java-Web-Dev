@@ -1,8 +1,5 @@
 package edu.epam.xml.model.entity;
 
-import edu.epam.xml.model.entity.component.Ingredients;
-import edu.epam.xml.model.entity.component.Values;
-
 import java.util.Date;
 
 public abstract class Candy {

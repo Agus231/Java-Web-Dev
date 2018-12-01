@@ -1,17 +1,17 @@
 <candies xmlns="http://www.example.com/candy">
     <simple-candy id="Candy1" type="Caramel">
         <name>FirstCandy</name>
-        <energy>10</energy>
+        <energy>42</energy>
         <values>
-            <proteins>10</proteins>
-            <fats>10</fats>
-            <starches>10</starches>
+            <proteins>42</proteins>
+            <fats>42</fats>
+            <starches>42</starches>
         </values>
         <ingredients>
-            <water>10</water>
-            <sugar>10</sugar>
-            <fructose>10</fructose>
-            <vanilla>10</vanilla>
+            <water>42</water>
+            <sugar>42</sugar>
+            <fructose>42</fructose>
+            <vanilla>42</vanilla>
         </ingredients>
         <production>Komunarka</production>
         <produced-date>2002-12-24</produced-date>
@@ -35,4 +35,264 @@
         <produced-date>2010-11-18</produced-date>
         <chocolate-type>dark</chocolate-type>
     </chocolate-candy>
+
+    <chocolate-candy id="Candy3" type="Chocolate with filling">
+        <name>ThirdCandy</name>
+        <energy>20</energy>
+        <values>
+            <proteins>5</proteins>
+            <fats>10</fats>
+            <starches>18</starches>
+        </values>
+        <ingredients>
+            <water>5</water>
+            <sugar>5</sugar>
+            <fructose>5</fructose>
+            <vanilla>5</vanilla>
+        </ingredients>
+        <production>Spartak</production>
+        <produced-date>2014-11-15</produced-date>
+        <chocolate-type>white</chocolate-type>
+    </chocolate-candy>
+
+    <simple-candy id="Candy4">
+        <name>FourthCandy</name>
+        <energy>50</energy>
+        <values>
+            <proteins>50</proteins>
+            <fats>25</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>30</water>
+            <sugar>30</sugar>
+            <fructose>25</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Комунарка</production>
+        <produced-date>2012-08-07</produced-date>
+    </simple-candy>
+
+    <chocolate-candy id="Candy5" type="Chocolate">
+        <name>FifthCandy</name>
+        <energy>15</energy>
+        <values>
+            <proteins>10</proteins>
+            <fats>10</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>10</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Производитель</production>
+        <produced-date>2009-10-18</produced-date>
+        <chocolate-type>dark</chocolate-type>
+    </chocolate-candy>
+
+    <simple-candy id="Candy6" type="Iris">
+        <name>SixthCandy</name>
+        <energy>5</energy>
+        <values>
+            <proteins>15</proteins>
+            <fats>20</fats>
+            <starches>15</starches>
+        </values>
+        <ingredients>
+            <water>10</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Название</production>
+        <produced-date>2000-01-01</produced-date>
+    </simple-candy>
+
+    <chocolate-candy id="Candy7" type="Chocolate">
+        <name>SeventhCandy</name>
+        <energy>10</energy>
+        <values>
+            <proteins>10</proteins>
+            <fats>10</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>15</water>
+            <sugar>15</sugar>
+            <fructose>15</fructose>
+            <vanilla>15</vanilla>
+        </ingredients>
+        <production>Candies</production>
+        <produced-date>2005-10-10</produced-date>
+        <chocolate-type>milk</chocolate-type>
+    </chocolate-candy>
+
+    <chocolate-candy id="Candy8" type="Chocolate with filling">
+        <name>EighthCandy</name>
+        <energy>5</energy>
+        <values>
+            <proteins>5</proteins>
+            <fats>5</fats>
+            <starches>5</starches>
+        </values>
+        <ingredients>
+            <water>10</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Apache</production>
+        <produced-date>2014-11-14</produced-date>
+        <chocolate-type>dark</chocolate-type>
+    </chocolate-candy>
+
+    <simple-candy id="Candy9" type="Caramel">
+        <name>Ninth</name>
+        <energy>10</energy>
+        <values>
+            <proteins>10</proteins>
+            <fats>10</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>10</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Hadoop</production>
+        <produced-date>2006-11-08</produced-date>
+    </simple-candy>
+
+    <chocolate-candy id="Candy10" type="Chocolate">
+        <name>TenthCandy</name>
+        <energy>10</energy>
+        <values>
+            <proteins>10</proteins>
+            <fats>6</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>10</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Spark</production>
+        <produced-date>2010-11-18</produced-date>
+        <chocolate-type>dark</chocolate-type>
+    </chocolate-candy>
+
+    <simple-candy id="Candy11">
+        <name>AnotherCandy</name>
+        <energy>20</energy>
+        <values>
+            <proteins>10</proteins>
+            <fats>15</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>20</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>MapReduce</production>
+        <produced-date>2010-05-08</produced-date>
+    </simple-candy>
+
+    <simple-candy id="Candy12" type="Caramel">
+        <name>NewOne</name>
+        <energy>42</energy>
+        <values>
+            <proteins>42</proteins>
+            <fats>42</fats>
+            <starches>42</starches>
+        </values>
+        <ingredients>
+            <water>42</water>
+            <sugar>42</sugar>
+            <fructose>42</fructose>
+            <vanilla>42</vanilla>
+        </ingredients>
+        <production>Apache</production>
+        <produced-date>2010-11-18</produced-date>
+    </simple-candy>
+
+    <chocolate-candy id="Candy13" type="Chocolate">
+        <name>CANDYCRUSH</name>
+        <energy>42</energy>
+        <values>
+            <proteins>42</proteins>
+            <fats>42</fats>
+            <starches>42</starches>
+        </values>
+        <ingredients>
+            <water>42</water>
+            <sugar>42</sugar>
+            <fructose>42</fructose>
+            <vanilla>42</vanilla>
+        </ingredients>
+        <production>Tomcat</production>
+        <produced-date>2010-11-18</produced-date>
+        <chocolate-type>dark</chocolate-type>
+    </chocolate-candy>
+
+    <chocolate-candy id="Candy14" type="Chocolate">
+        <name>CANDY</name>
+        <energy>42</energy>
+        <values>
+            <proteins>24</proteins>
+            <fats>24</fats>
+            <starches>24</starches>
+        </values>
+        <ingredients>
+            <water>24</water>
+            <sugar>24</sugar>
+            <fructose>24</fructose>
+            <vanilla>24</vanilla>
+        </ingredients>
+        <production>Komunarka</production>
+        <produced-date>2017-11-18</produced-date>
+        <chocolate-type>milk</chocolate-type>
+    </chocolate-candy>
+
+    <chocolate-candy id="Candy15" type="Chocolate">
+        <name>MARK</name>
+        <energy>1</energy>
+        <values>
+            <proteins>2</proteins>
+            <fats>4</fats>
+            <starches>8</starches>
+        </values>
+        <ingredients>
+            <water>16</water>
+            <sugar>32</sugar>
+            <fructose>1</fructose>
+            <vanilla>2</vanilla>
+        </ingredients>
+        <production>TwoDegrees</production>
+        <produced-date>2016-04-18</produced-date>
+        <chocolate-type>dark</chocolate-type>
+    </chocolate-candy>
+
+    <simple-candy id="Candy16">
+        <name>SIMPLEONE</name>
+        <energy>6</energy>
+        <values>
+            <proteins>6</proteins>
+            <fats>6</fats>
+            <starches>6</starches>
+        </values>
+        <ingredients>
+            <water>6</water>
+            <sugar>7</sugar>
+            <fructose>7</fructose>
+            <vanilla>7</vanilla>
+        </ingredients>
+        <production>LASTONE</production>
+        <produced-date>2010-03-03</produced-date>
+    </simple-candy>
 </candies>

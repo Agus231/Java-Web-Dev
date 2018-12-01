@@ -21,7 +21,7 @@
         <th rowspan="2">Name</th>
         <th rowspan="2">Id</th>
         <th rowspan="2">Type</th>
-        <th rowspan="2">Energy</th>
+        <th rowspan="2">Energy, ккал</th>
         <th rowspan="2">Production</th>
         <th rowspan="2">Produced date</th>
         <th colspan="3">Values</th>
@@ -29,13 +29,13 @@
         <th rowspan="2">Chocolate type</th>
     </tr>
     <tr>
-        <th>Proteins</th>
-        <th>Starches</th>
-        <th>Fats</th>
+        <th>Proteins, гр.</th>
+        <th>Starches, гр.</th>
+        <th>Fats, гр.</th>
         <th>Water</th>
-        <th>Sugar</th>
-        <th>Fructose</th>
-        <th>Vanilla</th>
+        <th>Sugar, мг.</th>
+        <th>Fructose, мг.</th>
+        <th>Vanilla, мг.</th>
     </tr>
     <c:forEach var="elem" items="${ list }" varStatus="status">
     <tr>
@@ -66,6 +66,6 @@
     </tr>
     </c:forEach>
 </table>
-<button type="button" name="back" onclick="history.back()">back</button>
+<a href="../index.jsp">Go Back</a>
 </body>
 </html>

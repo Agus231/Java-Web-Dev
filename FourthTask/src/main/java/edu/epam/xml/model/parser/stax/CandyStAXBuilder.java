@@ -2,8 +2,8 @@ package edu.epam.xml.model.parser.stax;
 
 import edu.epam.xml.model.exception.CustomParsingXMLException;
 import edu.epam.xml.model.entity.*;
-import edu.epam.xml.model.entity.component.Ingredients;
-import edu.epam.xml.model.entity.component.Values;
+import edu.epam.xml.model.entity.Ingredients;
+import edu.epam.xml.model.entity.Values;
 import edu.epam.xml.model.parser.AbstractCandyBuilder;
 import edu.epam.xml.model.util.DateXMLFilter;
 import org.apache.logging.log4j.LogManager;
@@ -70,8 +70,10 @@ public class CandyStAXBuilder extends AbstractCandyBuilder {
                 candy = new SimpleCandy();
                 String simpleTypeName = reader.getAttributeValue(null, CandyEnum.TYPE.getTag());
 
-                SimpleCandyType simpleType = SimpleCandyType.valueOf(simpleTypeName.toUpperCase());
-                candy.setType(simpleType);
+                if (simpleTypeName != null) {
+                    SimpleCandyType simpleType = SimpleCandyType.valueOf(simpleTypeName.toUpperCase());
+                    candy.setType(simpleType);
+                }
                 break;
             case CHOCOLATE_CANDY:
                 candy = new ChocolateCandy();

@@ -1,6 +1,12 @@
 package edu.epam.xml.model.entity;
 
 public class SimpleCandy extends Candy {
+    private static final SimpleCandyType DEFAULT_TYPE = SimpleCandyType.CARAMEL;
+
+    public SimpleCandy(){
+        type = DEFAULT_TYPE;
+    }
+
     public enum SimpleCandyType {
         CARAMEL("Caramel"), IRIS("Iris");
 

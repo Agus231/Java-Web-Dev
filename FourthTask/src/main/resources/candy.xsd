@@ -65,7 +65,7 @@
     <complexType name="SimpleCandy">
         <complexContent>
             <extension base="tns:Candy">
-                <attribute name="type" type="tns:SimpleCandyType" use="optional"/>
+                <attribute name="type" type="tns:SimpleCandyType" default="Caramel" use="optional"/>
             </extension>
         </complexContent>
     </complexType>
@@ -76,7 +76,7 @@
                 <sequence>
                     <element name="chocolate-type" type="tns:ChocolateType" />
                 </sequence>
-                <attribute name="type" type="tns:ChocolateCandyType" default="Chocolate" use="required"/>
+                <attribute name="type" type="tns:ChocolateCandyType" use="required"/>
             </extension>
         </complexContent>
     </complexType>

@@ -1,0 +1,58 @@
+<candies xmlns="http://www.example.com/candy">
+    <simple-candy id="Candy1" type="Caramel">
+        <name>FirstCandy</name>
+        <energy>42</energy>
+        <values>
+            <proteins>42</proteins>
+            <fats>42</fats>
+            <starches>42</starches>
+        </values>
+        <ingredients>
+            <water>42</water>
+            <sugar>42</sugar>
+            <fructose>42</fructose>
+            <vanilla>42</vanilla>
+        </ingredients>
+        <production>Komunarka</production>
+        <produced-date>2002-12-24</produced-date>
+    </simple-candy>
+
+    <chocolate-candy id="Candy2" type="Chocolate">
+        <name>SecondCandy</name>
+        <energy>10</energy>
+        <values>
+            <proteins>10</proteins>
+            <fats>10</fats>
+            <starches>10</starches>
+        </values>
+        <ingredients>
+            <water>10</water>
+            <sugar>10</sugar>
+            <fructose>10</fructose>
+            <vanilla>10</vanilla>
+        </ingredients>
+        <production>Komunarka</production>
+        <produced-date>2010-11-18</produced-date>
+        <chocolate-type>dark</chocolate-type>
+    </chocolate-candy>
+
+    <chocolate-candy id="Candy3" type="Chocolate with filling">
+        <name>ThirdCandy</name>
+        <energy>5</energy>
+        <values>
+            <proteins>5</proteins>
+            <fats>5</fats>
+            <starches>5</starches>
+        </values>
+        <ingredients>
+            <water>5</water>
+            <sugar>5</sugar>
+            <fructose>5</fructose>
+            <vanilla>5</vanilla>
+        </ingredients>
+        <production>Spartak</production>
+        <produced-date>2014-11-15</produced-date>
+        <chocolate-type>white</chocolate-type>
+    </chocolate-candy>
+
+</candies>

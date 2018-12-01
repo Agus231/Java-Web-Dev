@@ -1,4 +1,4 @@
-package edu.epam.xml.model.entity.component;
+package edu.epam.xml.model.entity;
 
 public class Values {
     private int proteins;
@@ -27,6 +27,26 @@ public class Values {
 
     public void setStarches(int starches) {
         this.starches = starches;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Values values = (Values) o;
+
+        if (proteins != values.proteins) return false;
+        if (fats != values.fats) return false;
+        return starches == values.starches;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = proteins;
+        result = 31 * result + fats;
+        result = 31 * result + starches;
+        return result;
     }
 
     @Override

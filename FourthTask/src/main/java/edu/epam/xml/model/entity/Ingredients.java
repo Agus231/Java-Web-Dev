@@ -1,4 +1,4 @@
-package edu.epam.xml.model.entity.component;
+package edu.epam.xml.model.entity;
 
 public class Ingredients {
     protected int water;
@@ -28,6 +28,28 @@ public class Ingredients {
 
     public void setFructose(int fructose) {
         this.fructose = fructose;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Ingredients that = (Ingredients) o;
+
+        if (water != that.water) return false;
+        if (sugar != that.sugar) return false;
+        if (fructose != that.fructose) return false;
+        return vanilla == that.vanilla;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = water;
+        result = 31 * result + sugar;
+        result = 31 * result + fructose;
+        result = 31 * result + vanilla;
+        return result;
     }
 
     public int getVanilla() {
